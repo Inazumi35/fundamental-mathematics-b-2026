@@ -1,0 +1,89 @@
+% !TEX program = lualatex
+\documentclass[aspectratio=43,professionalfonts,handout]{beamer}
+\usepackage{beamer_template}
+
+\newcommand{\LectureNum}{14}
+\newcommand{\LectureTitle}{三角形への応用（総合演習）}
+\newcommand{\TextPages}{p.\,138-139（練習問題1-A, 1-B）}
+\newcommand{\NextTopic}{一般角と三角関数}
+\newcommand{\NextPages}{p.\,140-142}
+\newcommand{\CourseName}{基礎数学B}
+\renewcommand{\TermName}{後期}
+
+\begin{document}
+
+% -----------------------------------------------
+% スライド1: 表紙＋目標＋用語・定義
+% -----------------------------------------------
+\begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：正弦定理・余弦定理・面積公式を組み合わせて問題を解ける}
+
+  \begin{block}{用語・定義}
+  \begin{description}[labelwidth=5.5em]
+    \item[\kw{使い分け：辺と角の与え方で公式を選ぶ}] ~
+  \end{description}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド2: 公式・性質
+% -----------------------------------------------
+\begin{frame}{公式・性質}
+  \begin{block}{}
+  \begin{itemize}
+    \item 正弦定理・余弦定理・面積公式の3つを一覧
+    \item 使い分けのフローチャート
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: 問題集 basic の問題に取り組む
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
+% -----------------------------------------------
+\begin{frame}{例1→問1}
+  \begin{exampleblock}{練習問題3-A より（p.142）}
+    （板書で解説）
+  \end{exampleblock}
+
+  \vfill
+
+  \begin{block}{練習3-A 残り\quad 自分で解いてみよう}
+    （ノートに解くこと）
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド5: 解説
+% -----------------------------------------------
+\begin{frame}{解説}
+\end{frame}
+
+% -----------------------------------------------
+% まとめ
+% -----------------------------------------------
+\begin{frame}{まとめ}
+  \begin{itemize}
+    \item % TODO: まとめを記入
+  \end{itemize}
+
+  \vfill
+  {\small 基本問題：278}
+\end{frame}
+
+\end{document}

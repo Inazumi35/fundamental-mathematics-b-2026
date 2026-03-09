@@ -1,0 +1,101 @@
+% !TEX program = lualatex
+\documentclass[aspectratio=43,professionalfonts,handout]{beamer}
+\usepackage{beamer_template}
+
+\newcommand{\LectureNum}{3}
+\newcommand{\LectureTitle}{指数関数（１）}
+\newcommand{\TextPages}{p.\,107-108}
+\newcommand{\NextTopic}{指数関数（２）}
+\newcommand{\NextPages}{p.\,109-111}
+\newcommand{\CourseName}{基礎数学B}
+\renewcommand{\TermName}{後期}
+
+\begin{document}
+
+% -----------------------------------------------
+% スライド1: 表紙＋目標＋用語・定義
+% -----------------------------------------------
+\begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：指数関数 y=aˣ のグラフと性質を理解できる}
+
+  \begin{block}{用語・定義}
+  \begin{description}[labelwidth=5.5em]
+    \item[\kw{指数関数：y=aˣ（a>0, a≠1）}] ~
+    \item[\kw{単調増加（a>1）・単調減少（0<a<1）}] ~
+    \item[\kw{漸近線：y=0（x軸）}] ~
+  \end{description}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド2: 公式・性質
+% -----------------------------------------------
+\begin{frame}{公式・性質}
+  \begin{block}{}
+  \begin{itemize}
+    \item 点(0,1)を必ず通る
+    \item a>1：右上がり、0<a<1：右下がり
+    \item 平行移動：y=aˣ⁻ᵖ+q
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: y=2ˣ と y=(1/2)ˣ の比較グラフ（対称性）
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
+% -----------------------------------------------
+\begin{frame}{例1→問1}
+  \begin{exampleblock}{例1) p.107（グラフをかけ）}
+    （板書で解説）
+  \end{exampleblock}
+
+  \vfill
+
+  \begin{block}{問1) p.107\quad 自分で解いてみよう}
+    （ノートに解くこと）
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド5: 例2→問2
+% -----------------------------------------------
+\begin{frame}{例2→問2}
+  \begin{exampleblock}{例2) p.108（指数方程式）}
+    （板書で解説）
+  \end{exampleblock}
+
+  \vfill
+
+  \begin{block}{問2) p.108\quad 自分で解いてみよう}
+    （ノートに解くこと）
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% まとめ
+% -----------------------------------------------
+\begin{frame}{まとめ}
+  \begin{itemize}
+    \item % TODO: まとめを記入
+  \end{itemize}
+
+  \vfill
+  {\small 基本問題：207, 208, 209, 210}
+\end{frame}
+
+\end{document}

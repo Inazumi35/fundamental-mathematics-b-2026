@@ -1,0 +1,99 @@
+% !TEX program = lualatex
+\documentclass[aspectratio=43,professionalfonts,handout]{beamer}
+\usepackage{beamer_template}
+
+\newcommand{\LectureNum}{12}
+\newcommand{\LectureTitle}{三角比の相互関係・正弦定理}
+\newcommand{\TextPages}{p.\,132-135}
+\newcommand{\NextTopic}{余弦定理・三角形の面積}
+\newcommand{\NextPages}{p.\,135-137}
+\newcommand{\CourseName}{基礎数学B}
+\renewcommand{\TermName}{後期}
+
+\begin{document}
+
+% -----------------------------------------------
+% スライド1: 表紙＋目標＋用語・定義
+% -----------------------------------------------
+\begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：三角比の相互関係を使い、正弦定理を理解して辺と角を求められる}
+
+  \begin{block}{用語・定義}
+  \begin{description}[labelwidth=5.5em]
+    \item[\kw{正弦定理：a/sinA = b/sinB = c/sinC = 2R}] ~
+    \item[\kw{外接円の半径 R}] ~
+  \end{description}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド2: 公式・性質
+% -----------------------------------------------
+\begin{frame}{公式・性質}
+  \begin{block}{}
+  \begin{itemize}
+    \item 正弦定理の3つの使い方：辺を求める・角を求める・外接円半径を求める
+    \item 解の個数（1つ・2つ・なし）の判定
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: 三角形と外接円の図（正弦定理の導出イメージ）
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
+% -----------------------------------------------
+\begin{frame}{例1→問1}
+  \begin{exampleblock}{例題1) p.137（正弦定理で辺を求める）}
+    （板書で解説）
+  \end{exampleblock}
+
+  \vfill
+
+  \begin{block}{問3) p.137\quad 自分で解いてみよう}
+    （ノートに解くこと）
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド5: 例2→問2
+% -----------------------------------------------
+\begin{frame}{例2→問2}
+  \begin{exampleblock}{例題2) p.138（外接円の半径）}
+    （板書で解説）
+  \end{exampleblock}
+
+  \vfill
+
+  \begin{block}{問4) p.138\quad 自分で解いてみよう}
+    （ノートに解くこと）
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% まとめ
+% -----------------------------------------------
+\begin{frame}{まとめ}
+  \begin{itemize}
+    \item % TODO: まとめを記入
+  \end{itemize}
+
+  \vfill
+  {\small 基本問題：264, 265, 275, 276, 277}
+\end{frame}
+
+\end{document}

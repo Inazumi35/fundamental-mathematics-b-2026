@@ -1,0 +1,60 @@
+% !TEX program = lualatex
+\documentclass[aspectratio=43,professionalfonts,handout]{beamer}
+\usepackage{beamer_template}
+
+\newcommand{\LectureNum}{08}
+\newcommand{\LectureTitle}{問題演習}
+\newcommand{\TextPages}{p.\,86-87（練習問題1-A, 1-B）}
+\newcommand{\NextTopic}{べき関数}
+\newcommand{\NextPages}{p.\,88-91}
+\newcommand{\CourseName}{基礎数学B}
+\renewcommand{\TermName}{前期}
+
+\begin{document}
+
+% -----------------------------------------------
+% スライド1: 表紙＋目標＋用語・定義
+% -----------------------------------------------
+\begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：2次関数の全範囲を整理する}
+
+\end{frame}
+
+% -----------------------------------------------
+% スライド2: 公式・性質
+% -----------------------------------------------
+\begin{frame}{公式・性質}
+  \begin{block}{}
+  \begin{itemize}
+    \item % TODO: 内容を追加
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% まとめ
+% -----------------------------------------------
+\begin{frame}{まとめ}
+  \begin{itemize}
+    \item 平方完成・最大最小・判別式・2次不等式が2次関数の核心
+    \item 定義域の有無で最大最小の解き方が変わる
+    \item 2次不等式は必ず放物線のグラフを描いて考える
+  \end{itemize}
+\end{frame}
+
+\end{document}

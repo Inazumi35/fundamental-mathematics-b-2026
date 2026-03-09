@@ -1,0 +1,71 @@
+% !TEX program = lualatex
+\documentclass[aspectratio=43,professionalfonts,handout]{beamer}
+\usepackage{beamer_template}
+
+\newcommand{\LectureNum}{29}
+\newcommand{\LectureTitle}{後期復習（三角関数）}
+\newcommand{\TextPages}{p.\,140-170}
+\newcommand{\NextTopic}{学年末総復習}
+\newcommand{\NextPages}{p.\,72-170}
+\newcommand{\CourseName}{基礎数学B}
+\renewcommand{\TermName}{後期}
+
+\begin{document}
+
+% -----------------------------------------------
+% スライド1: 表紙＋目標＋用語・定義
+% -----------------------------------------------
+\begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：三角関数全範囲（5章2節・3節）を総復習する}
+
+\end{frame}
+
+% -----------------------------------------------
+% スライド2: 公式・性質
+% -----------------------------------------------
+\begin{frame}{公式・性質}
+  \begin{block}{}
+  \begin{itemize}
+    \item 加法定理・2倍角・合成の公式一覧
+  \end{itemize}
+  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: 振幅・周期・グラフ・方程式・不等式 各1問
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 確認問題2（加法定理・合成）
+% -----------------------------------------------
+\begin{frame}{確認問題2（加法定理・合成）}
+\end{frame}
+
+% -----------------------------------------------
+% スライド5: 解答確認
+% -----------------------------------------------
+\begin{frame}{解答確認}
+\end{frame}
+
+% -----------------------------------------------
+% まとめ
+% -----------------------------------------------
+\begin{frame}{まとめ}
+  \begin{itemize}
+    \item % TODO: まとめを記入
+  \end{itemize}
+\end{frame}
+
+\end{document}

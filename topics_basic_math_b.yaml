@@ -1,0 +1,2023 @@
+course:
+  name: 基礎数学B
+  grade: 1
+  textbook: 新 基礎数学 改訂版（大日本図書）
+  evaluation:
+    zenki: 前期中間35%、前期末35%、課題・レポート30%
+    kouki: 前期中間17.5%、前期末17.5%、後期中間17.5%、学年末17.5%、小テスト・課題・受講態度30%
+schedule:
+  zenki:
+  - week: 1
+    quarter: 1stQ
+    topic: 関数とグラフ
+    goal: 関数の概念・定義域・値域を理解し、1次関数のグラフが描ける
+    summary:
+    - 関数とは x の値に y がただ1つ対応する関係
+    - 定義域は x の範囲、値域は y の範囲
+    - 1次関数 y=ax+b のグラフは傾き a・切片 b の直線
+    - f(a+h) ≠ f(a)+h に注意
+    textbook_pages: 72-75
+    slide_content:
+      definitions:
+      - 関数の定義：x の値を決めると y の値がただ1つ定まるとき、y は x の関数
+      - 独立変数 x、従属変数 y
+      - 関数の記法：y=f(x)、f(a) は x=a における値
+      - 変域（定義域・値域）
+      - 1次関数：y=ax+b（a≠0）、グラフは傾き a、切片 b の直線
+      - 定数関数：y=c、x 軸に平行な直線
+      - x 軸に平行な直線は y=f(x) の形で表せない（x=d で表す）
+      examples:
+      - '例1: f(x)=5x-2 のとき f(-2)=-12, f(a)=5a-2, f(a+h)=5a+5h-2'
+      - '例2・3: 定義域が限定された関数の値域'
+      exercises:
+      - '問1: f(x)=2x+3 のとき f(-1), f(-a), f(a+1)'
+      - '問2: (1)y=3x-2（0≦x≦2）(2)y=-4x+3（-1≦x≦1）の値域'
+      graph_topics:
+      - 座標平面・象限（第1〜第4象限）
+      - 曲線 y=f(x) のグラフ
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 関数
+        - 独立変数
+        - 従属変数
+        - 定義域
+        - 値域
+        - f(a)
+      slide2:
+        title: 公式・性質
+        content:
+        - 1次関数 y=ax+b
+        - 定数関数 y=c
+        - x=d（垂直な直線）
+      slide3:
+        title: 図・グラフ
+        content:
+        - 座標平面と象限
+        - y=x+1、y=2、x=-1 のグラフ
+      slide4:
+        title: 例1→問1
+        example: 例1) p.73
+        exercise: 問1) p.73
+      slide5:
+        title: 例2→問2
+        example: 例2) p.74
+        exercise: 問2) p.74
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 143
+        - 144
+  - week: 2
+    quarter: 1stQ
+    topic: ２次関数のグラフ（１）
+    goal: y=ax²のグラフと平行移動を理解し、標準形に変形できる
+    summary:
+    - y=a(x-p)²+q が標準形：軸 x=p、頂点 (p,q)
+    - a>0 で下に凸、a<0 で上に凸
+    - x 軸方向に p 平行移動 → x を x-p に置き換える
+    - y 軸方向に q 平行移動 → 右辺に +q
+    textbook_pages: 75-77
+    slide_content:
+      definitions:
+      - 2次関数：y=ax²+bx+c（a≠0）
+      - y=ax² のグラフ：y 軸を軸とし原点を頂点とする放物線
+      - a>0 のとき下に凸、a<0 のとき上に凸
+      - 平行移動：x 軸方向に p、y 軸方向に q → y=a(x-p)²+q
+      - 標準形：y=a(x-p)²+q、軸は x=p、頂点は (p,q)
+      examples:
+      - y=x², y=(x-2)², y=(x-2)²+3 の関係（表と平行移動）
+      - '例4: 平行移動した放物線の方程式（p.76）'
+      exercises:
+      - '問3: 4つの2次関数のグラフをかけ'
+      - '問4: 放物線を平行移動した方程式'
+      key_points:
+      - x 軸方向に p 平行移動 → x を x-p に置き換える
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 2次関数
+        - 放物線
+        - 軸
+        - 頂点
+        - 標準形
+      slide2:
+        title: 公式・性質
+        content:
+        - y=ax² のグラフの性質
+        - 平行移動の規則 y=a(x-p)²+q
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=x²、y=(x-2)²、y=(x-2)²+3 の比較
+      slide4:
+        title: 例1→問1
+        example: 例4) p.76（軸・頂点）
+        exercise: 問3) p.76（グラフをかけ）
+      slide5:
+        title: 例2→問2
+        example: 例4) p.76（平行移動の方程式）
+        exercise: 問4) p.76
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 145
+        - 146
+  - week: 3
+    quarter: 1stQ
+    topic: ２次関数のグラフ（２）
+    goal: 平方完成により一般形を標準形に変形し、グラフが描ける
+    summary:
+    - 一般形 y=ax²+bx+c は平方完成で標準形に変形できる
+    - 平方完成の手順：ax²+bx を a(x+b/2a)²-b²/4a に
+    - 3点を通る放物線は y=ax²+bx+c として連立方程式を立てる
+    textbook_pages: 77-79
+    slide_content:
+      definitions:
+      - 平方完成：y=ax²+bx+c を y=a(x-p)²+q の形に変形する
+      examples:
+      - y=-2x²+8x-5 の平方完成 → y=-2(x-2)²+3（軸 x=2、頂点(2,3)）
+      - '例題1: 軸 x=1、2点(0,1),(3,7)を通る放物線の方程式（p.77）'
+      - '例題2: 3点を通る放物線の方程式 → y=x²-4x-1（p.78）'
+      exercises:
+      - '問5: 平方完成（4問）'
+      - '問6: 標準形で条件を満たす放物線を求めよ（2問）'
+      - '問7: 3点を通る放物線の方程式・軸・頂点'
+      key_points:
+      - 平方完成の手順を確実に
+      - 標準形から軸・頂点・開口方向を即座に読み取る
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 平方完成
+        - 変形の手順
+      slide2:
+        title: 公式・性質
+        content:
+        - 平方完成の公式
+        - p=-b/2a、q=c-b²/4a
+        - 3ステップの手順
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=-2x²+8x-5 = -2(x-2)²+3 のグラフ（軸・頂点付き）
+      slide4:
+        title: 例1→問1
+        example: 例) p.77（平方完成の計算例）
+        exercise: 問5) p.77（4問）
+      slide5:
+        title: 例2→問2
+        example: 例題1) p.77（条件から標準形を求める）/ 例題2) p.78（3点を通る放物線）
+        exercise: 問6) p.78（2問）/ 問7) p.78
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 147
+        - 148
+        - 149
+  - week: 4
+    quarter: 1stQ
+    topic: ２次関数の最大・最小
+    goal: 頂点の位置と定義域から最大値・最小値を求められる
+    summary:
+    - a>0 のとき頂点で最小値、a<0 のとき頂点で最大値
+    - 定義域が限定されているときは端点と頂点を比較する
+    - 軸が定義域の内側か外側かで場合分けが必要
+    textbook_pages: 79-81
+    slide_content:
+      definitions:
+      - a>0 のとき：x=p で最小値 q（最大値はとらない）
+      - a<0 のとき：x=p で最大値 q（最小値はとらない）
+      - 定義域が限定された場合：グラフの実線部分から判断
+      examples:
+      - '例題3: 定義域なしの最大・最小（2問）'
+      - '例題4: 定義域あり（-1≦x≦2, -1≦x≦1）の最大・最小'
+      exercises:
+      - '問8: 最大値または最小値（2問）'
+      - '問9: 定義域あり（2問）'
+      - '問10: 長方形の面積を最大にする問題'
+      key_points:
+      - 定義域の端点・頂点を比較
+      - 軸が定義域の内外どちらにあるかを確認
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 最大値
+        - 最小値
+        - 定義域なしの場合
+        - 定義域ありの場合
+      slide2:
+        title: 公式・性質
+        content:
+        - a>0：頂点で最小値
+        - a<0：頂点で最大値
+        - 定義域あり：端点・頂点を比較する手順
+      slide3:
+        title: 図・グラフ
+        content:
+        - 定義域なし（頂点が最小）vs 定義域あり（軸の位置で場合分け）
+      slide4:
+        title: 例1→問1
+        example: 例題3) p.79（定義域なし）
+        exercise: 問8) p.80
+      slide5:
+        title: 例2→問2
+        example: 例題4) p.80（定義域あり）
+        exercise: 問9) p.80
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 150
+        - 151
+        - 152
+  - week: 5
+    quarter: 1stQ
+    topic: ２次関数と２次方程式（１）
+    goal: 判別式を用いて放物線と x 軸の位置関係を判定できる
+    summary:
+    - 判別式 D=b²-4ac の符号が放物線と x 軸の関係を決める
+    - D>0：2点で交わる、D=0：接する、D<0：交わらない
+    - 定数を含む問題は D の条件を不等式で立てる
+    textbook_pages: 81-83
+    slide_content:
+      definitions:
+      - 判別式：D=b²-4ac
+      - D>0：x 軸と2点で交わる
+      - D=0：x 軸と接する（接点）
+      - D<0：x 軸と共有点なし
+      examples:
+      - '例題5: 3つの放物線の x 軸との共有点を調べる'
+      - '例題6: y=x²-4x+k の条件（交わる・接する）'
+      exercises:
+      - '問11: x 軸との共有点（3問）'
+      - '問12: 定数 k の値・範囲（3問）'
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 判別式 D=b²-4ac
+        - D>0（2点で交わる）
+        - D=0（接する）
+        - D<0（交わらない）
+      slide2:
+        title: 公式・性質
+        content:
+        - D の符号と x 軸との位置関係対応表
+        - a<0 のときは上下逆転
+      slide3:
+        title: 図・グラフ
+        content:
+        - D>0・D=0・D<0 の3パターン図
+      slide4:
+        title: 例1→問1
+        example: 例題5) p.81（共有点を調べる）
+        exercise: 問11) p.82（3問）
+      slide5:
+        title: 例2→問2
+        example: 例題6) p.82（定数 k の条件）
+        exercise: 問12) p.82（3問）
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 153
+        - 154
+  - week: 6
+    quarter: 1stQ
+    topic: ２次関数と２次方程式（２）
+    goal: 係数条件を含む2次方程式・放物線の問題が解ける
+    summary:
+    - 判別式と x 軸の位置関係の3パターンを確実に使い分ける
+    - 放物線が x 軸より上・下にある条件も判別式で判定
+    textbook_pages: 83, 86-87
+    slide_content:
+      review_items:
+      - 判別式と x 軸との位置関係の総整理
+      exercises:
+      - '練習問題1-A（p.86）: 全問'
+      - '練習問題1-B（p.87）: 全問（発展）'
+      key_points:
+      - 判別式の符号と位置関係を確実に対応させる
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 前回の復習（D と位置関係）
+        - 常に y>0 の条件
+        - 常に y≧0 の条件
+      slide2:
+        title: 公式・性質
+        content:
+        - a>0 かつ常に y>0 ⟺ D<0
+        - 解と係数の関係（参考）
+      slide3:
+        title: 図・グラフ
+        content:
+        - k の値で位置関係が変わるイメージ図
+      slide4:
+        title: 例1→問1
+        example: 練習1-A 問6) p.86（平行移動して原点を通る）
+        exercise: 練習1-A 問7) p.86
+      slide5:
+        title: 例2→問2
+        example: 練習1-B 問4) p.87（内接する長方形）
+        exercise: 練習1-B 問5) p.87
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 154
+  - week: 7
+    quarter: 1stQ
+    topic: ２次関数と２次不等式
+    goal: 2次不等式を放物線のグラフを用いて解くことができる
+    summary:
+    - 2次不等式は放物線と x 軸の位置関係をグラフで確認して解く
+    - D>0・D=0・D<0 の3パターンで解の形が異なる
+    - 「解なし」「すべての実数」が答えになるケースを見落とさない
+    textbook_pages: 84-85
+    slide_content:
+      definitions:
+      - 手順：(i) x² の係数を正に (ii) 判別式で D を調べる (iii) y の符号で解を求める
+      - D>0（α<β）：ax²+bx+c>0 の解は x<α, x>β（a>0）
+      - D=0（2重解α）：ax²+bx+c>0 の解は α 以外のすべての実数
+      - D<0：ax²+bx+c>0 の解はすべての実数（a>0）
+      examples:
+      - '例題7: (1)x²+2x-1>0 (2)-x²+4x-4≧0 (3)x²+2x+3<0'
+      exercises:
+      - '問13: 2次不等式（4問）'
+      key_points:
+      - 「解なし」「すべての実数」になるケースに注意
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 2次不等式
+        - 解き方（グラフを利用）
+      slide2:
+        title: 公式・性質
+        content:
+        - D>0（解 α<β）：>0 の解は x<α または x>β
+        - D=0：>0 の解は α 以外
+        - D<0：>0 の解はすべての実数
+      slide3:
+        title: 図・グラフ
+        content:
+        - D>0・D=0・D<0 の3パターンと y>0 の範囲
+      slide4:
+        title: 例1→問1
+        example: 例題7) p.84（3パターン各1問）
+        exercise: 問13) p.85（4問）
+      slide5:
+        title: 追加演習
+        note: 例が1セットのみのため追加演習に充てる
+        exercise: 練習1-A 問8・問9) p.86
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 155
+  - week: 8
+    quarter: 1stQ
+    topic: 問題演習
+    goal: 2次関数の全範囲を整理する
+    summary:
+    - 平方完成・最大最小・判別式・2次不等式が2次関数の核心
+    - 定義域の有無で最大最小の解き方が変わる
+    - 2次不等式は必ず放物線のグラフを描いて考える
+    textbook_pages: 86-87（練習問題1-A, 1-B）
+    slide_content:
+      review_items:
+      - 平方完成と標準形
+      - 定義域あり・なしの最大最小
+      - 判別式と x 軸との位置関係
+      - 2次不等式の解法（3パターン）
+      key_problems:
+      - '1-B 問4: 放物線と内接する長方形の周の長さの最大'
+      - '1-B 問5: y=x²+2mx-4m の最小値 s の関数'
+    slides:
+      slide1:
+        title: 表紙（目標＋範囲）
+        goal: 2次関数の全範囲を問題集で確認する
+        note: Check（授業中演習）回
+      slide2:
+        title: Check（演習）
+        workbook:
+        - 143
+        - 144
+        - 145
+        - 146
+        - 147
+        - 148
+        - 149
+        - 150
+        - 151
+        - 152
+        - 153
+        - 154
+        - 155
+        - 156
+        - 157
+        - 158
+        - 159
+        - 160
+        - 161
+        - 162
+        - 163
+        - 164
+        note: 問題集から各自取り組む。全問でなくてよい。
+      slide3:
+        title: 解説
+        note: 授業後半に重要問題を板書で解説
+        key_problems:
+        - 151
+        - 154
+        - 163
+  - week: 9
+    quarter: 2ndQ
+    topic: べき関数
+    goal: べき関数の性質と奇関数・偶関数を理解しグラフが描ける
+    summary:
+    - べき関数 y=xⁿ は n が奇数なら奇関数、偶数なら偶関数
+    - 奇関数は原点対称、偶関数は y 軸対称
+    - グラフの平行移動は y=f(x-p)+q で表せる
+    textbook_pages: 88-91
+    slide_content:
+      definitions:
+      - べき関数：y=xⁿ（n は正の整数）
+      - n が奇数：奇関数（f(-x)=-f(x)）、グラフは原点対称
+      - n が偶数：偶関数（f(-x)=f(x)）、グラフは y 軸対称
+      - 単調増加・単調減少の定義
+      - グラフの平行移動：y=f(x-p)+q
+      examples:
+      - y=x³, y=x⁴ のグラフと表
+      - '例3: y=(x-1)⁴-2 のグラフ'
+      exercises:
+      - '問1: 奇関数・偶関数の判定（3問）'
+      - '問2: グラフをかけ（2問）'
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - べき関数 y=xⁿ
+        - 奇関数
+        - 偶関数
+        - 単調増加
+        - 単調減少
+      slide2:
+        title: 公式・性質
+        content:
+        - n が奇数：奇関数・原点対称
+        - n が偶数：偶関数・y 軸対称
+        - 平行移動 y=f(x-p)+q
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=x³（奇）、y=x⁴（偶）、y=(x-1)⁴-2（平行移動）
+      slide4:
+        title: 例1→問1
+        example: 例1・例2) p.88-89（奇偶関数の判定）
+        exercise: 問1) p.89（3問）
+      slide5:
+        title: 例2→問2
+        example: 例3) p.90（グラフをかけ）
+        exercise: 問2) p.90（2問）
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 171
+        - 172
+  - week: 10
+    quarter: 2ndQ
+    topic: 分数関数（１）
+    goal: y=a/x のグラフ（双曲線）と漸近線を理解できる
+    summary:
+    - y=a/x のグラフは双曲線、漸近線は x=0 と y=0
+    - y=a/(x-p)+q は漸近線が x=p と y=q に移動する
+    - 定義域・値域は漸近線の「除外点」から読み取る
+    textbook_pages: 91-93
+    slide_content:
+      definitions:
+      - y=a/x（a≠0）：双曲線、漸近線は x=0 と y=0
+      - a>0：第1・3象限、a<0：第2・4象限
+      - 平行移動：y=a/(x-p)+q（漸近線：x=p, y=q）
+      examples:
+      - '例題1: (1)y=1/(x-1)+2 (2)y=-2/(x+3) のグラフ・定義域・値域・漸近線'
+      exercises:
+      - '問3: 3つの分数関数のグラフ・定義域・値域・漸近線'
+      key_points:
+      - 漸近線は定義域・値域の除外点から読み取る
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 分数関数
+        - 双曲線
+        - 漸近線
+      slide2:
+        title: 公式・性質
+        content:
+        - y=a/x：定義域・値域・漸近線・象限
+        - y=a/(x-p)+q：漸近線 x=p と y=q
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=1/x（基本形）と y=1/(x-1)+2（平行移動）と漸近線
+      slide4:
+        title: 例1→問1
+        example: 例題1) p.92（定義域・値域・漸近線・グラフ）
+        exercise: 問3) p.92（3問）
+      slide5:
+        title: 補足演習
+        note: 例が1セットのみのため補足演習に充てる
+        exercise: 練習2-A 問3・問4) p.99
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 173
+  - week: 11
+    quarter: 2ndQ
+    topic: 分数関数（２）
+    goal: y=(cx+d)/(x+b) 型の分数関数のグラフを描ける
+    summary:
+    - y=(cx+d)/(x+b) は分子÷分母で y=q+r/(x+b) に変形する
+    - 変形後の形から漸近線を読み取り、双曲線をかく
+    textbook_pages: '93'
+    slide_content:
+      definitions:
+      - 分子を分母で割って y=q+r/(x+b) の形に変形
+      - 商 q が y の漸近線、x=-b が x の漸近線
+      examples:
+      - y=(3x+7)/(x+2) = 3 + 1/(x+2)
+      exercises:
+      - '問4: (1)y=(3x-2)/(x-1) (2)y=-3x/(x+1)'
+      - 練習問題2-A 問3,4
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 変形の方針（分子÷分母）
+        - 漸近線の読み取り方
+      slide2:
+        title: 公式・性質
+        content:
+        - y=(cx+d)/(x+b) → y=c+(d-bc)/(x+b) の変形手順
+        - 例：(3x+7)/(x+2) = 3+1/(x+2)
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=(3x+7)/(x+2) のグラフと漸近線 x=-2、y=3
+      slide4:
+        title: 例1→問1
+        example: 例) p.93（変形とグラフ）
+        exercise: 問4) p.93（2問）
+      slide5:
+        title: 例2→問2
+        example: 練習2-A 問4) p.99（係数を求める）
+        exercise: 練習2-B 問4) p.100
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 174
+  - week: 12
+    quarter: 2ndQ
+    topic: 無理関数
+    goal: 無理関数の定義域とグラフを理解し、変形グラフが描ける
+    summary:
+    - y=√(P(x)) の定義域は P(x)≧0 を解いて求める
+    - y=√x のグラフは放物線 x=y² の上半分
+    - x軸・y軸・原点に関する対称移動の公式を使い分ける
+    textbook_pages: 94-95
+    slide_content:
+      definitions:
+      - y=√(P(x)) の定義域：P(x)≧0 となる x の範囲
+      - y=√x のグラフ：放物線 x=y² の上半分
+      - 対称移動のまとめ：y=-f(x)（x軸）、y=f(-x)（y軸）、y=-f(-x)（原点）
+      examples:
+      - '例5: 定義域を求めよ（p.94）'
+      - '例題2: y=√(x-1)+2（定義域 x≧1、値域 y≧2）（p.95）'
+      exercises:
+      - '問5: 定義域（3問）'
+      - '問6: グラフ（3問）'
+      - '問7,8: 対称移動'
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 無理関数
+        - 定義域（P(x)≧0）
+        - y=√x のグラフ
+      slide2:
+        title: 公式・性質
+        content:
+        - 対称移動：-f(x)（x軸）、f(-x)（y軸）、-f(-x)（原点）
+        - 平行移動：y=√(x-p)+q
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=√x、y=-√x、y=√(-x)、y=√(x-1)+2
+      slide4:
+        title: 例1→問1
+        example: 例5) p.94（定義域を求めよ）
+        exercise: 問5) p.94（定義域3問）
+      slide5:
+        title: 例2→問2
+        example: 例題2) p.95（グラフ・定義域・値域）/ 例) p.95（対称移動）
+        exercise: 問6) p.95（グラフ3問）/ 問7・問8) p.95（対称移動）
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 175
+        - 176
+        - 177
+        - 178
+  - week: 13
+    quarter: 2ndQ
+    topic: 逆関数
+    goal: 逆関数の定義と求め方を理解し、y=x に関する対称性を説明できる
+    summary:
+    - 逆関数は x と y を入れ替えて y について解く
+    - もとの関数の定義域・値域と逆関数の値域・定義域は入れ替わる
+    - y=f(x) と逆関数のグラフは直線 y=x に関して対称
+    textbook_pages: 96-97
+    slide_content:
+      definitions:
+      - 逆関数：x と y を入れ替えて y について解いた関数
+      - もとの関数の定義域 = 逆関数の値域（逆も成立）
+      - y=f(x) と逆関数のグラフは直線 y=x に関して対称
+      examples:
+      - '例題3: y=x²-1（x≧0）の逆関数 → y=√(x+1)'
+      exercises:
+      - '問9: 逆関数を求めよ（3問）'
+      - 練習問題2-A 問6,7
+      key_points:
+      - 手順：x と y を入れ替え → y について解く → 定義域を確認
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 逆関数
+        - 定義域と値域の入れ替わり
+        - y=x に関する対称性
+      slide2:
+        title: 公式・性質
+        content:
+        - 逆関数の求め方3ステップ
+        - 逆関数が存在する条件（1対1）
+        - 例：y=x²（x≧0）→ y=√x
+      slide3:
+        title: 図・グラフ
+        content:
+        - y=x²-1（x≧0）と逆関数 y=√(x+1)、y=x に関する対称性
+      slide4:
+        title: 例1→問1
+        example: 例題3) p.96（逆関数を求める）
+        exercise: 問9) p.97（3問）
+      slide5:
+        title: 例2→問2
+        example: 練習2-A 問6) p.99（逆関数とグラフ）
+        exercise: 練習2-A 問7) p.99
+      slide6:
+        title: まとめ
+        summary: true
+        basic:
+        - 179
+  - week: 14
+    quarter: 2ndQ
+    topic: 問題演習
+    goal: べき関数・分数関数・無理関数・逆関数を総合的に理解する
+    summary:
+    - べき・分数・無理関数はすべて「グラフの形」と「定義域・値域」がセット
+    - 逆関数は定義域の確認を忘れずに
+    - 練習問題で各関数の特徴を整理する
+    textbook_pages: 98-100（練習問題2-A, 2-B）
+    slide_content:
+      review_items:
+      - べき関数（奇偶関数・グラフ）
+      - 分数関数（双曲線・漸近線・変形）
+      - 無理関数（定義域・グラフ・対称移動）
+      - 逆関数（求め方・グラフの対称性）
+      exercises:
+      - '練習問題2-A（p.99）: 全問'
+      - '練習問題2-B（p.100）: 全問（発展）'
+    slides:
+      slide1:
+        title: 表紙（目標＋範囲）
+        goal: いろいろな関数の全範囲を問題集で確認する
+        note: Check（授業中演習）回
+      slide2:
+        title: Check（演習）
+        workbook:
+        - 171
+        - 172
+        - 173
+        - 174
+        - 175
+        - 176
+        - 177
+        - 178
+        - 179
+        - 180
+        - 181
+        - 182
+        - 183
+        - 184
+        - 185
+        - 186
+        - 187
+        - 188
+        note: 問題集から各自取り組む。全問でなくてよい。
+      slide3:
+        title: 解説
+        note: 授業後半に重要問題を板書で解説
+        key_problems:
+        - 176
+        - 179
+        - 188
+  - week: 15
+    quarter: 2ndQ
+    topic: 前期復習
+    goal: 前期全範囲（3章）を総復習し、定期試験に備える
+    summary:
+    - 2次関数：標準形・最大最小・判別式・2次不等式
+    - いろいろな関数：べき・分数・無理・逆関数
+    - 共通のキーワード：定義域・値域・グラフ・平行移動・対称移動
+    textbook_pages: 72-100
+    slide_content:
+      review_items:
+      - '[3章1節] 2次関数：標準形・グラフ・最大最小・判別式・2次不等式'
+      - '[3章2節] べき関数・分数関数・無理関数・逆関数'
+      important_formulas:
+      - 標準形：y=a(x-p)²+q（軸 x=p、頂点(p,q)）
+      - 判別式：D=b²-4ac
+      - 平行移動：y=f(x-p)+q
+      - 逆関数：x と y を入れ替えて y について解く
+    slides:
+      slide1:
+        title: 表紙
+        goal: true
+        terms:
+        - 3章1節（2次関数）
+        - 3章2節（いろいろな関数）
+        - 共通テーマ
+      slide2:
+        title: 重要公式まとめ
+        content:
+        - 前期全範囲の重要公式一覧
+      slide3:
+        title: 確認問題1（2次関数）
+        content:
+        - 標準形・最大最小・判別式・2次不等式 各1問
+      slide4:
+        title: 確認問題2（いろいろな関数）
+        content:
+        - 奇偶関数・分数関数・無理関数・逆関数 各1問
+      slide5:
+        title: 解答確認
+        content:
+        - 板書で解答確認・質問タイム
+      slide6:
+        title: まとめ
+        summary: true
+        basic: []
+  kouki:
+  - week: 1
+    quarter: 3rdQ
+    lesson_a:
+      topic: 累乗根・指数の拡張（１）
+      goal: 累乗根の定義と性質を理解し計算できる
+      textbook_pages: 102-104
+      slide_content:
+        definitions:
+        - n乗根：xⁿ=a となる x を a の n乗根という
+        - n が偶数：a>0 なら ⁿ√a と -ⁿ√a の2個、a<0 なら実数の n乗根はない
+        - n が奇数：n乗根はただ1つ、ⁿ√(-a)=-ⁿ√a
+        - 累乗根の性質：(ⁿ√a)ⁿ=a、ⁿ√(aᵐ)=(ⁿ√a)ᵐ、ⁿ√a·ⁿ√b=ⁿ√(ab)、ⁿ√a/ⁿ√b=ⁿ√(a/b)
+        examples:
+        - '例1: 16の4乗根は 2 と -2'
+        - '例2: ∛8=2、∛(-8)=-2'
+        - '例3: ⁴√9·(⁴√3)³=3'
+        exercises:
+        - '問1: 次の値を根号を用いて表せ（3問）'
+        - '問2: 累乗根の計算（4問）'
+      basic: &id001
+      - 201
+      - 202
+      - 203
+      - 204
+      slides:
+      - title: 表紙
+        goal: n乗根の定義と性質を理解し、基本的な計算ができる
+        terms:
+        - n乗根
+        - n乗根の定義（aのn乗根）
+        - √ⁿa の表記
+        - 奇数乗根と偶数乗根の違い
+      - title: 公式・性質
+        content:
+        - (√ⁿa)ⁿ=a
+        - √ⁿ(aⁿ)=a（nが奇数）
+        - √ⁿ(aⁿ)=|a|（nが偶数）
+        - √ⁿa・√ⁿb=√ⁿ(ab)
+        - √ⁿa÷√ⁿb=√ⁿ(a/b)
+      - title: 例1→問1
+        example: 例1) p.102（n乗根の値を求める）
+        exercise: 問1) p.102
+      - title: 例2→問2
+        example: 例2) p.103（√ⁿa の計算）
+        exercise: 問2) p.103
+      - title: 例3→問3
+        example: '例3: ⁴√9·(⁴√3)³=3'
+      - title: まとめ
+        basic: *id001
+    lesson_b:
+      topic: 累乗根・指数の拡張（２）
+      goal: 指数法則を有理数指数に拡張して計算できる
+      textbook_pages: 104-106
+      slide_content:
+        definitions:
+        - 指数の拡張(1)：a⁰=1、a⁻ⁿ=1/aⁿ（a≠0）
+        - 指数の拡張(2)：a^(1/n)=ⁿ√a、a^(m/n)=ⁿ√(aᵐ)（a>0）
+        - 指数法則（有理数指数）：aᵖaᵍ=aᵖ⁺ᵍ、(aᵖ)ᵍ=aᵖᵍ、(ab)ᵖ=aᵖbᵖ
+        examples:
+        - '例4: 5⁰=1、3⁻²=1/9'
+        - '例5: a²×a⁻³=a⁻¹=1/a'
+        - '例6: 5^(1/2)=√5、5^(2/3)=∛(5²)'
+        - '例題1: 指数法則を用いた計算（2問）'
+        exercises:
+        - '問3: 計算せよ（a≠0, b≠0）（4問）'
+        - '問4: a^(m/n) の形・根号で表せ（4問）'
+        - '問5,6: 指数法則の計算'
+      basic: &id002
+      - 205
+      - 206
+      - 211
+      - 212
+      - 213
+      - 214
+      slides:
+      - title: 表紙
+        goal: 有理数指数を理解し、指数法則を有理数・実数に拡張できる
+        terms:
+        - 有理数指数：aᵐ/ⁿ = √ⁿ(aᵐ)
+        - 指数法則（aᵐ・aⁿ=aᵐ⁺ⁿ など）の拡張
+      - title: 公式・性質
+        content:
+        - aᵐ/ⁿ = √ⁿ(aᵐ)（a>0）
+        - a⁰=1、a⁻ⁿ=1/aⁿ
+        - 指数法則4つ（有理数指数でも成立）
+      - title: 例1→問1
+        example: 例3) p.104（有理数指数の計算）
+        exercise: 問3) p.104
+      - title: 例2→問2
+        example: 例4) p.105（指数法則の応用）
+        exercise: 問4) p.105
+      - title: 例3→問3
+        example: '例6: 5^(1/2)=√5、5^(2/3)=∛(5²)'
+        exercise: '問5,6: 指数法則の計算'
+      - title: 例4→問4
+        example: '例題1: 指数法則を用いた計算（2問）'
+      - title: まとめ
+        basic: *id002
+  - week: 2
+    quarter: 3rdQ
+    lesson_a:
+      topic: 指数関数（１）
+      goal: 指数関数 y=aˣ のグラフと性質を理解できる
+      textbook_pages: 107-108
+      slide_content:
+        definitions:
+        - 指数関数：y=aˣ（a>0, a≠1）
+        - 性質(I)：定義域は実数全体、値域は正の実数全体
+        - 性質(II)：a>1 のとき単調増加、0<a<1 のとき単調減少
+        - 性質(III)：グラフは点(0,1)と点(1,a)を通る
+        - 性質(IV)：x 軸（y=0）が漸近線
+        examples:
+        - y=2ˣ, y=3ˣ と y=0.4ˣ, y=0.6ˣ のグラフ比較
+        - '例題2: (1)y=2^(x-1) (2)y=(1/2)ˣ のグラフ'
+        exercises:
+        - '問7: y=1.5ˣ, y=3^(x+1), y=(1/3)ˣ のグラフ'
+        - '問8: y=-2ˣ, y=-2^(-x) のグラフ'
+      basic: &id003
+      - 207
+      - 208
+      - 209
+      - 210
+      slides:
+      - title: 表紙
+        goal: 指数関数の性質を理解し、グラフが描ける
+        terms:
+        - 指数関数：y=aˣ（a>0, a≠1）
+        - 単調増加（a>1）・単調減少（0<a<1）
+        - 漸近線：y=0（x軸）
+      - title: 公式・性質
+        content:
+        - 点(0,1)を必ず通る
+        - a>1：右上がり、0<a<1：右下がり
+        - 平行移動：y=aˣ⁻ᵖ+q
+      - title: 図・グラフ
+        content:
+        - y=2ˣ と y=(1/2)ˣ の比較グラフ（対称性）
+      - title: 例1→問1
+        example: 例1) p.107（グラフをかけ）
+        exercise: 問1) p.107
+      - title: 例2→問2
+        example: 例2) p.108（指数方程式）
+        exercise: 問2) p.108
+      - title: まとめ
+        basic: *id003
+    lesson_b:
+      topic: 指数関数（２）
+      goal: 指数方程式・不等式を解ける
+      textbook_pages: 109-111
+      slide_content:
+        definitions:
+        - 指数方程式：底をそろえて指数を比較する
+        - 指数不等式：底 a の大小により不等号の向きに注意
+        examples:
+        - '例題3: (1)2^(x-1)=4√2 → x=7/2 (2)9ˣ+3·3ˣ-4=0 → x=0'
+        - '例題4: 9ˣ>27 → x>3/2'
+        exercises:
+        - '問9: 指数方程式（3問）'
+        - '問10: 指数不等式（2問）'
+        - 練習問題1-A, 1-B（p.110-111）
+      basic: &id004
+      - 215
+      - 216
+      - 217
+      slides:
+      - title: 表紙
+        goal: 指数方程式・不等式を底をそろえて解くことができる
+        terms:
+        - 底をそろえる：aˣ=aᵏ → x=k
+        - 底が1より大：不等号の向きはそのまま
+        - 底が1より小：不等号の向きが逆転
+      - title: 公式・性質
+        content:
+        - 置換（t=2ˣ など）で2次方程式に帰着する手法
+        - 解の検証（t>0 の条件確認）
+      - title: 図・グラフ
+        content:
+        - y=2ˣ のグラフで不等式の解範囲を視覚化
+      - title: 例1→問1
+        example: 例3) p.109（指数不等式）
+        exercise: 問3) p.109
+      - title: 例2→問2
+        example: 例題1) p.110（置換して2次方程式）
+        exercise: 問4) p.110
+      - title: まとめ
+        basic: *id004
+  - week: 3
+    quarter: 3rdQ
+    lesson_a:
+      topic: 対数（１）
+      goal: 対数の定義と基本性質を理解し計算できる
+      textbook_pages: 112-114
+      slide_content:
+        definitions:
+        - 対数の定義：aᵐ=N ⟺ m=logₐN（a>0, a≠1, N>0）
+        - 真数条件：N>0
+        - 対数の性質(1)：logₐ1=0、logₐa=1、a^(logₐN)=N
+        - 対数の性質(2)：logₐMN=logₐM+logₐN、logₐ(M/N)=logₐM-logₐN、logₐMᵖ=p·logₐM
+        examples:
+        - '例1: log₂8=3、log₂(1/4)=-2'
+        - '例2: log₂32=5、計算例'
+        exercises:
+        - '問1: 対数の値を求めよ（6問）'
+        - '問2: 対数の計算（4問）'
+        - '問3,4: 等式の証明'
+      basic: &id005
+      - 225
+      - 226
+      - 227
+      - 228
+      slides:
+      - title: 表紙
+        goal: 対数の定義を理解し、基本的な性質と計算ができる
+        terms:
+        - 対数の定義：logₐb=c ⟺ aᶜ=b
+        - logₐ1=0、logₐa=1
+        - 真数条件：b>0、底の条件：a>0, a≠1
+      - title: 公式・性質
+        content:
+        - logₐMN=logₐM+logₐN
+        - logₐ(M/N)=logₐM-logₐN
+        - logₐMᵏ=k・logₐM
+      - title: 例1→問1
+        example: 例1) p.113（対数の値を求める）
+        exercise: 問1) p.113
+      - title: 例2→問2
+        example: 例2) p.114（対数の性質を使った計算）
+        exercise: 問2) p.114
+      - title: まとめ
+        basic: *id005
+    lesson_b:
+      topic: 対数（２）・底の変換
+      goal: 底の変換公式を使いこなせる
+      textbook_pages: 114-115
+      slide_content:
+        definitions:
+        - 底の変換公式：logₐb=log_c(b)/log_c(a)（c>0, c≠1）
+        examples:
+        - '例題1: logₐb=1/log_b(a) の証明'
+        - '例題2: (log₂3)·(log₉2)=1/2'
+        exercises:
+        - '問5,6: 底の変換公式の利用'
+        - '問7: 底の変換を用いた計算'
+      basic: &id006
+      - 229
+      - 230
+      - 231
+      slides:
+      - title: 表紙
+        goal: 底の変換公式を理解し、対数の計算に活用できる
+        terms:
+        - 底の変換公式：logₐb = logcb/logca
+        - 自然対数・常用対数（参考）
+      - title: 公式・性質
+        content:
+        - 底の変換：logₐb = logb/loga（底は任意）
+        - (logₐb)(logbc)=logₐc（連鎖律）
+      - title: 例1→問1
+        example: 例3) p.115（底の変換公式の計算）
+        exercise: 問3) p.115
+      - title: 例2→問2
+        example: 例4) p.116（log₂27・log₉8 の計算）
+        exercise: 問4) p.116
+      - title: まとめ
+        basic: *id006
+  - week: 4
+    quarter: 3rdQ
+    lesson_a:
+      topic: 対数関数
+      goal: 対数関数 y=logₐx のグラフと性質を理解し、方程式・不等式を解ける
+      textbook_pages: 115-118
+      slide_content:
+        definitions:
+        - 対数関数：y=logₐx（a>0, a≠1）
+        - 定義域 x>0、値域は実数全体
+        - 点(1,0)と点(a,1)を通る
+        - a>1 のとき単調増加、0<a<1 のとき単調減少
+        - 対数方程式・不等式では真数条件を必ず確認
+        examples:
+        - '例3: y=log₂x のグラフ'
+        - '例題3: 0.5<x≦4 における y=log₂x の値域'
+        - '例題4: log₂x+log₂(x+2)=3 → x=2'
+        - '例題5: log₂(2x-1)≦-2 → 1/2<x≦5/8'
+        exercises:
+        - '問8,9: グラフと値域'
+        - '問10: 大小比較'
+        - '問11,12: 対数方程式・不等式'
+      basic: &id007
+      - 232
+      - 233
+      - 234
+      - 235
+      - 236
+      slides:
+      - title: 表紙
+        goal: 対数関数のグラフと性質を理解し、方程式・不等式が解ける
+        terms:
+        - 対数関数：y=logₐx
+        - 単調増加（a>1）・単調減少（0<a<1）
+        - 漸近線：x=0（y軸）
+        - 真数条件の重要性
+      - title: 公式・性質
+        content:
+        - 点(1,0)を必ず通る
+        - a>1：右上がり、0<a<1：右下がり
+        - 対数方程式：真数をまとめて指数に戻す
+      - title: 図・グラフ
+        content:
+        - y=log₂x と y=log₁/₂x の比較（y軸対称）
+      - title: 例1→問1
+        example: 例1) p.118（グラフをかけ・値域）
+        exercise: 問1) p.118
+      - title: 例2→問2
+        example: 例題2) p.120（対数方程式・不等式）
+        exercise: 問2) p.120
+      - title: 例3→問3
+        example: '例題4: log₂x+log₂(x+2)=3 → x=2'
+        exercise: '問11,12: 対数方程式・不等式'
+      - title: 例4→問4
+        example: '例題5: log₂(2x-1)≦-2 → 1/2<x≦5/8'
+      - title: まとめ
+        basic: *id007
+    lesson_b:
+      topic: 常用対数
+      goal: 常用対数を利用した計算ができ、桁数・最高位の問題が解ける
+      textbook_pages: 118-121
+      slide_content:
+        definitions:
+        - 常用対数：10を底とする対数 log₁₀N
+        - 桁数：10^(n-1)≦N<10ⁿ ⟺ n-1≦logN<n
+        examples:
+        - '例4: log₁₀120=2.0792'
+        - '例題6: log₁₀5=0.6990、log₂5=2.322'
+        - '例題7,8: 桁数を求める問題'
+        - '例題9: バクテリア増殖の問題'
+        exercises:
+        - '問13: 常用対数の計算（3問）'
+        - '問14,15: 桁数を満たす最大の整数 n'
+        - '問16,17: 応用問題'
+      basic: &id008
+      - 237
+      - 238
+      - 239
+      slides:
+      - title: 表紙
+        goal: 常用対数を使って桁数や不等式の問題が解ける
+        terms:
+        - 常用対数：底が10の対数（log₁₀）
+        - log₁₀2≈0.3010、log₁₀3≈0.4771
+        - 桁数：n桁 ⟺ 10ⁿ⁻¹≦x<10ⁿ
+      - title: 公式・性質
+        content:
+        - 常用対数の基本値（log₁₀2、log₁₀3、log₁₀5=1-log₁₀2）
+        - 桁数の判定：⌊log₁₀x⌋+1 桁
+        - 増殖・減少問題への応用
+      - title: 例1→問1
+        example: 例1) p.122（常用対数の計算）
+        exercise: 問1) p.122
+      - title: 例2→問2
+        example: 例題3) p.123（桁数・不等式の整数解）
+        exercise: 問2) p.123
+      - title: 例3→問3
+        example: '例題7,8: 桁数を求める問題'
+        exercise: '問16,17: 応用問題'
+      - title: 例4→問4
+        example: '例題9: バクテリア増殖の問題'
+      - title: まとめ
+        basic: *id008
+  - week: 5
+    quarter: 3rdQ
+    lesson_a:
+      topic: 鋭角の三角比
+      goal: sin・cos・tan の定義と特別角の値を理解できる
+      textbook_pages: 126-129
+      slide_content:
+        definitions:
+        - 三角比の定義：sinα=高さ/斜辺、cosα=底辺/斜辺、tanα=高さ/底辺
+        - 特別角：30°, 45°, 60° の三角比の値（表）
+        - 三角比の相互関係：tanα=sinα/cosα、sin²α+cos²α=1
+        - 余角の三角比（α+β=90°）：sinβ=cosα、cosβ=sinα
+        examples:
+        - '例題1: AB=5, BC=3, ∠B=90° → α の三角比'
+        - '例2: 三角関数表の使い方（cos53°=0.6018）'
+        exercises:
+        - '問1: 3つの直角三角形の三角比'
+        - '問2: 30°, 45°, 60° の三角比'
+        - '問3: 三角関数表を使って求めよ'
+      basic: &id009
+      - 255
+      - 257
+      - 258
+      - 259
+      slides:
+      - title: 表紙
+        goal: 鋭角の三角比を定義し、代表角の値を求められる
+        terms:
+        - sinθ=対辺/斜辺
+        - cosθ=隣辺/斜辺
+        - tanθ=対辺/隣辺
+        - 30°・45°・60°の三角比
+      - title: 公式・性質
+        content:
+        - sin²θ+cos²θ=1
+        - tanθ=sinθ/cosθ
+        - 余角の関係：sin(90°-θ)=cosθ など
+        - 代表角の表
+      - title: 図・グラフ
+        content:
+        - 直角三角形と三角比の定義図
+        - 30-60-90・45-45-90の三角形
+      - title: 例1→問1
+        example: 例1) p.128（三角比を求める）
+        exercise: 問1) p.128
+      - title: 例2→問2
+        example: 例2) p.129（相互関係で残りを求める）
+        exercise: 問2) p.129
+      - title: まとめ
+        basic: *id009
+    lesson_b:
+      topic: 鋭角の三角比の応用
+      goal: 三角比を用いて図形の辺の長さを求められる
+      textbook_pages: 128-129
+      slide_content:
+        definitions:
+        - 余角の三角比の利用
+        examples:
+        - '例題2: 仰角24°から木の高さを求める（tan利用）'
+        exercises:
+        - '問4: 坂道の水平・垂直距離'
+        - '問5: 45° より小さい角の三角比で表せ（3問）'
+      basic: &id010
+      - 272
+      - 273
+      - 274
+      slides:
+      - title: 表紙
+        goal: 三角比を使った測量・高さの計算ができる
+        terms:
+        - 仰角・俯角
+        - 三角比の応用（距離・高さを求める）
+      - title: 公式・性質
+        content:
+        - 三角比の活用手順：図を描く→関係式を立てる→計算
+        - 三角関数表の使い方
+      - title: 例1→問1
+        example: 例題1) p.130（高さ・距離の計算）
+        exercise: 問3) p.130
+      - title: 例2→問2
+        example: 例題2) p.131（2点間の距離）
+        exercise: 問4) p.131
+      - title: まとめ
+        basic: *id010
+  - week: 6
+    quarter: 3rdQ
+    lesson_a:
+      topic: 鈍角の三角比
+      goal: 鈍角（90°〜180°）の三角比を求め、相互関係を利用できる
+      textbook_pages: 129-132
+      slide_content:
+        definitions:
+        - 半径 r の半円上の点 P(X,Y) による三角比の拡張
+        - sinα=Y/r、cosα=X/r、tanα=Y/X（0°≦α≦180°）
+        - α が鈍角：sinα>0、cosα<0、tanα<0
+        - 補角の三角比（α+β=180°）：sinβ=sinα、cosβ=-cosα、tanβ=-tanα
+        examples:
+        - '例題3: 135°の三角比 → sin=1/√2, cos=-1/√2, tan=-1'
+        - 0°〜180° の主な三角比の値の表（p.132）
+        exercises:
+        - '問6: 120°, 150° の三角比'
+        - '問7: sin160°, cos145°, tan123°'
+      basic: &id011
+      - 260
+      - 261
+      - 262
+      - 263
+      slides:
+      - title: 表紙
+        goal: 鈍角の三角比と相互関係を理解できる
+        terms:
+        - 鈍角（90°<θ<180°）の三角比
+        - sin(180°-θ)=sinθ
+        - cos(180°-θ)=-cosθ
+        - tan(180°-θ)=-tanθ
+      - title: 公式・性質
+        content:
+        - 単位円を使った定義
+        - 第2象限での符号（sin>0、cos<0、tan<0）
+        - 相互関係：sin²θ+cos²θ=1、tanθ=sinθ/cosθ
+      - title: 例1→問1
+        example: 例1) p.134（鈍角の三角比の値）
+        exercise: 問1) p.134
+      - title: 例2→問2
+        example: 例2) p.135（相互関係でsinθ等を求める）
+        exercise: 問2) p.135
+      - title: まとめ
+        basic: *id011
+    lesson_b:
+      topic: 三角比の相互関係・正弦定理
+      goal: 三角比の相互関係を使い、正弦定理を理解して辺と角を求められる
+      textbook_pages: 132-135
+      slide_content:
+        definitions:
+        - 三角比の相互関係：cos²α+sin²α=1、1+tan²α=1/cos²α
+        - 正弦定理：a/sinA=b/sinB=c/sinC=2R
+        examples:
+        - '例題4: α が鈍角、sinα=2/3 → cosα, tanα'
+        - '例題5: a=9, B=45°, C=75° → R と b'
+        exercises:
+        - '問8,9: 鈍角の三角比'
+        - '問10,11: 正弦定理の利用'
+      basic: &id012
+      - 264
+      - 265
+      - 275
+      - 276
+      - 277
+      slides:
+      - title: 表紙
+        goal: 正弦定理を理解し、三角形の辺・角・外接円を求められる
+        terms:
+        - 正弦定理：a/sinA = b/sinB = c/sinC = 2R
+        - 外接円の半径 R
+      - title: 公式・性質
+        content:
+        - 正弦定理の3つの使い方：辺を求める・角を求める・外接円半径を求める
+        - 解の個数（1つ・2つ・なし）の判定
+      - title: 例1→問1
+        example: 例題1) p.137（正弦定理で辺を求める）
+        exercise: 問3) p.137
+      - title: 例2→問2
+        example: 例題2) p.138（外接円の半径）
+        exercise: 問4) p.138
+      - title: まとめ
+        basic: *id012
+  - week: 7
+    quarter: 3rdQ
+    lesson_a:
+      topic: 余弦定理・三角形の面積
+      goal: 余弦定理を用いて辺と角を求め、面積公式を使える
+      textbook_pages: 135-137
+      slide_content:
+        definitions:
+        - 余弦定理：a²=b²+c²-2bc·cosA
+        - cosA=(b²+c²-a²)/2bc
+        - 三角形の面積：S=(1/2)bc·sinA
+        - ヘロンの公式：S=√(s(s-a)(s-b)(s-c))、s=(a+b+c)/2
+        examples:
+        - '例6: a=4, b=3, c=2 → cosA=-1/4（鈍角）'
+        - '例題6: a=5, b=6, c=7 → cosA, sinA, S'
+        exercises:
+        - '問12,13: 余弦定理'
+        - '問14,15,16: 面積・ヘロン'
+      basic: &id013
+      - 266
+      - 267
+      - 268
+      - 269
+      - 270
+      - 271
+      slides:
+      - title: 表紙
+        goal: 余弦定理と三角形の面積公式を使いこなせる
+        terms:
+        - 余弦定理：a²=b²+c²-2bc cosA
+        - 面積公式：S=½bc sinA
+        - ヘロンの公式
+      - title: 公式・性質
+        content:
+        - 余弦定理の2つの使い方：辺を求める・角を求める
+        - S=½bc sinA から角を求める逆算
+        - ヘロン：s=(a+b+c)/2、S=√(s(s-a)(s-b)(s-c))
+      - title: 例1→問1
+        example: 例題3) p.140（余弦定理で辺・角を求める）
+        exercise: 問5) p.140
+      - title: 例2→問2
+        example: 例題4) p.141（面積・ヘロン）
+        exercise: 問6) p.141
+      - title: まとめ
+        basic: *id013
+    lesson_b:
+      topic: 三角形への応用（総合演習）
+      goal: 正弦定理・余弦定理・面積公式を組み合わせて問題を解ける
+      textbook_pages: 138-139（練習問題1-A, 1-B）
+      slide_content:
+        exercises:
+        - '練習問題1-A（p.138）: 全問'
+        - '練習問題1-B（p.139）: 全問（発展）'
+      basic: &id014
+      - 278
+      check: []
+      slides:
+      - title: 表紙
+        goal: 正弦定理・余弦定理・面積公式を組み合わせて応用問題が解ける
+        terms:
+        - 使い分け：辺と角の与え方で公式を選ぶ
+      - title: 例1→問1
+        example: 練習問題3-A より（p.142）
+        exercise: 練習3-A 残り
+      - title: まとめ
+        basic: *id014
+  - week: 8
+    quarter: 3rdQ
+    lesson_a:
+      topic: 一般角と三角関数
+      goal: 一般角・象限を理解し、三角関数の値を求められる
+      textbook_pages: 140-142
+      slide_content:
+        definitions:
+        - 動径・始線・一般角：α+360°×n
+        - 第1〜第4象限の角
+        - 三角関数の定義（単位円）：sinθ=Y, cosθ=X, tanθ=Y/X
+        - 象限ごとの符号
+        examples:
+        - '例1: 840°=120°+360°×2（第2象限）'
+        - '例題1: 300°の三角関数'
+        exercises:
+        - '問1: 動径を図示（5問）'
+        - '問2: 第何象限か（5問）'
+        - '問3: 三角関数の値（6問）'
+      basic: &id015
+      - 285
+      - 286
+      - 287
+      slides:
+      - title: 表紙
+        goal: 一般角の概念と三角関数の定義を理解できる
+        terms:
+        - 一般角：360°×n+θ で表す
+        - 動径と象限
+        - 単位円上の定義：sinθ=y、cosθ=x、tanθ=y/x
+      - title: 公式・性質
+        content:
+        - sin・cos の周期：2π（360°）
+        - tan の周期：π（180°）
+        - 各象限での符号
+      - title: 図・グラフ
+        content:
+        - 単位円と各象限の符号図
+      - title: 例1→問1
+        example: 例1) p.148（動径の位置・象限）
+        exercise: 問1) p.148
+      - title: 例2→問2
+        example: 例2) p.149（一般角の三角関数の値）
+        exercise: 問2) p.149
+      - title: まとめ
+        basic: *id015
+    lesson_b:
+      topic: 弧度法
+      goal: 弧度法で角を表し、扇形の弧長・面積を求められる
+      textbook_pages: 143-145
+      slide_content:
+        definitions:
+        - 弧度法：弧長=半径のとき中心角1ラジアン
+        - 変換：θ=πα/180、α=180θ/π
+        - 扇形の弧長：l=rθ、面積：S=(1/2)r²θ=(1/2)rl
+        examples:
+        - '例3: 360°=2π, 180°=π, 90°=π/2, 45°=π/4'
+        - '例6: 半径9cm、中心角π/3 → l=3π、S=27π/2'
+        exercises:
+        - '問4: 60分法→弧度法（5問）'
+        - '問5: 弧度法→60分法（5問）'
+        - '問6: 弧度法で三角関数の値（6問）'
+        - '問7,8,9: 扇形の弧長・面積'
+      basic: &id016
+      - 288
+      - 289
+      - 290
+      - 291
+      slides:
+      - title: 表紙
+        goal: 弧度法を理解し、度数法との相互変換と弧長・扇形面積が計算できる
+        terms:
+        - 弧度法：ラジアン（rad）
+        - 180°=π rad
+        - 弧長：l=rθ
+        - 扇形面積：S=½r²θ
+      - title: 公式・性質
+        content:
+        - 変換：度数→弧度 ×π/180、弧度→度数 ×180/π
+        - l=rθ、S=½r²θ=½rl
+      - title: 例1→問1
+        example: 例1) p.153（度数法↔弧度法の変換）
+        exercise: 問1) p.153
+      - title: 例2→問2
+        example: 例2) p.154（弧長・扇形面積）
+        exercise: 問2) p.154
+      - title: まとめ
+        basic: *id016
+  - week: 9
+    quarter: 4thQ
+    lesson_a:
+      topic: 三角関数の性質
+      goal: 三角関数の相互関係・周期性・対称性を理解できる
+      textbook_pages: 146-148
+      slide_content:
+        definitions:
+        - 相互関係：tanθ=sinθ/cosθ、cos²θ+sin²θ=1、1+tan²θ=1/cos²θ
+        - 周期性：sin(θ+2nπ)=sinθ、tan(θ+nπ)=tanθ
+        - 対称性：sin(-θ)=-sinθ、cos(-θ)=cosθ、tan(-θ)=-tanθ
+        - sin(θ+π)=-sinθ、cos(θ+π)=-cosθ
+        - sin(π/2-θ)=cosθ、cos(π/2-θ)=sinθ
+        - sin(π/2+θ)=cosθ、cos(π/2+θ)=-sinθ
+        examples:
+        - '例題2: 三角関数の等式の証明'
+        - '例題3: θ が第3象限、sinθ=-2/3 → cosθ, tanθ'
+        exercises:
+        - '問10: 等式の証明（2問）'
+        - '問11: 第3象限の三角関数'
+      basic: &id017
+      - 292
+      - 293
+      - 294
+      slides:
+      - title: 表紙
+        goal: 三角関数の性質（変換公式）を理解し、式の簡略化ができる
+        terms:
+        - sin(π-θ)=sinθ など（π-θ 型）
+        - sin(π+θ)=-sinθ など（π+θ 型）
+        - sin(-θ)=-sinθ など（-θ 型）
+      - title: 公式・性質
+        content:
+        - π/2-θ 型・π/2+θ 型・π-θ 型・π+θ 型・2π-θ 型・-θ 型の6パターン
+      - title: 図・グラフ
+        content:
+        - 単位円上での各変換のイメージ図
+      - title: 例1→問1
+        example: 例1) p.156（変換公式で値を求める）
+        exercise: 問1) p.156
+      - title: 例2→問2
+        example: 例2) p.157（式を簡略化する）
+        exercise: 問2) p.157
+      - title: まとめ
+        basic: *id017
+    lesson_b:
+      topic: 三角関数のグラフ
+      goal: sin・cos・tan のグラフを描き、周期を理解できる
+      textbook_pages: 149-151
+      slide_content:
+        definitions:
+        - 正弦曲線：y=sinx（周期2π）
+        - 余弦曲線：y=cosx（周期2π、y軸対称）
+        - 正接曲線：y=tanx（周期π、漸近線 x=π/2+nπ）
+        examples:
+        - y=sinx, y=cosx の表とグラフ（p.149）
+        - y=tanx の表とグラフ（p.150）
+        - '例7: y=sin(x-π/3) のグラフと周期'
+        exercises:
+        - '問14: y=sin(x+π/4), y=cos(x-π) のグラフ'
+        - '問16: y=cosx/2 のグラフ'
+      basic: &id018
+      - 295
+      - 296
+      - 297
+      slides:
+      - title: 表紙
+        goal: 三角関数のグラフの形と性質（周期・振幅・対称性）を理解できる
+        terms:
+        - 振幅
+        - 周期：y=sinx の周期は 2π
+        - 平行移動：y=sin(x-p)+q
+      - title: 公式・性質
+        content:
+        - y=sinx：振幅1、周期2π
+        - y=cosx：振幅1、周期2π
+        - y=tanx：周期π、x=π/2+nπ が漸近線
+      - title: 図・グラフ
+        content:
+        - y=sinx・y=cosx・y=tanx の1周期分のグラフ比較
+      - title: 例1→問1
+        example: 例1) p.159（グラフをかけ・周期・振幅）
+        exercise: 問1) p.159
+      - title: 例2→問2
+        example: 例2) p.160（平行移動したグラフ）
+        exercise: 問2) p.160
+      - title: 例3→問3
+        example: '例7: y=sin(x-π/3) のグラフと周期'
+      - title: まとめ
+        basic: *id018
+  - week: 10
+    quarter: 4thQ
+    lesson_a:
+      topic: グラフの拡大と縮小（１）
+      goal: y=Cf(x), y=f(Cx) 型のグラフ変換規則を理解できる
+      textbook_pages: 152-154
+      slide_content:
+        definitions:
+        - y=Cf(x)：y 軸方向に C 倍（振幅変化）
+        - y=f(Cx)：x 軸方向に 1/C 倍（周期変化）
+        - y=f(x) の周期 p → y=f(Cx) の周期は p/C
+        examples:
+        - '例題4: (1)y=2sinx（振幅2） (2)y=-1/2·cosx（振幅1/2）'
+        - '例9: y=sin2x（周期π）'
+        exercises:
+        - '問15: y=1/2·sinx, y=-cosx のグラフ'
+      basic: &id019 []
+      slides:
+      - title: 表紙
+        goal: y=a sin(bx) の振幅・周期の変化を理解しグラフが描ける
+        terms:
+        - 振幅：|a|
+        - 周期：2π/|b|
+        - b>1 で縮小、0<b<1 で拡大
+      - title: 公式・性質
+        content:
+        - y=a sinx：振幅|a|、周期2π
+        - y=sin(bx)：振幅1、周期2π/b
+        - y=a sin(bx)：振幅|a|、周期2π/b
+      - title: 図・グラフ
+        content:
+        - y=sinx と y=2sin(2x) の比較グラフ
+      - title: 例1→問1
+        example: 例1) p.162（振幅・周期を答えグラフをかけ）
+        exercise: 問1) p.162
+      - title: 例2→問2
+        example: 例2) p.163（y=cos(2x) のグラフ）
+        exercise: 問2) p.163
+      - title: まとめ
+        basic: *id019
+    lesson_b:
+      topic: グラフの拡大と縮小（２）
+      goal: y=A sin(Bx+C) 型のグラフを描ける
+      textbook_pages: '154'
+      slide_content:
+        definitions:
+        - y=A sin(Bx+C)：振幅|A|、周期2π/|B|
+        exercises:
+        - '練習問題2-A（p.156）: 問3,5'
+        - '練習問題2-B（p.157）: 問3,4'
+      basic: &id020 []
+      slides:
+      - title: 表紙
+        goal: y=a sin(bx+c) のグラフを描き、方程式・不等式が解ける
+        terms:
+        - 位相：+c によるグラフの水平移動
+        - グラフから方程式・不等式の解を読み取る
+      - title: 公式・性質
+        content:
+        - y=a sin(bx+c) の形に整理してから描く
+        - 方程式：グラフの交点のx座標
+        - 不等式：グラフで範囲を読み取る
+      - title: 図・グラフ
+        content:
+        - y=sin(2x+π/3) のグラフと解の読み取り
+      - title: 例1→問1
+        example: 例3) p.164（方程式を解く）
+        exercise: 問3) p.164
+      - title: 例2→問2
+        example: 例4) p.165（不等式を解く）
+        exercise: 問4) p.165
+      - title: まとめ
+        basic: *id020
+  - week: 11
+    quarter: 4thQ
+    lesson_a:
+      topic: 三角関数の方程式（sinθ, cosθ）
+      goal: sinθ=a, cosθ=a の方程式を単位円を用いて解ける
+      textbook_pages: 154-155
+      slide_content:
+        definitions:
+        - 単位円と sinθ=a（直線 Y=a との交点）
+        - 単位円と cosθ=a（直線 X=a との交点）
+        examples:
+        - '例題5: sinx=-1/2（0≦x<2π）→ x=7π/6, 11π/6'
+        - sinx>-1/2 の不等式
+        exercises:
+        - '問17: (1)sinx=1/2 (2)cosx=√3/2 (3)sinx≦-√2/2 (4)cosx>1/2'
+      basic: &id021
+      - 298
+      check:
+      - 308
+      slides:
+      - title: 表紙
+        goal: sinθ・cosθ の方程式・不等式をグラフで解ける
+        terms:
+        - 0≦x<2π の範囲での解
+        - 単位円・グラフを使った解法
+        - 解の個数の確認
+      - title: 公式・性質
+        content:
+        - sinx=k の解：x=α と x=π-α（|k|≦1）
+        - cosx=k の解：x=α と x=2π-α
+        - 不等式は範囲で答える
+      - title: 図・グラフ
+        content:
+        - 単位円上での解の位置と対称性
+      - title: 例1→問1
+        example: 例1) p.167（sinx=√2/2 を解く）
+        exercise: 問1) p.167
+      - title: 例2→問2
+        example: 例2) p.168（cosx≦1/2 を解く）
+        exercise: 問2) p.168
+      - title: まとめ
+        basic: *id021
+    lesson_b:
+      topic: 三角関数の方程式（tanθ）・不等式
+      goal: tanθ=a の方程式・三角関数の不等式を解ける
+      textbook_pages: 155-156
+      slide_content:
+        definitions:
+        - tanθ=a の解：周期 π なので θ=α+nπ
+        examples:
+        - '例10: tanx=√3（0≦x<2π）→ x=π/3, 4π/3'
+        exercises:
+        - '問18: tanx=1, tanx=-1/√3（0≦x<2π）'
+        - 練習問題2-A 問6,7
+        - 練習問題2-B 問5,6
+      basic: &id022
+      - 299
+      check:
+      - 308
+      slides:
+      - title: 表紙
+        goal: tanθ の方程式・不等式と複合問題が解ける
+        terms:
+        - tanx=k の解：x=α と x=α+π
+        - tanx の定義域に注意（x≠π/2+nπ）
+      - title: 公式・性質
+        content:
+        - tanx=k の解の求め方
+        - 定義域除外点の確認
+        - 方程式・不等式の両方に対応
+      - title: 図・グラフ
+        content:
+        - y=tanx のグラフと解の読み取り
+      - title: 例1→問1
+        example: 例3) p.169（tanx=-1 を解く）
+        exercise: 問3) p.169
+      - title: 例2→問2
+        example: 例4) p.170（tanx>√3 を解く）
+        exercise: 問4) p.170
+      - title: まとめ
+        basic: *id022
+  - week: 12
+    quarter: 4thQ
+    lesson_a:
+      topic: 加法定理
+      goal: sin・cos・tan の加法定理を理解し証明できる
+      textbook_pages: 158-159
+      slide_content:
+        definitions:
+        - sin(α±β)=sinα·cosβ±cosα·sinβ
+        - cos(α±β)=cosα·cosβ∓sinα·sinβ
+        - tan(α±β)=(tanα±tanβ)/(1∓tanα·tanβ)
+        examples:
+        - cos(α+β) の証明
+        - '例1: cos75°=(√6-√2)/4'
+        exercises:
+        - '問1: 特別角の値（5問）'
+        - '問2: tan(θ+π/4) を tanθ で'
+        - '例題1: α が第2象限、β が第3象限 → sin(α+β)'
+      basic: &id023
+      - 318
+      - 319
+      - 320
+      slides:
+      - title: 表紙
+        goal: 加法定理を理解し、sin・cosの和の角・差の角を求められる
+        terms:
+        - sin(α±β)=sinαcosβ±cosαsinβ
+        - cos(α±β)=cosαcosβ∓sinαsinβ
+        - tan(α±β)=(tanα±tanβ)/(1∓tanαtanβ)
+      - title: 公式・性質
+        content:
+        - 加法定理6公式（sin・cos・tan の + と -）
+        - 代表的な応用：sin75°、cos15° などの計算
+      - title: 例1→問1
+        example: 例1) p.174（sin75°、cos15° を求める）
+        exercise: 問1) p.174
+      - title: 例2→問2
+        example: 例題1) p.175（sin(α+β) を求める）
+        exercise: 問2) p.175
+      - title: まとめ
+        basic: *id023
+    lesson_b:
+      topic: 2倍角・半角の公式
+      goal: 2倍角・半角の公式を導き、使いこなせる
+      textbook_pages: 160-162
+      slide_content:
+        definitions:
+        - sin2α=2sinα·cosα
+        - cos2α=cos²α-sin²α=2cos²α-1=1-2sin²α
+        - tan2α=2tanα/(1-tan²α)
+        - sin²(α/2)=(1-cosα)/2、cos²(α/2)=(1+cosα)/2
+        examples:
+        - '例題2: α が第3象限、sinα=-2/3 → sin2α'
+        - '例2: sin²(π/8)=(2-√2)/4'
+        - '例題3: cosα=1/9 → sinα/2, cosα/2, tanα/2'
+        exercises:
+        - '問3,4: 加法定理の利用'
+        - '問5: 2倍角（3問）'
+      basic: &id024
+      - 321
+      - 322
+      - 323
+      slides:
+      - title: 表紙
+        goal: 2倍角・半角の公式を使って値や式を変形できる
+        terms:
+        - sin2α=2sinαcosα
+        - cos2α=cos²α-sin²α=1-2sin²α=2cos²α-1
+        - tan2α=2tanα/(1-tan²α)
+      - title: 公式・性質
+        content:
+        - 半角：sin²(α/2)=(1-cosα)/2、cos²(α/2)=(1+cosα)/2
+        - 2倍角を使った方程式・不等式の解き方
+      - title: 例1→問1
+        example: 例2) p.177（2倍角で値を求める）
+        exercise: 問3) p.177
+      - title: 例2→問2
+        example: 例3) p.178（三角関数の合成）
+        exercise: 問4) p.178
+      - title: 例3→問3
+        example: '例題3: cosα=1/9 → sinα/2, cosα/2, tanα/2'
+      - title: まとめ
+        basic: *id024
+  - week: 13
+    quarter: 4thQ
+    lesson_a:
+      topic: 三角関数の合成
+      goal: a sinθ+b cosθ を r sin(θ+α) の形に合成できる
+      textbook_pages: 164-165
+      slide_content:
+        definitions:
+        - 三角関数の合成：a sinθ+b cosθ=√(a²+b²) sin(θ+α)
+        - r=√(a²+b²)、cosα=a/r、sinα=b/r
+        examples:
+        - '例1: sinθ+cosθ=√2 sin(θ+π/4)'
+        - '例題1: 2sinθ-2cosθ を合成し最大値・最小値を求める'
+        exercises:
+        - '問6: 合成せよ（3問）'
+        - '問7: 最大値・最小値を求めよ'
+      basic: &id025
+      - 324
+      - 325
+      slides:
+      - title: 表紙
+        goal: 三角関数の合成を使って最大値・最小値と方程式が解ける
+        terms:
+        - 合成：a sinθ+b cosθ=√(a²+b²) sin(θ+α)
+        - tanα=b/a で位相 α を求める
+      - title: 公式・性質
+        content:
+        - 合成の手順3ステップ
+        - 合成後の最大値 √(a²+b²)、最小値 -√(a²+b²)
+        - 方程式への応用
+      - title: 図・グラフ
+        content:
+        - y=sinθ+cosθ → y=√2 sin(θ+π/4) の変換イメージ
+      - title: 例1→問1
+        example: 例1) p.179（合成して最大・最小）
+        exercise: 問1) p.179
+      - title: 例2→問2
+        example: 例題2) p.180（合成して方程式を解く）
+        exercise: 問2) p.180
+      - title: まとめ
+        basic: *id025
+    lesson_b:
+      topic: 和を積に直す公式・三角関数の合成（参考）と加法定理の発展
+      goal: 積和・和積公式を知り、加法定理の発展的応用（証明・2直線のなす角）ができる
+      textbook_pages: 164-165
+      slide_content:
+        definitions:
+        - 積和・和積公式（参考）：積を和に、和を積に変換する公式
+        - 2直線のなす角への応用：tanθ=|(m₁-m₂)/(1+m₁m₂)|
+        examples:
+        - '例題3: 加法定理を使った証明（p.182）'
+        - '例題4: 2直線のなす角を求める（p.183）'
+        exercises:
+        - '問3: 加法定理を使った証明（p.182）'
+        - '問4: 2直線のなす角（p.183）'
+      basic: &id026
+      - 326
+      - 327
+      - 328
+      - 329
+      - 330
+      slides:
+      - title: 表紙
+        goal: 加法定理を使った証明や発展的な問題が解ける
+        terms:
+        - 積和・和積公式（参考）
+        - 2直線のなす角への応用
+      - title: 公式・性質
+        content:
+        - 積和公式（加法定理の足し引きで導出）
+        - 和積公式
+        - 2直線のなす角：tanθ=|(m₁-m₂)/(1+m₁m₂)|
+      - title: 図・グラフ
+        content:
+        - 2直線のなす角の図解
+      - title: 例1→問1
+        example: 例題3) p.182（加法定理を使った証明）
+        exercise: 問3) p.182
+      - title: 例2→問2
+        example: 例題4) p.183（2直線のなす角）
+        exercise: 問4) p.183
+      - title: まとめ
+        basic: *id026
+  - week: 14
+    quarter: 4thQ
+    lesson_a:
+      topic: 加法定理の応用（総合演習）
+      goal: 加法定理・2倍角・積和・合成を組み合わせて問題を解ける
+      textbook_pages: '163-166（練習問題3-A: p.168-169, 3-B: p.170）'
+      slide_content:
+        exercises:
+        - '練習問題3-A（p.168-169）: 全問'
+        - '練習問題3-B（p.170）: 全問（発展）'
+        key_problems:
+        - '3-A 問4: 3倍角の公式 sin3θ=3sinθ-4sin³θ の証明'
+        - '3-A 問6: -√3·sinx+cosx の合成と最大・最小'
+        - '3-B 問4: f(x)=2sin²x+sinx·cosx+cos²x の最大・最小'
+      check:
+      - 318
+      - 319
+      - 320
+      - 321
+      - 322
+      - 323
+      - 324
+      - 325
+      - 326
+      - 327
+      slides:
+      - title: 表紙
+        goal: 加法定理〜合成の全範囲を問題集で確認する
+        terms: [加法定理, 2倍角・半角, 積和・和積, 三角関数の合成]
+      - title: 公式・性質
+        content:
+        - '加法定理：sin(α±β)、cos(α±β)、tan(α±β)'
+        - '2倍角：sin2θ=2sinθcosθ、cos2θ=1-2sin²θ'
+        - '合成：a sinθ+b cosθ=√(a²+b²) sin(θ+α)'
+        - '積和・和積（参考）'
+      - title: 例1→問1
+        example: '練習3-A 問4) p.168（3倍角の証明）'
+        exercise: '練習3-A 問1〜3) p.168'
+      - title: 例2→問2
+        example: '練習3-A 問6) p.169（合成・最大最小）'
+        exercise: '練習3-A 問5, 7) p.169'
+      - title: 例3→問3
+        example: '練習3-B 問4) p.170（最大・最小の発展）'
+        exercise: '練習3-B 問1〜3) p.170'
+      - title: まとめ
+        basic: []
+    lesson_b:
+      topic: 練習問題3-Aの解説
+      goal: 練習問題3-Aの全問を振り返り、自力で解けるようにする
+      textbook_pages: 168-169（練習問題3-A）
+      slide_content:
+        exercises:
+        - '問1〜3: 加法定理・2倍角・半角の計算'
+        - '問4: 3倍角の公式 sin3θ=3sinθ-4sin³θ の証明'
+        - '問5〜6: 合成・最大値・最小値'
+        - '問7: 三角関数の方程式・不等式への応用'
+      slides:
+      - title: 表紙
+        goal: 練習問題3-Aを全問解説する
+        terms: [加法定理, 2倍角・半角, 合成]
+      - title: 解説1
+        example: '問1〜3) p.168（加法定理・2倍角・半角の計算）'
+        exercise: 自己採点・確認
+      - title: 解説2
+        example: '問4) p.168（3倍角の公式の証明）'
+        exercise: 自己採点・確認
+      - title: 解説3
+        example: '問5〜6) p.169（合成・最大値・最小値）'
+        exercise: 自己採点・確認
+      - title: 解説4
+        example: '問7) p.169（方程式・不等式への応用）'
+        exercise: 自己採点・確認
+      - title: まとめ
+        basic: []
+  - week: 15
+    quarter: 4thQ
+    lesson_a:
+      topic: 後期復習（三角関数）
+      goal: 三角関数全範囲（5章2節・3節）を総復習する
+      textbook_pages: 140-170
+      slide_content:
+        review_items:
+        - '[5章2節] 一般角・弧度法・性質・グラフ・方程式と不等式'
+        - '[5章3節] 加法定理・2倍角・半角・積和・和積・合成'
+        important_formulas:
+        - 弧度法変換・扇形の弧長・面積
+        - 加法定理（sin・cos・tan）
+        - 2倍角・半角の公式
+        - 三角関数の合成
+      slides:
+      - title: 表紙
+        goal: 後期全範囲（三角関数）を総復習し学年末試験に備える
+        terms: []
+      - title: 図・グラフ
+        content:
+        - 振幅・周期・グラフ・方程式・不等式 各1問
+      - title: まとめ
+        basic: []
+    lesson_b:
+      topic: 学年末総復習
+      goal: 基礎数学B 全範囲（3章・4章・5章）を総整理する
+      textbook_pages: 72-170
+      slide_content:
+        review_items:
+        - '[前期 3章] 2次関数・べき関数・分数関数・無理関数・逆関数'
+        - '[後期 4章] 指数関数・対数関数・常用対数'
+        - '[後期 5章] 三角比・三角関数・加法定理とその応用'
+        exam_tips:
+        - 平方完成・判別式・2次不等式の3パターン
+        - 指数・対数方程式は底をそろえる
+        - 三角関数の方程式は単位円で図示して解く
+        - 合成は点P(a,b)の OP の長さと角度を求める
+      slides:
+      - title: 表紙
+        goal: 学年末総復習（前期・後期の全範囲）
+        terms: []
+      - title: まとめ
+        basic: []

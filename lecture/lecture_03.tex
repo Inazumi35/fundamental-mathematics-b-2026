@@ -21,8 +21,8 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{平方完成}] ~
-    \item[\kw{変形の手順}] ~
+    \item[\kw{平方完成}] $ax^2+bx+c$ を $a(x-p)^2+q$ の形に変形すること
+    \item[\kw{変形の手順}] ①$a$ をくくり出す　②$(x+\tfrac{b}{2a})^2$ を作る　③定数項を整理する
   \end{description}
   \end{block}
 \end{frame}
@@ -33,30 +33,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 平方完成の公式
-    \item p=-b/2a、q=c-b²/4a
-    \item 3ステップの手順
+    \item 平方完成の公式：$ax^2+bx+c = a\!\left(x+\dfrac{b}{2a}\right)^{\!2}-\dfrac{b^2-4ac}{4a}$
+    \item 標準形の軸：$x=-\dfrac{b}{2a}$、頂点：$\left(-\dfrac{b}{2a},\,-\dfrac{b^2-4ac}{4a}\right)$
+    \item 3点を通る放物線は $y=ax^2+bx+c$ として連立方程式を立てる
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=-2x²+8x-5 = -2(x-2)²+3 のグラフ（軸・頂点付き）
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例) p.77（平方完成の計算例）}
@@ -71,7 +56,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題2) p.78（3点を通る放物線）}
@@ -90,9 +75,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item 一般形 y=ax²+bx+c は平方完成で標準形に変形できる
-    \item 平方完成の手順：ax²+bx を a(x+b/2a)²-b²/4a に
-    \item 3点を通る放物線は y=ax²+bx+c として連立方程式を立てる
+    \item 一般形 $y=ax^2+bx+c$ は平方完成で標準形に変形できる
+    \item 平方完成の手順：$ax^2+bx$ を $a(x+\tfrac{b}{2a})^2-\tfrac{b^2}{4a}$ に
+    \item 3点を通る放物線は $y=ax^2+bx+c$ として連立方程式を立てる
   \end{itemize}
 
   \vfill

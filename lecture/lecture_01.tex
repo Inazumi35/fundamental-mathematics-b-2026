@@ -21,12 +21,12 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{関数}] ~
-    \item[\kw{独立変数}] ~
-    \item[\kw{従属変数}] ~
-    \item[\kw{定義域}] ~
-    \item[\kw{値域}] ~
-    \item[\kw{f(a)}] ~
+    \item[\kw{関数}] $x$ の値が決まると $y$ の値がただ1つ定まる対応関係
+    \item[\kw{独立変数}] 自由に値を取れる変数（入力側）$x$
+    \item[\kw{従属変数}] 独立変数に従って値が決まる変数（出力側）$y$
+    \item[\kw{定義域}] 独立変数 $x$ が取り得る値の集合（範囲）
+    \item[\kw{値域}] 従属変数 $y$ が取り得る値の集合（範囲）
+    \item[\kw{f(a)}] 関数 $f$ に $x=a$ を代入した値：$y=f(a)$
   \end{description}
   \end{block}
 \end{frame}
@@ -37,30 +37,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 1次関数 y=ax+b
-    \item 定数関数 y=c
-    \item x=d（垂直な直線）
+    \item 1次関数 $y=ax+b$
+    \item 定数関数 $y=c$
+    \item $x=d$（垂直な直線）
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 座標平面と象限; y=x+1、y=2、x=-1 のグラフ
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.73}
@@ -75,7 +60,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.74}
@@ -94,10 +79,10 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item 関数とは x の値に y がただ1つ対応する関係
-    \item 定義域は x の範囲、値域は y の範囲
-    \item 1次関数 y=ax+b のグラフは傾き a・切片 b の直線
-    \item f(a+h) ≠ f(a)+h に注意
+    \item 関数とは $x$ の値に $y$ がただ1つ対応する関係
+    \item 定義域は $x$ の範囲、値域は $y$ の範囲
+    \item 1次関数 $y=ax+b$ のグラフは傾き $a$・切片 $b$ の直線
+    \item $f(a+h) \neq f(a)+h$ に注意
   \end{itemize}
 
   \vfill

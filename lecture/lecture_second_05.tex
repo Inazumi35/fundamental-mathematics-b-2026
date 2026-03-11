@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{対数の定義：logₐb=c ⟺ aᶜ=b}] ~
-    \item[\kw{logₐ1=0、logₐa=1}] ~
-    \item[\kw{真数条件：b>0、底の条件：a>0, a≠1}] ~
+    \item[\kw{対数の定義：$\log_a b = c \Leftrightarrow a^c = b$}] $a > 0$, $a \neq 1$, $b > 0$ として $a^c = b \Leftrightarrow c = \log_a b$
+    \item[\kw{$\log_a 1 = 0$、$\log_a a = 1$}] 底 $a$ を0乗すると1，1乗すると $a$ になることから
+    \item[\kw{真数条件：$b > 0$、底の条件：$a > 0$, $a \neq 1$}] 対数 $\log_a b$ は $b > 0$ のときのみ定義される
   \end{description}
   \end{block}
 \end{frame}
@@ -34,30 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item logₐMN=logₐM+logₐN
-    \item logₐ(M/N)=logₐM-logₐN
-    \item logₐMᵏ=k・logₐM
+    \item $\log_a MN = \log_a M + \log_a N$
+    \item $\log_a (M/N) = \log_a M - \log_a N$
+    \item $\log_a M^k = k \cdot \log_a M$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 対数と指数の関係を数直線で表現
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.113（対数の値を求める）}
@@ -72,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.114（対数の性質を使った計算）}
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 対数は指数の「逆」：$a^c = b \Leftrightarrow \log_a b = c$
+    \item $\log_a b + \log_a c = \log_a(bc)$，$\log_a b - \log_a c = \log_a(b/c)$
+    \item 計算前に必ず真数条件 $b > 0$ と底の条件を確認する
   \end{itemize}
 
   \vfill

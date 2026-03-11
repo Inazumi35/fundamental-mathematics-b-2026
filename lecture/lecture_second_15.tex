@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{一般角：360°×n+θ で表す}] ~
-    \item[\kw{動径と象限}] ~
-    \item[\kw{単位円上の定義：sinθ=y、cosθ=x、tanθ=y/x}] ~
+    \item[\kw{一般角：$360° \times n + \theta$ で表す}] $360° \times n + \theta$（$n$ は整数）で表す角
+    \item[\kw{動径と象限}] 角 $\theta$ の動径がある象限で三角関数の符号が決まる
+    \item[\kw{単位円上の定義：$\sin\theta = y$、$\cos\theta = x$、$\tan\theta = y/x$}] 単位円上の点 $(\cos\theta, \sin\theta)$；$\tan\theta = \sin\theta / \cos\theta$
   \end{description}
   \end{block}
 \end{frame}
@@ -34,30 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item sin・cos の周期：2π（360°）
-    \item tan の周期：π（180°）
+    \item $\sin$・$\cos$ の周期：$2\pi$（$360°$）
+    \item $\tan$ の周期：$\pi$（$180°$）
     \item 各象限での符号
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 単位円と各象限の符号図
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.148（動径の位置・象限）}
@@ -72,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.149（一般角の三角関数の値）}
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 一般角 $\theta + 360° n$ で1回転以上や負の角を統一的に扱う
+    \item 単位円：$\cos\theta = x$，$\sin\theta = y$，$\tan\theta = y/x$
+    \item 象限によるサインの符号（All/Sin/Tan/Cos の順）を確認する
   \end{itemize}
 
   \vfill

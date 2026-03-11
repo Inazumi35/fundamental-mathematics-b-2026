@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{常用対数：底が10の対数（log₁₀）}] ~
-    \item[\kw{log₁₀2≈0.3010、log₁₀3≈0.4771}] ~
-    \item[\kw{桁数：n桁 ⟺ 10ⁿ⁻¹≦x<10ⁿ}] ~
+    \item[\kw{常用対数：底が10の対数（$\log_{10}$）}] 底が $10$ の対数：$\log_{10} x$（単に $\log x$ と書くこともある）
+    \item[\kw{$\log_{10} 2 \approx 0.3010$、$\log_{10} 3 \approx 0.4771$}] 計算に使う近似値
+    \item[\kw{桁数：$n$ 桁 $\Leftrightarrow$ $10^{n-1} \leq N < 10^n$}] $n$ 桁の整数 $N$ $\Leftrightarrow$ $10^{n-1} \leq N < 10^n$ $\Leftrightarrow$ $n-1 \leq \log_{10} N < n$
   \end{description}
   \end{block}
 \end{frame}
@@ -34,30 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 常用対数の基本値（log₁₀2、log₁₀3、log₁₀5=1-log₁₀2）
-    \item 桁数の判定：⌊log₁₀x⌋+1 桁
+    \item 常用対数の基本値（$\log_{10} 2$、$\log_{10} 3$、$\log_{10} 5 = 1 - \log_{10} 2$）
+    \item 桁数の判定：$\lfloor \log_{10} x \rfloor + 1$ 桁
     \item 増殖・減少問題への応用
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=log₁₀x のグラフと桁数の関係
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.122（常用対数の計算）}
@@ -72,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題3) p.123（桁数・不等式の整数解）}
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 常用対数 $\log_{10}$ は桁数・最高位の数字を求めるのに使う
+    \item $n = \lfloor \log_{10} N \rfloor + 1$ が整数 $N$ の桁数
+    \item $\log_{10} 2 \approx 0.3010$，$\log_{10} 3 \approx 0.4771$ を覚えておく
   \end{itemize}
 
   \vfill

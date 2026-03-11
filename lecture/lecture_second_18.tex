@@ -17,13 +17,13 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：sin・cos・tan のグラフを描き、周期を理解できる}
+  \textbf{目標}：$\sin$・$\cos$・$\tan$ のグラフを描き、周期を理解できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{振幅}] ~
-    \item[\kw{周期：y=sinx の周期は 2π}] ~
-    \item[\kw{平行移動：y=sin(x-p)+q}] ~
+    \item[\kw{振幅}] $y = a\sin x$ のグラフの振れ幅 $|a|$
+    \item[\kw{周期：$y = \sin x$ の周期は $2\pi$}] $y = \sin x$ の周期は $2\pi$，$y = \cos x$ も $2\pi$，$y = \tan x$ は $\pi$
+    \item[\kw{平行移動：$y = \sin(x - p) + q$}] $y = \sin(x - p) + q$ でグラフを水平・垂直に移動する
   \end{description}
   \end{block}
 \end{frame}
@@ -34,30 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item y=sinx：振幅1、周期2π
-    \item y=cosx：振幅1、周期2π
-    \item y=tanx：周期π、x=π/2+nπ が漸近線
+    \item $y = \sin x$：振幅1、周期 $2\pi$
+    \item $y = \cos x$：振幅1、周期 $2\pi$
+    \item $y = \tan x$：周期 $\pi$、$x = \pi/2 + n\pi$ が漸近線
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=sinx・y=cosx・y=tanx の1周期分のグラフ比較
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.159（グラフをかけ・周期・振幅）}
@@ -72,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.160（平行移動したグラフ）}
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $y = \sin x$：振幅1，周期 $2\pi$，値域 $[-1, 1]$
+    \item $y = \cos x$：$y = \sin x$ を $\pi/2$ 左に移動したグラフ
+    \item 平行移動・対称移動でグラフの形は変わらない
   \end{itemize}
 
   \vfill

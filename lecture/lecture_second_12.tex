@@ -21,8 +21,8 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{正弦定理：a/sinA = b/sinB = c/sinC = 2R}] ~
-    \item[\kw{外接円の半径 R}] ~
+    \item[\kw{正弦定理：$a/\sin A = b/\sin B = c/\sin C = 2R$}] $\dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C} = 2R$（$R$：外接円の半径）
+    \item[\kw{外接円の半径 $R$}] 三角形に外接する円の半径
   \end{description}
   \end{block}
 \end{frame}
@@ -40,22 +40,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 三角形と外接円の図（正弦定理の導出イメージ）
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例題1) p.137（正弦定理で辺を求める）}
@@ -70,7 +55,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題2) p.138（外接円の半径）}
@@ -89,7 +74,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 正弦定理 $a/\sin A = 2R$ で辺と角，外接円の半径を結びつける
+    \item 「辺と角を混在」した問題では正弦定理を使う
+    \item 三角形の成立条件（三角不等式）も確認する
   \end{itemize}
 
   \vfill

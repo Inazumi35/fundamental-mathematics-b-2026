@@ -17,14 +17,14 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：対数関数 y=logₐx のグラフと性質を理解し、方程式・不等式を解ける}
+  \textbf{目標}：対数関数 $y = \log_a x$ のグラフと性質を理解し、方程式・不等式を解ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{対数関数：y=logₐx}] ~
-    \item[\kw{単調増加（a>1）・単調減少（0<a<1）}] ~
-    \item[\kw{漸近線：x=0（y軸）}] ~
-    \item[\kw{真数条件の重要性}] ~
+    \item[\kw{対数関数：$y = \log_a x$}] $y = \log_a x$（$a > 0$, $a \neq 1$, $x > 0$）の形の関数
+    \item[\kw{単調増加（$a > 1$）・単調減少（$0 < a < 1$）}] 底 $a > 1$ のとき $x$ が増えると $y$ も増える；$0 < a < 1$ のとき $x$ が増えると $y$ が減る
+    \item[\kw{漸近線：$x = 0$（$y$ 軸）}] $y$ 軸に限りなく近づくが交わらない；定義域は $x > 0$
+    \item[\kw{真数条件の重要性}] $\log_a f(x)$ には $f(x) > 0$ が必要
   \end{description}
   \end{block}
 \end{frame}
@@ -35,30 +35,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 点(1,0)を必ず通る
-    \item a>1：右上がり、0<a<1：右下がり
+    \item 点 $(1, 0)$ を必ず通る
+    \item $a > 1$：右上がり、$0 < a < 1$：右下がり
     \item 対数方程式：真数をまとめて指数に戻す
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=log₂x と y=log₁/₂x の比較（y軸対称）
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.118（グラフをかけ・値域）}
@@ -73,7 +58,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題2) p.120（対数方程式・不等式）}
@@ -92,7 +77,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $y = \log_a x$ のグラフは常に点 $(1, 0)$ を通る
+    \item $a > 1$ で単調増加，$0 < a < 1$ で単調減少；漸近線は $y$ 軸（$x = 0$）
+    \item 対数方程式・不等式でも底の大小で不等号の向きが変わる
   \end{itemize}
 
   \vfill

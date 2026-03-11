@@ -21,8 +21,8 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{有理数指数：aᵐ/ⁿ = √ⁿ(aᵐ)}] ~
-    \item[\kw{指数法則（aᵐ・aⁿ=aᵐ⁺ⁿ など）の拡張}] ~
+    \item[\kw{有理数指数：$a^{m/n} = \sqrt[n]{a^m}$}] $a > 0$, $m,n$ 整数, $n > 0$ として定義する
+    \item[\kw{指数法則（$a^m \cdot a^n = a^{m+n}$ など）の拡張}] $a^r \cdot a^s = a^{r+s}$, $(a^r)^s = a^{rs}$, $(ab)^r = a^r b^r$（$r,s$ は有理数）
   \end{description}
   \end{block}
 \end{frame}
@@ -33,30 +33,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item aᵐ/ⁿ = √ⁿ(aᵐ)（a>0）
-    \item a⁰=1、a⁻ⁿ=1/aⁿ
+    \item $a^{m/n} = \sqrt[n]{a^m}$（$a > 0$）
+    \item $a^0 = 1$、$a^{-n} = 1/a^n$
     \item 指数法則4つ（有理数指数でも成立）
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 有理数指数の数直線上のイメージ
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例3) p.104（有理数指数の計算）}
@@ -71,7 +56,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例4) p.105（指数法則の応用）}
@@ -90,7 +75,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 有理数指数 $a^{m/n} = \sqrt[n]{a^m}$ で定義する
+    \item 指数法則はすべての有理数指数で成立する
+    \item $a^0 = 1$, $a^{-n} = 1/a^n$（$a \neq 0$）を確認する
   \end{itemize}
 
   \vfill

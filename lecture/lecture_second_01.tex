@@ -21,10 +21,10 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{n乗根}] ~
-    \item[\kw{n乗根の定義（aのn乗根）}] ~
-    \item[\kw{√ⁿa の表記}] ~
-    \item[\kw{奇数乗根と偶数乗根の違い}] ~
+    \item[\kw{n乗根}] $a^n = b$ を満たす数 $a$（$\sqrt[n]{b}$ と書く）
+    \item[\kw{n乗根の定義（aのn乗根）}] $n$ が奇数のとき実数解1個、偶数のとき正の数のみ（$a > 0$）
+    \item[\kw{$\sqrt[n]{a}$ の表記}] $n$ 乗根のうち正のもの（$n$ が偶数）または実数のもの
+    \item[\kw{奇数乗根と偶数乗根の違い}] 奇数乗根は負の数でも定義できる；偶数乗根は $a \geq 0$ が必要
   \end{description}
   \end{block}
 \end{frame}
@@ -35,32 +35,17 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item (√ⁿa)ⁿ=a
-    \item √ⁿ(aⁿ)=a（nが奇数）
-    \item √ⁿ(aⁿ)=|a|（nが偶数）
-    \item √ⁿa・√ⁿb=√ⁿ(ab)
-    \item √ⁿa÷√ⁿb=√ⁿ(a/b)
+    \item $(\sqrt[n]{a})^n = a$
+    \item $\sqrt[n]{a^n} = a$（$n$ が奇数）
+    \item $\sqrt[n]{a^n} = |a|$（$n$ が偶数）
+    \item $\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}$
+    \item $\sqrt[n]{a} \div \sqrt[n]{b} = \sqrt[n]{a/b}$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 数直線上でのn乗根の位置（n=2,3,4の比較）
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.102（n乗根の値を求める）}
@@ -75,10 +60,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例2) p.103（√ⁿa の計算）}
+  \begin{exampleblock}{例2) p.103（$\sqrt[n]{a}$ の計算）}
     （板書で解説）
   \end{exampleblock}
 
@@ -94,7 +79,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $\sqrt[n]{a}$ は $a$ の $n$ 乗根（$a \geq 0$ のとき正の値）
+    \item $(\sqrt[n]{a})^n = a$、$\sqrt[n]{a^n} = |a|$（$n$ が偶数）
+    \item 累乗根の性質：$\sqrt[n]{a}\cdot\sqrt[n]{b}=\sqrt[n]{ab}$
   \end{itemize}
 
   \vfill

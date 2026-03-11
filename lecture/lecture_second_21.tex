@@ -17,13 +17,13 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：sinθ=a, cosθ=a の方程式を単位円を用いて解ける}
+  \textbf{目標}：$\sin\theta = a$, $\cos\theta = a$ の方程式を単位円を用いて解ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{0≦x<2π の範囲での解}] ~
-    \item[\kw{単位円・グラフを使った解法}] ~
-    \item[\kw{解の個数の確認}] ~
+    \item[\kw{$0 \leq x < 2\pi$ の範囲での解}] 単位円またはグラフを使って $\sin x = k$, $\cos x = k$ の解を求める
+    \item[\kw{単位円・グラフを使った解法}] 単位円上で $y$ 座標（$\sin$）または $x$ 座標（$\cos$）が $k$ となる点を探す
+    \item[\kw{解の個数の確認}] $\sin x = k$（$-1 < k < 1$）は $0 \leq x < 2\pi$ で2個の解をもつ
   \end{description}
   \end{block}
 \end{frame}
@@ -34,33 +34,18 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item sinx=k の解：x=α と x=π-α（|k|≦1）
-    \item cosx=k の解：x=α と x=2π-α
+    \item $\sin x = k$ の解：$x = \alpha$ と $x = \pi - \alpha$（$|k| \leq 1$）
+    \item $\cos x = k$ の解：$x = \alpha$ と $x = 2\pi - \alpha$
     \item 不等式は範囲で答える
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 単位円上での解の位置と対称性
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
-  \begin{exampleblock}{例1) p.167（sinx=√2/2 を解く）}
+  \begin{exampleblock}{例1) p.167（$\sin x = \sqrt{2}/2$ を解く）}
     （板書で解説）
   \end{exampleblock}
 
@@ -72,10 +57,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例2) p.168（cosx≦1/2 を解く）}
+  \begin{exampleblock}{例2) p.168（$\cos x \leq 1/2$ を解く）}
     （板書で解説）
   \end{exampleblock}
 
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $\sin x = k$ の解：$x = \alpha$ と $x = \pi - \alpha$（$0 \leq x < 2\pi$）
+    \item $\cos x = k$ の解：$x = \alpha$ と $x = 2\pi - \alpha$（$0 \leq x < 2\pi$）
+    \item 単位円・グラフで解の位置を確認し，解の範囲を見落とさない
   \end{itemize}
 
   \vfill

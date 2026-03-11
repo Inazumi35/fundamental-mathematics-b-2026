@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{底をそろえる：aˣ=aᵏ → x=k}] ~
-    \item[\kw{底が1より大：不等号の向きはそのまま}] ~
-    \item[\kw{底が1より小：不等号の向きが逆転}] ~
+    \item[\kw{底をそろえる：$a^x = a^k \Rightarrow x = k$}] 指数方程式・不等式では底を統一して $a^x = a^k \Rightarrow x = k$ を使う
+    \item[\kw{底が1より大：不等号の向きはそのまま}] $a > 1$ のとき $a^x > a^k \Rightarrow x > k$
+    \item[\kw{底が1より小：不等号の向きが逆転}] $0 < a < 1$ のとき $a^x > a^k \Rightarrow x < k$
   \end{description}
   \end{block}
 \end{frame}
@@ -34,29 +34,14 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 置換（t=2ˣ など）で2次方程式に帰着する手法
-    \item 解の検証（t>0 の条件確認）
+    \item 置換（$t = 2^x$ など）で2次方程式に帰着する手法
+    \item 解の検証（$t > 0$ の条件確認）
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=2ˣ のグラフで不等式の解範囲を視覚化
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例3) p.109（指数不等式）}
@@ -71,7 +56,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題1) p.110（置換して2次方程式）}
@@ -90,7 +75,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 指数方程式は底をそろえて指数を比較する
+    \item 指数不等式は底の大小（$a > 1$ か $0 < a < 1$ か）で不等号の向きが変わる
+    \item グラフを描いて解の範囲を確認する習慣をつける
   \end{itemize}
 
   \vfill

@@ -17,13 +17,16 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：sin・cos・tan の加法定理を理解し証明できる}
+  \textbf{目標}：$\sin$・$\cos$・$\tan$ の加法定理を理解し証明できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{sin(α±β)=sinαcosβ±cosαsinβ}] ~
-    \item[\kw{cos(α±β)=cosαcosβ∓sinαsinβ}] ~
-    \item[\kw{tan(α±β)=(tanα±tanβ)/(1∓tanαtanβ)}] ~
+    \item[\kw{$\sin(\alpha \pm \beta) = \sin\alpha\cos\beta \pm \cos\alpha\sin\beta$}]
+      $\sin(\alpha+\beta) = \sin\alpha\cos\beta + \cos\alpha\sin\beta$，$\sin(\alpha-\beta) = \sin\alpha\cos\beta - \cos\alpha\sin\beta$
+    \item[\kw{$\cos(\alpha \pm \beta) = \cos\alpha\cos\beta \mp \sin\alpha\sin\beta$}]
+      $\cos(\alpha+\beta) = \cos\alpha\cos\beta - \sin\alpha\sin\beta$，$\cos(\alpha-\beta) = \cos\alpha\cos\beta + \sin\alpha\sin\beta$
+    \item[\kw{$\tan(\alpha \pm \beta) = (\tan\alpha \pm \tan\beta)/(1 \mp \tan\alpha\tan\beta)$}]
+      $\tan(\alpha+\beta) = \dfrac{\tan\alpha+\tan\beta}{1-\tan\alpha\tan\beta}$，$\tan(\alpha-\beta) = \dfrac{\tan\alpha-\tan\beta}{1+\tan\alpha\tan\beta}$
   \end{description}
   \end{block}
 \end{frame}
@@ -34,32 +37,17 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 加法定理6公式（sin・cos・tan の + と -）
-    \item 代表的な応用：sin75°、cos15° などの計算
+    \item 加法定理6公式（$\sin$・$\cos$・$\tan$ の $+$ と $-$）
+    \item 代表的な応用：$\sin 75°$、$\cos 15°$ などの計算
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 加法定理の幾何的導出のイメージ図
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
-  \begin{exampleblock}{例1) p.174（sin75°、cos15° を求める）}
+  \begin{exampleblock}{例1) p.174（$\sin 75°$、$\cos 15°$ を求める）}
     （板書で解説）
   \end{exampleblock}
 
@@ -71,10 +59,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例題1) p.175（sin(α+β) を求める）}
+  \begin{exampleblock}{例題1) p.175（$\sin(\alpha+\beta)$ を求める）}
     （板書で解説）
   \end{exampleblock}
 
@@ -90,7 +78,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $\sin(\alpha\pm\beta)$，$\cos(\alpha\pm\beta)$，$\tan(\alpha\pm\beta)$ の3セットを確実に覚える
+    \item $15° = 45° - 30°$，$75° = 45° + 30°$ など特殊角への応用
+    \item 加法定理から2倍角・半角公式が導出できる
   \end{itemize}
 
   \vfill

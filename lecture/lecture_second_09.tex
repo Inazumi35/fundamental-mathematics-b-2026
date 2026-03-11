@@ -17,14 +17,14 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：sin・cos・tan の定義と特別角の値を理解できる}
+  \textbf{目標}：$\sin$・$\cos$・$\tan$ の定義と特別角の値を理解できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{sinθ=対辺/斜辺}] ~
-    \item[\kw{cosθ=隣辺/斜辺}] ~
-    \item[\kw{tanθ=対辺/隣辺}] ~
-    \item[\kw{30°・45°・60°の三角比}] ~
+    \item[\kw{$\sin\theta = \text{対辺}/\text{斜辺}$}] 直角三角形において $\sin\theta = \dfrac{\text{対辺}}{\text{斜辺}}$
+    \item[\kw{$\cos\theta = \text{隣辺}/\text{斜辺}$}] $\cos\theta = \dfrac{\text{隣辺}}{\text{斜辺}}$
+    \item[\kw{$\tan\theta = \text{対辺}/\text{隣辺}$}] $\tan\theta = \dfrac{\text{対辺}}{\text{隣辺}}$
+    \item[\kw{$30°$・$45°$・$60°$ の三角比}] $30°, 45°, 60°$ の三角比は正確な値を暗記する
   \end{description}
   \end{block}
 \end{frame}
@@ -35,31 +35,16 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item sin²θ+cos²θ=1
-    \item tanθ=sinθ/cosθ
-    \item 余角の関係：sin(90°-θ)=cosθ など
+    \item $\sin^2\theta + \cos^2\theta = 1$
+    \item $\tan\theta = \sin\theta / \cos\theta$
+    \item 余角の関係：$\sin(90° - \theta) = \cos\theta$ など
     \item 代表角の表
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 直角三角形と三角比の定義図; 30-60-90・45-45-90の三角形
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.128（三角比を求める）}
@@ -74,7 +59,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.129（相互関係で残りを求める）}
@@ -93,7 +78,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $\sin^2\theta + \cos^2\theta = 1$，$\tan\theta = \sin\theta/\cos\theta$
+    \item 特殊角：$\sin 30° = 1/2$，$\cos 45° = 1/\sqrt{2}$，$\tan 60° = \sqrt{3}$
+    \item 相互関係 $1 + \tan^2\theta = 1/\cos^2\theta$ も確認する
   \end{itemize}
 
   \vfill

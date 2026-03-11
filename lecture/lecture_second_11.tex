@@ -17,14 +17,14 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：鈍角（90°〜180°）の三角比を求め、相互関係を利用できる}
+  \textbf{目標}：鈍角（$90°$〜$180°$）の三角比を求め、相互関係を利用できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{鈍角（90°<θ<180°）の三角比}] ~
-    \item[\kw{sin(180°-θ)=sinθ}] ~
-    \item[\kw{cos(180°-θ)=-cosθ}] ~
-    \item[\kw{tan(180°-θ)=-tanθ}] ~
+    \item[\kw{鈍角（$90° < \theta < 180°$）の三角比}] $90° < \theta < 180°$ での $\sin\theta$, $\cos\theta$, $\tan\theta$ を単位円で定義
+    \item[\kw{$\sin(180° - \theta) = \sin\theta$}] 補角の正弦は等しい
+    \item[\kw{$\cos(180° - \theta) = -\cos\theta$}] 補角の余弦は符号が逆
+    \item[\kw{$\tan(180° - \theta) = -\tan\theta$}] 補角の正接は符号が逆
   \end{description}
   \end{block}
 \end{frame}
@@ -36,29 +36,14 @@
   \begin{block}{}
   \begin{itemize}
     \item 単位円を使った定義
-    \item 第2象限での符号（sin>0、cos<0、tan<0）
-    \item 相互関係：sin²θ+cos²θ=1、tanθ=sinθ/cosθ
+    \item 第2象限での符号（$\sin > 0$、$\cos < 0$、$\tan < 0$）
+    \item 相互関係：$\sin^2\theta + \cos^2\theta = 1$、$\tan\theta = \sin\theta/\cos\theta$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 単位円上の鋭角・鈍角の対応点
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.134（鈍角の三角比の値）}
@@ -73,10 +58,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例2) p.135（相互関係でsinθ等を求める）}
+  \begin{exampleblock}{例2) p.135（相互関係で $\sin\theta$ 等を求める）}
     （板書で解説）
   \end{exampleblock}
 
@@ -92,7 +77,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 鈍角の三角比は単位円で定義：$\cos\theta < 0$，$\sin\theta > 0$（$90° < \theta < 180°$）
+    \item 補角の公式：$\sin(180° - \theta) = \sin\theta$，$\cos(180° - \theta) = -\cos\theta$
+    \item $\sin^2\theta + \cos^2\theta = 1$ は鈍角でも成立する
   \end{itemize}
 
   \vfill

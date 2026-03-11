@@ -17,12 +17,12 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：tanθ=a の方程式・三角関数の不等式を解ける}
+  \textbf{目標}：$\tan\theta = a$ の方程式・三角関数の不等式を解ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{tanx=k の解：x=α と x=α+π}] ~
-    \item[\kw{tanx の定義域に注意（x≠π/2+nπ）}] ~
+    \item[\kw{$\tan x = k$ の解：$x = \alpha$ と $x = \alpha + \pi$}] 周期 $\pi$ を使って解を求める
+    \item[\kw{$\tan x$ の定義域に注意（$x \neq \pi/2 + n\pi$）}] $x \neq \pi/2 + n\pi$ では $\tan x$ は未定義
   \end{description}
   \end{block}
 \end{frame}
@@ -33,7 +33,7 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item tanx=k の解の求め方
+    \item $\tan x = k$ の解の求め方
     \item 定義域除外点の確認
     \item 方程式・不等式の両方に対応
   \end{itemize}
@@ -41,25 +41,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=tanx のグラフと解の読み取り
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
-  \begin{exampleblock}{例3) p.169（tanx=-1 を解く）}
+  \begin{exampleblock}{例3) p.169（$\tan x = -1$ を解く）}
     （板書で解説）
   \end{exampleblock}
 
@@ -71,10 +56,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例4) p.170（tanx>√3 を解く）}
+  \begin{exampleblock}{例4) p.170（$\tan x > \sqrt{3}$ を解く）}
     （板書で解説）
   \end{exampleblock}
 
@@ -90,7 +75,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $\tan x = k$ は $0 \leq x < \pi$（または $0 \leq x < 2\pi$）の範囲で解を求める
+    \item 三角不等式はグラフを描いて $y \geq k$ または $y \leq k$ の範囲を読む
+    \item 定義域の制限（$\tan x$ が未定義の点）を忘れずに除く
   \end{itemize}
 
   \vfill

@@ -17,13 +17,13 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：指数関数 y=aˣ のグラフと性質を理解できる}
+  \textbf{目標}：指数関数 $y = a^x$ のグラフと性質を理解できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{指数関数：y=aˣ（a>0, a≠1）}] ~
-    \item[\kw{単調増加（a>1）・単調減少（0<a<1）}] ~
-    \item[\kw{漸近線：y=0（x軸）}] ~
+    \item[\kw{指数関数：$y = a^x$（$a > 0$, $a \neq 1$）}] $y = a^x$（$a > 0$, $a \neq 1$）の形の関数
+    \item[\kw{単調増加（$a > 1$）・単調減少（$0 < a < 1$）}] $a > 1$ のとき $x$ が増えると $y$ も増える；$0 < a < 1$ のとき $x$ が増えると $y$ が減る
+    \item[\kw{漸近線：$y = 0$（$x$ 軸）}] $y = 0$（$x$ 軸）に限りなく近づくが交わらない
   \end{description}
   \end{block}
 \end{frame}
@@ -34,30 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 点(0,1)を必ず通る
-    \item a>1：右上がり、0<a<1：右下がり
-    \item 平行移動：y=aˣ⁻ᵖ+q
+    \item 点 $(0, 1)$ を必ず通る
+    \item $a > 1$：右上がり、$0 < a < 1$：右下がり
+    \item 平行移動：$y = a^{x-p} + q$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=2ˣ と y=(1/2)ˣ の比較グラフ（対称性）
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.107（グラフをかけ）}
@@ -72,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.108（指数方程式）}
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $y = a^x$ のグラフは常に点 $(0, 1)$ を通り，$y$ 軸の左右で単調増減
+    \item $a > 1$ で単調増加，$0 < a < 1$ で単調減少
+    \item 漸近線 $y = 0$，定義域は全実数，値域は $y > 0$
   \end{itemize}
 
   \vfill

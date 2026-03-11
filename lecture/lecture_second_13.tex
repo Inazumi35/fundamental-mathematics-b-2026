@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{余弦定理：a²=b²+c²-2bc cosA}] ~
-    \item[\kw{面積公式：S=½bc sinA}] ~
-    \item[\kw{ヘロンの公式}] ~
+    \item[\kw{余弦定理：$a^2 = b^2 + c^2 - 2bc\cos A$}] $a^2 = b^2 + c^2 - 2bc\cos A$（3辺と1角の関係）
+    \item[\kw{面積公式：$S = \frac{1}{2}bc\sin A$}] $S = \dfrac{1}{2}bc\sin A$
+    \item[\kw{ヘロンの公式}] $S = \sqrt{s(s-a)(s-b)(s-c)}$（$s = (a+b+c)/2$）
   \end{description}
   \end{block}
 \end{frame}
@@ -35,29 +35,14 @@
   \begin{block}{}
   \begin{itemize}
     \item 余弦定理の2つの使い方：辺を求める・角を求める
-    \item S=½bc sinA から角を求める逆算
-    \item ヘロン：s=(a+b+c)/2、S=√(s(s-a)(s-b)(s-c))
+    \item $S = \dfrac{1}{2}bc\sin A$ から角を求める逆算
+    \item ヘロン：$s = (a+b+c)/2$、$S = \sqrt{s(s-a)(s-b)(s-c)}$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 余弦定理の幾何的意味（ピタゴラスの拡張）
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例題3) p.140（余弦定理で辺・角を求める）}
@@ -72,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題4) p.141（面積・ヘロン）}
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 余弦定理で「2辺と挟む角 $\to$ 残りの辺」または「3辺 $\to$ 角」を求める
+    \item 面積 $S = \dfrac{1}{2}bc\sin A$ は2辺と挟む角がわかれば使える
+    \item 正弦定理か余弦定理かを問題の与え方で選ぶ
   \end{itemize}
 
   \vfill

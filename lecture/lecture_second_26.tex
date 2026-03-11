@@ -21,8 +21,8 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{積和・和積公式（参考）}] ~
-    \item[\kw{2直線のなす角への応用}] ~
+    \item[\kw{積和・和積公式（参考）}] 積を和に，和を積に変換する公式（加法定理から導出できる）
+    \item[\kw{2直線のなす角への応用}] $\tan\theta = \left|\dfrac{m_1 - m_2}{1 + m_1 m_2}\right|$ で2直線のなす角 $\theta$ を求める
   \end{description}
   \end{block}
 \end{frame}
@@ -35,28 +35,13 @@
   \begin{itemize}
     \item 積和公式（加法定理の足し引きで導出）
     \item 和積公式
-    \item 2直線のなす角：tanθ=|(m₁-m₂)/(1+m₁m₂)|
+    \item 2直線のなす角：$\tan\theta = \left|\dfrac{m_1 - m_2}{1 + m_1 m_2}\right|$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 2直線のなす角の図解
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例題3) p.182（加法定理を使った証明）}
@@ -71,7 +56,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題4) p.183（2直線のなす角）}
@@ -90,7 +75,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 積和・和積公式は加法定理から導出できる（暗記より導出方法を理解する）
+    \item 2直線 $y = m_1 x + b_1$，$y = m_2 x + b_2$ のなす角は $\tan$ を使って求める
+    \item 三角関数の合成を使った最大・最小問題を復習する
   \end{itemize}
 
   \vfill

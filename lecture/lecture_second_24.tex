@@ -21,9 +21,10 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{sin2α=2sinαcosα}] ~
-    \item[\kw{cos2α=cos²α-sin²α=1-2sin²α=2cos²α-1}] ~
-    \item[\kw{tan2α=2tanα/(1-tan²α)}] ~
+    \item[\kw{$\sin 2\alpha = 2\sin\alpha\cos\alpha$}] $\sin 2\alpha = 2\sin\alpha\cos\alpha$
+    \item[\kw{$\cos 2\alpha = \cos^2\alpha - \sin^2\alpha = 1 - 2\sin^2\alpha = 2\cos^2\alpha - 1$}]
+      $\cos 2\alpha = \cos^2\alpha - \sin^2\alpha = 1 - 2\sin^2\alpha = 2\cos^2\alpha - 1$
+    \item[\kw{$\tan 2\alpha = 2\tan\alpha/(1 - \tan^2\alpha)$}] $\tan 2\alpha = \dfrac{2\tan\alpha}{1-\tan^2\alpha}$
   \end{description}
   \end{block}
 \end{frame}
@@ -34,29 +35,14 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 半角：sin²(α/2)=(1-cosα)/2、cos²(α/2)=(1+cosα)/2
+    \item 半角：$\sin^2(\alpha/2) = (1 - \cos\alpha)/2$、$\cos^2(\alpha/2) = (1 + \cos\alpha)/2$
     \item 2倍角を使った方程式・不等式の解き方
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=sin2x と y=2sinxcosx が一致するイメージ
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例2) p.177（2倍角で値を求める）}
@@ -71,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例3) p.178（三角関数の合成）}
@@ -90,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 2倍角公式は加法定理で $\beta = \alpha$ とすれば導出できる
+    \item $\cos 2\alpha = 1 - 2\sin^2\alpha$ から $\sin^2\alpha = \dfrac{1-\cos 2\alpha}{2}$（半角の公式）
+    \item $\cos^2\alpha = \dfrac{1+\cos 2\alpha}{2}$ も半角の公式として使う
   \end{itemize}
 
   \vfill

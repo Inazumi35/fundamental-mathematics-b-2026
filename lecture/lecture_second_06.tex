@@ -21,8 +21,8 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{底の変換公式：logₐb = logcb/logca}] ~
-    \item[\kw{自然対数・常用対数（参考）}] ~
+    \item[\kw{底の変換公式：$\log_a b = \dfrac{\log_c b}{\log_c a}$}] 任意の底 $c > 0$, $c \neq 1$ に変換できる
+    \item[\kw{自然対数・常用対数（参考）}] 底が $e \approx 2.718$ の対数 $\ln x = \log_e x$（自然対数）；底が $10$ の対数 $\log_{10} x$（常用対数）
   \end{description}
   \end{block}
 \end{frame}
@@ -33,29 +33,14 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 底の変換：logₐb = logb/loga（底は任意）
-    \item (logₐb)(logbc)=logₐc（連鎖律）
+    \item 底の変換：$\log_a b = \dfrac{\log b}{\log a}$（底は任意）
+    \item $(\log_a b)(\log_b c) = \log_a c$（連鎖律）
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 底を変えても同じ値になることのイメージ
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例3) p.115（底の変換公式の計算）}
@@ -70,10 +55,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例4) p.116（log₂27・log₉8 の計算）}
+  \begin{exampleblock}{例4) p.116（$\log_2 27 \cdot \log_9 8$ の計算）}
     （板書で解説）
   \end{exampleblock}
 
@@ -89,7 +74,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 底の変換公式 $\log_a b = \dfrac{\log_c b}{\log_c a}$ で底を統一する
+    \item 対数の性質：$n \log_a b = \log_a b^n$，$\log_{a^n} b = \dfrac{1}{n}\log_a b$
+    \item 底の変換で $\log_a b \cdot \log_b a = 1$ が成り立つ
   \end{itemize}
 
   \vfill

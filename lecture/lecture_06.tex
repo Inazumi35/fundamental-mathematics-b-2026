@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{前回の復習（D と位置関係）}] ~
-    \item[\kw{常に y>0 の条件}] ~
-    \item[\kw{常に y≧0 の条件}] ~
+    \item[\kw{前回の復習}] $D=b^2-4ac$ の符号で放物線と $x$ 軸の位置関係が決まる
+    \item[\kw{常に $y>0$}] $a>0$ かつ $D<0$（放物線が $x$ 軸より常に上）
+    \item[\kw{常に $y\geq 0$}] $a>0$ かつ $D\leq 0$（$x$ 軸と接するか常に上）
   \end{description}
   \end{block}
 \end{frame}
@@ -34,29 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item a>0 かつ常に y>0 ⟺ D<0
-    \item 解と係数の関係（参考）
+    \item $a>0$ かつ常に $y>0$ $\Longleftrightarrow$ $D<0$
+    \item $a>0$ かつ常に $y\geq 0$ $\Longleftrightarrow$ $D\leq 0$
+    \item 解と係数の関係（参考）：$\alpha+\beta=-\tfrac{b}{a}$、$\alpha\beta=\tfrac{c}{a}$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: k の値で位置関係が変わるイメージ図
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{練習1-A 問6) p.86（平行移動して原点を通る）}
@@ -71,7 +57,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{練習1-B 問4) p.87（内接する長方形）}
@@ -90,8 +76,8 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item 判別式と x 軸の位置関係の3パターンを確実に使い分ける
-    \item 放物線が x 軸より上・下にある条件も判別式で判定
+    \item 判別式と $x$ 軸の位置関係の3パターンを確実に使い分ける
+    \item 放物線が $x$ 軸より上・下にある条件も判別式で判定
   \end{itemize}
 
   \vfill

@@ -17,12 +17,12 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：y=A sin(Bx+C) 型のグラフを描ける}
+  \textbf{目標}：$y = A\sin(Bx + C)$ 型のグラフを描ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{位相：+c によるグラフの水平移動}] ~
-    \item[\kw{グラフから方程式・不等式の解を読み取る}] ~
+    \item[\kw{位相：$+c$ によるグラフの水平移動}] $y = \sin(x + c)$ において $+c$ によるグラフの水平移動量（$-c$ だけ移動）
+    \item[\kw{グラフから方程式・不等式の解を読み取る}] 方程式 $\sin x = k$ の解をグラフで確認する
   \end{description}
   \end{block}
 \end{frame}
@@ -33,30 +33,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item y=a sin(bx+c) の形に整理してから描く
-    \item 方程式：グラフの交点のx座標
+    \item $y = a\sin(bx + c)$ の形に整理してから描く
+    \item 方程式：グラフの交点の $x$ 座標
     \item 不等式：グラフで範囲を読み取る
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=sin(2x+π/3) のグラフと解の読み取り
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例3) p.164（方程式を解く）}
@@ -71,7 +56,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例4) p.165（不等式を解く）}
@@ -90,7 +75,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $y = a\sin(bx + c) + d$：振幅 $|a|$，周期 $2\pi/|b|$，位相 $-c/b$ の移動，$y$ 方向 $d$ の移動
+    \item グラフを描いて $\sin x = k$ や $\cos x = k$ の解の個数・範囲を確認する
+    \item 定義域が制限されている場合は解の範囲を絞る
   \end{itemize}
 
   \vfill

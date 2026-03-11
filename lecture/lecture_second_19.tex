@@ -17,13 +17,13 @@
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
-  \textbf{目標}：y=Cf(x), y=f(Cx) 型のグラフ変換規則を理解できる}
+  \textbf{目標}：$y = Cf(x)$, $y = f(Cx)$ 型のグラフ変換規則を理解できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{振幅：|a|}] ~
-    \item[\kw{周期：2π/|b|}] ~
-    \item[\kw{b>1 で縮小、0<b<1 で拡大}] ~
+    \item[\kw{振幅：$|a|$}] $y = a\sin x$ の振れ幅は $|a|$（$y$ 方向のスケール）
+    \item[\kw{周期：$2\pi/|b|$}] $y = \sin(bx)$ の周期は $\dfrac{2\pi}{|b|}$（$|b| > 1$ で縮小，$0 < |b| < 1$ で拡大）
+    \item[\kw{$b > 1$ で縮小、$0 < b < 1$ で拡大}] グラフが $x$ 方向に縮む（または伸びる）
   \end{description}
   \end{block}
 \end{frame}
@@ -34,30 +34,15 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item y=a sinx：振幅|a|、周期2π
-    \item y=sin(bx)：振幅1、周期2π/b
-    \item y=a sin(bx)：振幅|a|、周期2π/b
+    \item $y = a\sin x$：振幅 $|a|$、周期 $2\pi$
+    \item $y = \sin(bx)$：振幅1、周期 $2\pi/b$
+    \item $y = a\sin(bx)$：振幅 $|a|$、周期 $2\pi/b$
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=sinx と y=2sin(2x) の比較グラフ
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.162（振幅・周期を答えグラフをかけ）}
@@ -72,10 +57,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例2) p.163（y=cos(2x) のグラフ）}
+  \begin{exampleblock}{例2) p.163（$y = \cos(2x)$ のグラフ）}
     （板書で解説）
   \end{exampleblock}
 
@@ -91,7 +76,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $y = a\sin(bx)$：振幅 $|a|$，周期 $\dfrac{2\pi}{|b|}$
+    \item $y = a\cos(bx)$ も同様の規則
+    \item $b$ が大きいほど波が細かくなる（周期が短い）
   \end{itemize}
 
   \vfill

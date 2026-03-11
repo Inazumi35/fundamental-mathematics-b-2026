@@ -21,8 +21,10 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{合成：a sinθ+b cosθ=√(a²+b²) sin(θ+φ)}] ~
-    \item[\kw{tanφ=b/a で位相 φ を求める}] ~
+    \item[\kw{合成：$a\sin\theta + b\cos\theta = \sqrt{a^2+b^2}\sin(\theta+\varphi)$}]
+      $a\sin\theta + b\cos\theta = \sqrt{a^2+b^2}\sin(\theta+\varphi)$（$\tan\varphi = b/a$）
+    \item[\kw{$\tan\varphi = b/a$ で位相 $\varphi$ を求める}]
+      振幅は $\sqrt{a^2+b^2}$，位相 $\varphi$ は $\tan\varphi = b/a$ から求める
   \end{description}
   \end{block}
 \end{frame}
@@ -34,29 +36,14 @@
   \begin{block}{}
   \begin{itemize}
     \item 合成の手順3ステップ
-    \item 合成後の最大値 √(a²+b²)、最小値 -√(a²+b²)
+    \item 合成後の最大値 $\sqrt{a^2+b^2}$、最小値 $-\sqrt{a^2+b^2}$
     \item 方程式への応用
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: y=sinθ+cosθ → y=√2 sin(θ+π/4) の変換イメージ
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.179（合成して最大・最小）}
@@ -71,7 +58,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題2) p.180（合成して方程式を解く）}
@@ -90,7 +77,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item 三角関数の合成 $a\sin\theta + b\cos\theta = \sqrt{a^2+b^2}\sin(\theta+\varphi)$
+    \item 合成後の振幅は $\sqrt{a^2+b^2}$，位相 $\varphi$ は $\tan\varphi = b/a$ で求める
+    \item 最大値・最小値や周期を求めるときに合成を使う
   \end{itemize}
 
   \vfill

@@ -21,9 +21,9 @@
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{sin(π-θ)=sinθ など（π-θ 型）}] ~
-    \item[\kw{sin(π+θ)=-sinθ など（π+θ 型）}] ~
-    \item[\kw{sin(-θ)=-sinθ など（-θ 型）}] ~
+    \item[\kw{$\sin(\pi - \theta) = \sin\theta$ など（$\pi - \theta$ 型）}] $\sin(\pi-\theta) = \sin\theta$，$\cos(\pi-\theta) = -\cos\theta$，$\tan(\pi-\theta) = -\tan\theta$
+    \item[\kw{$\sin(\pi + \theta) = -\sin\theta$ など（$\pi + \theta$ 型）}] $\sin(\pi+\theta) = -\sin\theta$，$\cos(\pi+\theta) = -\cos\theta$，$\tan(\pi+\theta) = \tan\theta$
+    \item[\kw{$\sin(-\theta) = -\sin\theta$ など（$-\theta$ 型）}] $\sin(-\theta) = -\sin\theta$，$\cos(-\theta) = \cos\theta$，$\tan(-\theta) = -\tan\theta$
   \end{description}
   \end{block}
 \end{frame}
@@ -34,28 +34,13 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item π/2-θ 型・π/2+θ 型・π-θ 型・π+θ 型・2π-θ 型・-θ 型の6パターン
+    \item $\pi/2-\theta$ 型・$\pi/2+\theta$ 型・$\pi-\theta$ 型・$\pi+\theta$ 型・$2\pi-\theta$ 型・$-\theta$ 型の6パターン
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 図・グラフ（TikZコードを手動追加）
-% -----------------------------------------------
-\begin{frame}{図・グラフ}
-  \centering
-  % TODO: 単位円上での各変換のイメージ図
-  \begin{tikzpicture}[scale=0.65]
-    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
-    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
-    \node[below left] at (0,0) {O};
-    \draw[gray!40, very thin] (-3,-2) grid (4,4);
-    % ここにグラフを描画
-  \end{tikzpicture}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 例1→問1
+% スライド3: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例1) p.156（変換公式で値を求める）}
@@ -70,7 +55,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド5: 例2→問2
+% スライド4: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例2) p.157（式を簡略化する）}
@@ -89,7 +74,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item % TODO: まとめを記入
+    \item $\pi-\theta$，$\pi+\theta$，$-\theta$ の3パターンの変換を確実に使い分ける
+    \item $\sin$，$\cos$ の符号変化パターンを象限で確認する
+    \item 変換後の角の範囲（$0 \leq \theta \leq \pi/2$）を確認する
   \end{itemize}
 
   \vfill

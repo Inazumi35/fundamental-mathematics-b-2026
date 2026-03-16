@@ -5,6 +5,8 @@
 *.synctex.gz
 *.fls
 *.fdb_latexmk
+*.nav
+*.snm
 texput.*
 __pycache__/
 *.pyc

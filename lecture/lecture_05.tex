@@ -4,9 +4,9 @@
 
 \newcommand{\LectureNum}{05}
 \newcommand{\LectureTitle}{２次関数と２次方程式（１）}
-\newcommand{\TextPages}{pp.\,81-83}
+\newcommand{\TextPages}{p.\,81-83}
 \newcommand{\NextTopic}{２次関数と２次方程式（２）}
-\newcommand{\NextPages}{pp.\,83, 86-87}
+\newcommand{\NextPages}{p.\,83, 86-87}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
@@ -16,14 +16,15 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：判別式を用いて放物線と x 軸の位置関係を判定できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{判別式 $D$}] $ax^2+bx+c=0$ の解の判定量：$D=b^2-4ac$
-    \item[\kw{$D>0$}] 放物線が $x$ 軸と\textbf{2点}で交わる（実数解2個）
-    \item[\kw{$D=0$}] 放物線が $x$ 軸に\textbf{接する}（重解1個）
-    \item[\kw{$D<0$}] 放物線が $x$ 軸と\textbf{交わらない}（実数解なし）
+    \item[\kw{判別式 D=b²-4ac}] ~
+    \item[\kw{D>0（2点で交わる）}] ~
+    \item[\kw{D=0（接する）}] ~
+    \item[\kw{D<0（交わらない）}] ~
   \end{description}
   \end{block}
 \end{frame}
@@ -34,25 +35,29 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item $D=b^2-4ac$ の符号と $x$ 軸との位置関係対応表
-    \begin{center}
-      \begin{tabular}{ccc}
-        \toprule
-        $D$ の符号 & 共有点の数 & グラフの様子 \\
-        \midrule
-        $D>0$ & 2点 & $x$ 軸を横切る \\
-        $D=0$ & 1点（接点） & $x$ 軸に接する \\
-        $D<0$ & なし & $x$ 軸と離れる \\
-        \bottomrule
-      \end{tabular}
-    \end{center}
-    \item $a<0$ のときはグラフが上下逆転
+    \item D の符号と x 軸との位置関係対応表
+    \item a<0 のときは上下逆転
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 例1→問1
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: D>0・D=0・D<0 の3パターン図
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例題5) p.81（共有点を調べる）}
@@ -67,10 +72,10 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド4: 例2→問2
+% スライド5: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例題6) p.82（定数 $k$ の条件）}
+  \begin{exampleblock}{例題6) p.82（定数 k の条件）}
     （板書で解説）
   \end{exampleblock}
 
@@ -86,9 +91,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item 判別式 $D=b^2-4ac$ の符号が放物線と $x$ 軸の関係を決める
-    \item $D>0$：2点で交わる、$D=0$：接する、$D<0$：交わらない
-    \item 定数を含む問題は $D$ の条件を不等式で立てる
+    \item 判別式 D=b²-4ac の符号が放物線と x 軸の関係を決める
+    \item D>0：2点で交わる、D=0：接する、D<0：交わらない
+    \item 定数を含む問題は D の条件を不等式で立てる
   \end{itemize}
 
   \vfill

@@ -4,9 +4,9 @@
 
 \newcommand{\LectureNum}{12}
 \newcommand{\LectureTitle}{無理関数}
-\newcommand{\TextPages}{pp.\,94-95}
+\newcommand{\TextPages}{p.\,94-95}
 \newcommand{\NextTopic}{逆関数}
-\newcommand{\NextPages}{pp.\,96-97}
+\newcommand{\NextPages}{p.\,96-97}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
@@ -16,13 +16,14 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：無理関数の定義域とグラフを理解し、変形グラフが描ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{無理関数}] 根号（$\sqrt{\phantom{x}}$）の中に変数を含む関数
-    \item[\kw{定義域}] 根号内 $P(x)\geq 0$ を解いて求める（例：$y=\sqrt{x-1}$ は $x\geq 1$）
-    \item[\kw{$y=\sqrt{x}$ のグラフ}] 放物線 $x=y^2$（$y\geq 0$）の半分、第1象限の曲線
+    \item[\kw{無理関数}] ~
+    \item[\kw{定義域（P(x)≧0）}] ~
+    \item[\kw{y=√x のグラフ}] ~
   \end{description}
   \end{block}
 \end{frame}
@@ -33,16 +34,29 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item $x$ 軸対称：$y=f(x)$ $\to$ $y=-f(x)$
-    \item $y$ 軸対称：$y=f(x)$ $\to$ $y=f(-x)$
-    \item 原点対称：$y=f(x)$ $\to$ $y=-f(-x)$
-    \item 平行移動：$y=\sqrt{x-p}+q$（始点が $(p,\,q)$ に移動）
+    \item 対称移動：-f(x)（x軸）、f(-x)（y軸）、-f(-x)（原点）
+    \item 平行移動：y=√(x-p)+q
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 例1→問1
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: y=√x、y=-√x、y=√(-x)、y=√(x-1)+2
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例5) p.94（定義域を求めよ）}
@@ -57,16 +71,16 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド4: 例2→問2
+% スライド5: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例題2) p.95（グラフ・定義域・値域）／ 例) p.95（対称移動）}
+  \begin{exampleblock}{例題2) p.95（グラフ・定義域・値域）/ 例) p.95（対称移動）}
     （板書で解説）
   \end{exampleblock}
 
   \vfill
 
-  \begin{block}{問6) p.95（グラフ3問）、問7・問8) p.95（対称移動）\quad 自分で解いてみよう}
+  \begin{block}{問6) p.95（グラフ3問）/ 問7・問8) p.95（対称移動）\quad 自分で解いてみよう}
     （ノートに解くこと）
   \end{block}
 \end{frame}
@@ -76,9 +90,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item $y=\sqrt{P(x)}$ の定義域は $P(x)\geq 0$ を解いて求める
-    \item $y=\sqrt{x}$ のグラフは放物線 $x=y^2$ の上半分
-    \item $x$ 軸・$y$ 軸・原点に関する対称移動の公式を使い分ける
+    \item y=√(P(x)) の定義域は P(x)≧0 を解いて求める
+    \item y=√x のグラフは放物線 x=y² の上半分
+    \item x軸・y軸・原点に関する対称移動の公式を使い分ける
   \end{itemize}
 
   \vfill

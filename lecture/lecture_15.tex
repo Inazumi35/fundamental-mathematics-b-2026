@@ -4,7 +4,7 @@
 
 \newcommand{\LectureNum}{15}
 \newcommand{\LectureTitle}{前期復習}
-\newcommand{\TextPages}{pp.\,72-100}
+\newcommand{\TextPages}{p.\,72-100}
 \newcommand{\NextTopic}{}
 \newcommand{\NextPages}{対応なし}
 \newcommand{\CourseName}{基礎数学B}
@@ -16,56 +16,54 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：前期全範囲（3章）を総復習し、定期試験に備える}
 
-  \begin{block}{前期の構成}
+  \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{3章1節}] 2次関数：標準形・最大最小・判別式・2次不等式
-    \item[\kw{3章2節}] いろいろな関数：べき・分数・無理・逆関数
-    \item[\kw{共通テーマ}] 定義域・値域・グラフ・平行移動・対称移動
+    \item[\kw{3章1節（2次関数）}] ~
+    \item[\kw{3章2節（いろいろな関数）}] ~
+    \item[\kw{共通テーマ}] ~
   \end{description}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド2: 重要公式一覧
+% スライド2: 公式・性質
 % -----------------------------------------------
-\begin{frame}{重要公式一覧}
+\begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 平方完成：$y=a(x-p)^2+q$、軸 $x=p$、頂点 $(p,\,q)$
-    \item 判別式：$D=b^2-4ac$（$D>0$:2交点, $D=0$:接, $D<0$:交わらない）
-    \item $y=\dfrac{a}{x-p}+q$：漸近線 $x=p$, $y=q$
-    \item $y=\sqrt{x-p}+q$：始点 $(p,\,q)$、定義域 $x\geq p$
-    \item 逆関数：$x$ と $y$ を入れ替えて解く
+    \item 前期全範囲の重要公式一覧
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 確認問題1（2次関数）
+% スライド3: 図・グラフ（TikZコードを手動追加）
 % -----------------------------------------------
-\begin{frame}{確認問題1（2次関数）}
-  \begin{block}{次の問いに答えよ}
-    \begin{enumerate}
-      \item $y=2x^2-8x+5$ を標準形に変形せよ
-      \item $y=x^2-4x+3$ が $x$ 軸と共有点をもつか判定せよ
-      \item $x^2-3x-4>0$ を解け
-    \end{enumerate}
-  \end{block}
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: 標準形・最大最小・判別式・2次不等式 各1問
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
 \end{frame}
 
 % -----------------------------------------------
 % スライド4: 確認問題2（いろいろな関数）
 % -----------------------------------------------
 \begin{frame}{確認問題2（いろいろな関数）}
-  \begin{block}{次の問いに答えよ}
-    \begin{enumerate}
-      \item $y=\dfrac{2x+3}{x+1}$ の漸近線を求めよ
-      \item $y=\sqrt{2x-4}$ の定義域・値域を求めよ
-      \item $y=3x-1$（$x\geq 0$）の逆関数を求めよ
-    \end{enumerate}
-  \end{block}
+\end{frame}
+
+% -----------------------------------------------
+% スライド5: 解答確認
+% -----------------------------------------------
+\begin{frame}{解答確認}
 \end{frame}
 
 % -----------------------------------------------

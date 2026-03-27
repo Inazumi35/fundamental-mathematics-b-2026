@@ -4,9 +4,9 @@
 
 \newcommand{\LectureNum}{03}
 \newcommand{\LectureTitle}{２次関数のグラフ（２）}
-\newcommand{\TextPages}{pp.\,77-79}
+\newcommand{\TextPages}{p.\,77-79}
 \newcommand{\NextTopic}{２次関数の最大・最小}
-\newcommand{\NextPages}{pp.\,79-81}
+\newcommand{\NextPages}{p.\,79-81}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
@@ -16,12 +16,13 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：平方完成により一般形を標準形に変形し、グラフが描ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{平方完成}] $ax^2+bx+c$ を $a(x-p)^2+q$ の形に変形すること
-    \item[\kw{変形の手順}] ①$a$ をくくり出す　②$(x+\tfrac{b}{2a})^2$ を作る　③定数項を整理する
+    \item[\kw{平方完成}] ~
+    \item[\kw{変形の手順}] ~
   \end{description}
   \end{block}
 \end{frame}
@@ -32,15 +33,30 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 平方完成の公式：$ax^2+bx+c = a\!\left(x+\dfrac{b}{2a}\right)^{\!2}-\dfrac{b^2-4ac}{4a}$
-    \item 標準形の軸：$x=-\dfrac{b}{2a}$、頂点：$\left(-\dfrac{b}{2a},\,-\dfrac{b^2-4ac}{4a}\right)$
-    \item 3点を通る放物線は $y=ax^2+bx+c$ として連立方程式を立てる
+    \item 平方完成の公式
+    \item p=-b/2a、q=c-b²/4a
+    \item 3ステップの手順
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 例1→問1
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: y=-2x²+8x-5 = -2(x-2)²+3 のグラフ（軸・頂点付き）
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例) p.77（平方完成の計算例）}
@@ -55,16 +71,16 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド4: 例2→問2
+% スライド5: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
-  \begin{exampleblock}{例題2) p.78（3点を通る放物線）}
+  \begin{exampleblock}{例題1) p.77（条件から標準形を求める）/ 例題2) p.78（3点を通る放物線）}
     （板書で解説）
   \end{exampleblock}
 
   \vfill
 
-  \begin{block}{問7) p.78\quad 自分で解いてみよう}
+  \begin{block}{問6) p.78（2問）/ 問7) p.78\quad 自分で解いてみよう}
     （ノートに解くこと）
   \end{block}
 \end{frame}
@@ -74,9 +90,9 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item 一般形 $y=ax^2+bx+c$ は平方完成で標準形に変形できる
-    \item 平方完成の手順：$ax^2+bx$ を $a(x+\tfrac{b}{2a})^2-\tfrac{b^2}{4a}$ に
-    \item 3点を通る放物線は $y=ax^2+bx+c$ として連立方程式を立てる
+    \item 一般形 y=ax²+bx+c は平方完成で標準形に変形できる
+    \item 平方完成の手順：ax²+bx を a(x+b/2a)²-b²/4a に
+    \item 3点を通る放物線は y=ax²+bx+c として連立方程式を立てる
   \end{itemize}
 
   \vfill

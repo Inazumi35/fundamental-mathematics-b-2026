@@ -4,9 +4,9 @@
 
 \newcommand{\LectureNum}{10}
 \newcommand{\LectureTitle}{分数関数（１）}
-\newcommand{\TextPages}{pp.\,91-93}
+\newcommand{\TextPages}{p.\,91-93}
 \newcommand{\NextTopic}{分数関数（２）}
-\newcommand{\NextPages}{pp.\,93}
+\newcommand{\NextPages}{p.\,93}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
@@ -16,13 +16,14 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：y=a/x のグラフ（双曲線）と漸近線を理解できる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{分数関数}] $y=\dfrac{a}{x}$ や $y=\dfrac{ax+b}{cx+d}$ のような有理式で表される関数
-    \item[\kw{双曲線}] $y=\dfrac{a}{x}$ のグラフの形（2本の曲線）
-    \item[\kw{漸近線}] グラフが限りなく近づく直線（$y=\dfrac{a}{x}$ では $x$ 軸と $y$ 軸）
+    \item[\kw{分数関数}] ~
+    \item[\kw{双曲線}] ~
+    \item[\kw{漸近線}] ~
   \end{description}
   \end{block}
 \end{frame}
@@ -33,15 +34,29 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item $y=\dfrac{a}{x}$：定義域 $x\neq 0$、値域 $y\neq 0$、漸近線 $x=0$・$y=0$
-    \item $a>0$ のとき第1・第3象限、$a<0$ のとき第2・第4象限に分布
-    \item $y=\dfrac{a}{x-p}+q$：漸近線 $x=p$ と $y=q$ に移動
+    \item y=a/x：定義域・値域・漸近線・象限
+    \item y=a/(x-p)+q：漸近線 x=p と y=q
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 例1→問1
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: y=1/x（基本形）と y=1/(x-1)+2（平行移動）と漸近線
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例題1) p.92（定義域・値域・漸近線・グラフ）}
@@ -56,12 +71,13 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド4: 補足演習
+% スライド5: 補足演習
 % -----------------------------------------------
 \begin{frame}{補足演習}
   \begin{block}{練習2-A 問3・問4) p.99\quad 自分で解いてみよう}
     （ノートに解くこと）
   \end{block}
+  % NOTE: 例が1セットのみのため補足演習に充てる
 \end{frame}
 
 % -----------------------------------------------
@@ -69,8 +85,8 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item $y=\dfrac{a}{x}$ のグラフは双曲線、漸近線は $x=0$ と $y=0$
-    \item $y=\dfrac{a}{x-p}+q$ は漸近線が $x=p$ と $y=q$ に移動する
+    \item y=a/x のグラフは双曲線、漸近線は x=0 と y=0
+    \item y=a/(x-p)+q は漸近線が x=p と y=q に移動する
     \item 定義域・値域は漸近線の「除外点」から読み取る
   \end{itemize}
 

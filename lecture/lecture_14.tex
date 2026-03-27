@@ -4,52 +4,46 @@
 
 \newcommand{\LectureNum}{14}
 \newcommand{\LectureTitle}{問題演習}
-\newcommand{\TextPages}{pp.\,98-100（練習問題2-A, 2-B）}
+\newcommand{\TextPages}{p.\,98-100（練習問題2-A, 2-B）}
 \newcommand{\NextTopic}{前期復習}
-\newcommand{\NextPages}{pp.\,72-100}
+\newcommand{\NextPages}{p.\,72-100}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
 \begin{document}
 
 % -----------------------------------------------
-% スライド1: 表紙＋目標
+% スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：べき関数・分数関数・無理関数・逆関数を総合的に理解する}
 
 \end{frame}
 
 % -----------------------------------------------
-% スライド2: 公式まとめ（いろいろな関数）
+% スライド2: 公式・性質
 % -----------------------------------------------
-\begin{frame}{公式まとめ（いろいろな関数）}
+\begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item $y=x^n$（$n$ 奇数：原点対称、$n$ 偶数：$y$ 軸対称）
-    \item $y=\dfrac{a}{x-p}+q$：漸近線 $x=p$、$y=q$
-    \item $y=\sqrt{x-p}+q$：始点 $(p,\,q)$、右上がりの曲線
-    \item $y=f^{-1}(x)$：$x$ と $y$ を入れ替えて $y$ について解く
+    \item % TODO: 内容を追加
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 演習（練習2-A）
+% スライド3: 図・グラフ（TikZコードを手動追加）
 % -----------------------------------------------
-\begin{frame}{演習（練習2-A）}
-  \begin{block}{練習2-A p.99\quad 自分で解いてみよう}
-    （ノートに解くこと）
-  \end{block}
-\end{frame}
-
-% -----------------------------------------------
-% スライド4: 演習（練習2-B）
-% -----------------------------------------------
-\begin{frame}{演習（練習2-B）}
-  \begin{block}{練習2-B p.100\quad 自分で解いてみよう}
-    （ノートに解くこと）
-  \end{block}
+\begin{frame}{図・グラフ}
+  \centering
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
 \end{frame}
 
 % -----------------------------------------------

@@ -4,9 +4,9 @@
 
 \newcommand{\LectureNum}{04}
 \newcommand{\LectureTitle}{２次関数の最大・最小}
-\newcommand{\TextPages}{pp.\,79-81}
+\newcommand{\TextPages}{p.\,79-81}
 \newcommand{\NextTopic}{２次関数と２次方程式（１）}
-\newcommand{\NextPages}{pp.\,81-83}
+\newcommand{\NextPages}{p.\,81-83}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
@@ -16,14 +16,15 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：頂点の位置と定義域から最大値・最小値を求められる}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{最大値}] 関数が取り得る最も大きい値（存在しない場合もある）
-    \item[\kw{最小値}] 関数が取り得る最も小さい値（存在しない場合もある）
-    \item[\kw{定義域なし}] $a>0$ のとき頂点で最小、$a<0$ のとき頂点で最大
-    \item[\kw{定義域あり}] 軸の位置により、端点と頂点を比較して最大・最小を決定する
+    \item[\kw{最大値}] ~
+    \item[\kw{最小値}] ~
+    \item[\kw{定義域なしの場合}] ~
+    \item[\kw{定義域ありの場合}] ~
   \end{description}
   \end{block}
 \end{frame}
@@ -34,16 +35,30 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item $a>0$：頂点 $(p,\,q)$ で最小値 $q$（最大値なし）
-    \item $a<0$：頂点 $(p,\,q)$ で最大値 $q$（最小値なし）
-    \item 定義域 $[\alpha,\,\beta]$ あり：①軸が定義域内 → 頂点と両端を比較
-    \item \phantom{定義域 $[\alpha,\,\beta]$ あり：}②軸が定義域外 → 端点のみを比較
+    \item a>0：頂点で最小値
+    \item a<0：頂点で最大値
+    \item 定義域あり：端点・頂点を比較する手順
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 例1→問1
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: 定義域なし（頂点が最小）vs 定義域あり（軸の位置で場合分け）
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例題3) p.79（定義域なし）}
@@ -58,7 +73,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド4: 例2→問2
+% スライド5: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{例題4) p.80（定義域あり）}
@@ -77,7 +92,7 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item $a>0$ のとき頂点で最小値、$a<0$ のとき頂点で最大値
+    \item a>0 のとき頂点で最小値、a<0 のとき頂点で最大値
     \item 定義域が限定されているときは端点と頂点を比較する
     \item 軸が定義域の内側か外側かで場合分けが必要
   \end{itemize}

@@ -4,9 +4,9 @@
 
 \newcommand{\LectureNum}{11}
 \newcommand{\LectureTitle}{分数関数（２）}
-\newcommand{\TextPages}{pp.\,93}
+\newcommand{\TextPages}{p.\,93}
 \newcommand{\NextTopic}{無理関数}
-\newcommand{\NextPages}{pp.\,94-95}
+\newcommand{\NextPages}{p.\,94-95}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{前期}
 
@@ -16,12 +16,13 @@
 % スライド1: 表紙＋目標＋用語・定義
 % -----------------------------------------------
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
-  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
+  {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages\quad
+  \textbf{目標}：y=(cx+d)/(x+b) 型の分数関数のグラフを描ける}
 
   \begin{block}{用語・定義}
   \begin{description}[labelwidth=5.5em]
-    \item[\kw{変形の方針}] $y=\dfrac{cx+d}{x+b}$ の分子を分母で割り、$y=c+\dfrac{r}{x+b}$ の形にする
-    \item[\kw{漸近線の読み取り}] $y=\dfrac{r}{x+b}+c$ の形から漸近線 $x=-b$、$y=c$ を読み取る
+    \item[\kw{変形の方針（分子÷分母）}] ~
+    \item[\kw{漸近線の読み取り方}] ~
   \end{description}
   \end{block}
 \end{frame}
@@ -32,14 +33,29 @@
 \begin{frame}{公式・性質}
   \begin{block}{}
   \begin{itemize}
-    \item 変形の手順：$y=\dfrac{cx+d}{x+b}$ $\longrightarrow$ $y=c+\dfrac{d-bc}{x+b}$
-    \item 例：$\dfrac{3x+7}{x+2} = 3+\dfrac{1}{x+2}$　→　漸近線 $x=-2$、$y=3$
+    \item y=(cx+d)/(x+b) → y=c+(d-bc)/(x+b) の変形手順
+    \item 例：(3x+7)/(x+2) = 3+1/(x+2)
   \end{itemize}
   \end{block}
 \end{frame}
 
 % -----------------------------------------------
-% スライド3: 例1→問1
+% スライド3: 図・グラフ（TikZコードを手動追加）
+% -----------------------------------------------
+\begin{frame}{図・グラフ}
+  \centering
+  % TODO: y=(3x+7)/(x+2) のグラフと漸近線 x=-2、y=3
+  \begin{tikzpicture}[scale=0.65]
+    \draw[->,thick] (-3.5,0) -- (4.5,0) node[right]{$x$};
+    \draw[->,thick] (0,-2.5) -- (0,4.5) node[above]{$y$};
+    \node[below left] at (0,0) {O};
+    \draw[gray!40, very thin] (-3,-2) grid (4,4);
+    % ここにグラフを描画
+  \end{tikzpicture}
+\end{frame}
+
+% -----------------------------------------------
+% スライド4: 例1→問1
 % -----------------------------------------------
 \begin{frame}{例1→問1}
   \begin{exampleblock}{例) p.93（変形とグラフ）}
@@ -54,7 +70,7 @@
 \end{frame}
 
 % -----------------------------------------------
-% スライド4: 例2→問2
+% スライド5: 例2→問2
 % -----------------------------------------------
 \begin{frame}{例2→問2}
   \begin{exampleblock}{練習2-A 問4) p.99（係数を求める）}
@@ -73,7 +89,7 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item $y=\dfrac{cx+d}{x+b}$ は分子÷分母で $y=c+\dfrac{r}{x+b}$ に変形する
+    \item y=(cx+d)/(x+b) は分子÷分母で y=q+r/(x+b) に変形する
     \item 変形後の形から漸近線を読み取り、双曲線をかく
   \end{itemize}
 

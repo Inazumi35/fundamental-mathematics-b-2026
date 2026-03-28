@@ -1,0 +1,62 @@
+\documentclass[a4paper,10pt,twocolumn]{article}
+\usepackage{kaitoushu}
+\renewcommand{\baselinestretch}{1.2}
+\problemrange{問題 XXX-YYY}
+
+\begin{document}
+\thispagestyle{fancy}
+
+%%% --- 問題（グラフなし）の例 ---
+
+\mondai{XXX}{
+問題文をここに書く。
+\[
+y = x^2 + 2x + 1
+\]
+}
+
+\kotae{
+\begin{align*}
+y &= x^2 + 2x + 1 \\
+&= (x + 1)^2
+\end{align*}
+
+頂点: $(-1, 0)$
+}
+
+%%% --- 問題（グラフあり）の例 ---
+
+\mondai{YYY}{
+次の2次関数のグラフをかけ。
+\[
+y = (x - 1)^2 + 2
+\]
+}
+
+\kotae{
+頂点 $(1, 2)$、軸 $x = 1$
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+    axis lines=middle,
+    xlabel={$x$},
+    ylabel={$y$},
+    xmin=-1, xmax=3,
+    ymin=0, ymax=6,
+    xtick={0,1,2},
+    ytick={0,2},
+    samples=100,
+    width=\linewidth,
+    height=0.75\linewidth
+]
+\addplot[blue, thick, domain=-0.5:2.5] {(x-1)^2 + 2};
+\addplot[only marks, mark=*, red] coordinates {(1,2)};
+\node[above right] at (axis cs:1,2) {$(1,2)$};
+\addplot[dashed, gray] coordinates {(1,0) (1,6)};
+\end{axis}
+\end{tikzpicture}
+\end{center}
+}
+
+\end{document}

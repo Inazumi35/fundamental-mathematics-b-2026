@@ -1,0 +1,123 @@
+\documentclass[a4paper,10pt,twocolumn]{ltjarticle}
+\usepackage{kaitoushu}
+
+\pgfplotsset{
+  myaxis/.style={
+    axis lines=middle,
+    xlabel={$x$}, ylabel={$y$},
+    every axis x label/.style={at={(ticklabel* cs:1)},anchor=west},
+    every axis y label/.style={at={(ticklabel* cs:1)},anchor=south},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    width=5.5cm, height=5cm,
+    grid=none,
+    samples=200,
+  }
+}
+
+\begin{document}
+
+\problemrange{5章：三角関数 — Check (p.70) 加法定理・倍角・合成（問326--336）}
+
+
+
+\mondai{326}{次の値を求めよ．}
+\kotae{
+(1) $\cos\dfrac{5\pi}{12}=\cos(75°)=\cos(45°+30°)=\dfrac{\sqrt{6}-\sqrt{2}}{4}$
+
+(2) $\sin\dfrac{\pi}{12}=\sin(15°)=\sin(45°-30°)=\dfrac{\sqrt{6}-\sqrt{2}}{4}$
+
+(3) $\tan\dfrac{7\pi}{12}=\tan(105°)=\tan(60°+45°)=\dfrac{\sqrt{3}+1}{1-\sqrt{3}}=-(2+\sqrt{3})$
+}
+
+\mondai{327}{$\sin\alpha=\dfrac{3}{5}$（$\alpha$鋭角），$\cos\beta=-\dfrac{12}{13}$（$\beta$鈍角）のとき，$\cos(\alpha+\beta)$を求めよ．}
+\kotae{
+$\cos\alpha=\dfrac{4}{5}$，$\sin\beta=\dfrac{5}{13}$
+
+$\cos(\alpha+\beta)=\dfrac{4}{5}\cdot\left(-\dfrac{12}{13}\right)-\dfrac{3}{5}\cdot\dfrac{5}{13}=-\dfrac{48}{65}-\dfrac{15}{65}=-\dfrac{63}{65}$
+}
+
+\mondai{328}{$\theta$が第1象限で$\sin\theta=\dfrac{5}{13}$のとき，$\sin2\theta$，$\cos2\theta$を求めよ．}
+\kotae{
+$\cos\theta=\dfrac{12}{13}$
+
+$\sin2\theta=2\cdot\dfrac{5}{13}\cdot\dfrac{12}{13}=\dfrac{120}{169}$
+
+$\cos2\theta=1-2\cdot\dfrac{25}{169}=\dfrac{119}{169}$
+}
+
+\mondai{329}{$0\leqq\theta<2\pi$ で $\sin\theta+\sqrt{3}\cos\theta=-1$ を解け．}
+\kotae{
+$\sin\theta+\sqrt{3}\cos\theta=2\sin\!\left(\theta+\dfrac{\pi}{3}\right)=-1$
+
+$\sin\!\left(\theta+\dfrac{\pi}{3}\right)=-\dfrac{1}{2}$
+
+$\theta+\dfrac{\pi}{3}=\dfrac{7\pi}{6},\;\dfrac{11\pi}{6}$
+
+$\theta=\dfrac{5\pi}{6},\;\dfrac{3\pi}{2}$
+}
+
+\mondai{330}{$0\leqq\theta<2\pi$ のとき，$y=\sin\theta-\sqrt{3}\cos\theta$ の最大値と最小値を求めよ．}
+\kotae{
+$y=2\sin\!\left(\theta-\dfrac{\pi}{3}\right)$
+
+最大値$2$（$\theta-\dfrac{\pi}{3}=\dfrac{\pi}{2}$，$\theta=\dfrac{5\pi}{6}$），最小値$-2$（$\theta=\dfrac{11\pi}{6}$）
+}
+
+\mondai{331}{$\tan\alpha+\tan\beta=\dfrac{\sin(\alpha+\beta)}{\cos\alpha\cos\beta}$ を証明せよ．}
+\kotae{
+左辺$=\dfrac{\sin\alpha}{\cos\alpha}+\dfrac{\sin\beta}{\cos\beta}=\dfrac{\sin\alpha\cos\beta+\cos\alpha\sin\beta}{\cos\alpha\cos\beta}=\dfrac{\sin(\alpha+\beta)}{\cos\alpha\cos\beta}=$右辺 \qed
+}
+
+\mondai{332}{$\sin(\alpha+\beta)\sin(\alpha-\beta)=\sin^{2}\alpha-\sin^{2}\beta$ を証明せよ．}
+\kotae{
+左辺$=(\sin\alpha\cos\beta+\cos\alpha\sin\beta)(\sin\alpha\cos\beta-\cos\alpha\sin\beta)$
+
+$=\sin^{2}\alpha\cos^{2}\beta-\cos^{2}\alpha\sin^{2}\beta$
+
+$=\sin^{2}\alpha(1-\sin^{2}\beta)-(1-\sin^{2}\alpha)\sin^{2}\beta$
+
+$=\sin^{2}\alpha-\sin^{2}\alpha\sin^{2}\beta-\sin^{2}\beta+\sin^{2}\alpha\sin^{2}\beta=\sin^{2}\alpha-\sin^{2}\beta=$右辺 \qed
+}
+
+\mondai{333}{2直線 $y=\dfrac{1}{2}x+1$，$y=2x-3$ のなす角$\theta$を求めよ．}
+\kotae{
+傾き$m_{1}=\dfrac{1}{2}$，$m_{2}=2$とすると
+
+$\tan\theta=\left|\dfrac{m_{1}-m_{2}}{1+m_{1}m_{2}}\right|=\left|\dfrac{\frac{1}{2}-2}{1+1}\right|=\left|\dfrac{-\frac{3}{2}}{2}\right|=\dfrac{3}{4}$
+
+$\theta=\arctan\dfrac{3}{4}\approx36.87°$
+}
+
+\mondai{334}{$\sin2\theta=2\sin\theta\cos\theta$ と $\cos2\theta=\cos^{2}\theta-\sin^{2}\theta$ を用いて $\tan2\theta=\dfrac{2\tan\theta}{1-\tan^{2}\theta}$ を導け．}
+\kotae{
+$\tan2\theta=\dfrac{\sin2\theta}{\cos2\theta}=\dfrac{2\sin\theta\cos\theta}{\cos^{2}\theta-\sin^{2}\theta}$
+
+分子分母を$\cos^{2}\theta$で割る：
+
+$=\dfrac{2\frac{\sin\theta}{\cos\theta}}{1-\frac{\sin^{2}\theta}{\cos^{2}\theta}}=\dfrac{2\tan\theta}{1-\tan^{2}\theta}$ \qed
+}
+
+\mondai{335}{$\cos^{4}\theta-\sin^{4}\theta=\cos2\theta$ を示せ．}
+\kotae{
+左辺$=(\cos^{2}\theta+\sin^{2}\theta)(\cos^{2}\theta-\sin^{2}\theta)=1\cdot\cos2\theta=$右辺 \qed
+}
+
+\mondai{336}{$0\leqq\theta<2\pi$ のとき $2\cos^{2}\theta+\sin\theta-1=0$ を解け．}
+\kotae{
+$\cos^{2}\theta=1-\sin^{2}\theta$ を代入：
+
+$2(1-\sin^{2}\theta)+\sin\theta-1=0$，$-2\sin^{2}\theta+\sin\theta+1=0$
+
+$2\sin^{2}\theta-\sin\theta-1=0$，$(2\sin\theta+1)(\sin\theta-1)=0$
+
+$\sin\theta=-\dfrac{1}{2}$ または $\sin\theta=1$
+
+$\sin\theta=1$：$\theta=\dfrac{\pi}{2}$
+
+$\sin\theta=-\dfrac{1}{2}$：$\theta=\dfrac{7\pi}{6},\;\dfrac{11\pi}{6}$
+
+$\therefore\theta=\dfrac{\pi}{2},\;\dfrac{7\pi}{6},\;\dfrac{11\pi}{6}$
+}
+
+\end{document}

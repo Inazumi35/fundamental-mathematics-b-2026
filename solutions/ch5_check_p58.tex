@@ -1,0 +1,81 @@
+\documentclass[a4paper,10pt,twocolumn]{ltjarticle}
+\usepackage{kaitoushu}
+
+\pgfplotsset{
+  myaxis/.style={
+    axis lines=middle,
+    xlabel={$x$}, ylabel={$y$},
+    every axis x label/.style={at={(ticklabel* cs:1)},anchor=west},
+    every axis y label/.style={at={(ticklabel* cs:1)},anchor=south},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    width=5.5cm, height=5cm,
+    grid=none,
+    samples=200,
+  }
+}
+
+\begin{document}
+
+\problemrange{5章：三角関数 — Check (p.58)（問272--278）}
+
+
+
+\mondai{272}{次の三角形で$\alpha$の三角比を求めよ．}
+\kotae{
+(1) 三辺 $\sqrt{2},\,\sqrt{7},\,3$（斜辺3）
+
+$\sin\alpha=\dfrac{\sqrt{2}}{3}$，$\cos\alpha=\dfrac{\sqrt{7}}{3}$，$\tan\alpha=\dfrac{\sqrt{2}}{\sqrt{7}}=\dfrac{\sqrt{14}}{7}$
+
+(2) 三辺 $1,\,2,\,\sqrt{5}$（斜辺$\sqrt{5}$）
+
+$\sin\alpha=\dfrac{2}{\sqrt{5}}=\dfrac{2\sqrt{5}}{5}$，$\cos\alpha=\dfrac{1}{\sqrt{5}}=\dfrac{\sqrt{5}}{5}$，$\tan\alpha=2$
+}
+
+\mondai{273}{図において，$\tan15°$の値を求めよ．}
+\kotae{
+加法定理：$\tan15°=\tan(45°-30°)=\dfrac{\tan45°-\tan30°}{1+\tan45°\tan30°}=\dfrac{1-\frac{1}{\sqrt{3}}}{1+\frac{1}{\sqrt{3}}}=\dfrac{\sqrt{3}-1}{\sqrt{3}+1}=2-\sqrt{3}$
+}
+
+\mondai{274}{傾斜角$34°$，距離815\,mのケーブルカーの標高差．}
+\kotae{
+$815\sin34°=815\times0.5592\approx456$\,m
+}
+
+\mondai{275}{次の式の値を求めよ．}
+\kotae{
+(1) $\sin60°\cos30°+\cos120°\sin150°+\sin135°\cos180°$
+
+$=\dfrac{3}{4}-\dfrac{1}{4}-\dfrac{\sqrt{2}}{2}=\dfrac{1-\sqrt{2}}{2}$
+
+(2) $\dfrac{\tan30°-\tan135°-\tan180°}{1+\tan120°\tan45°}$
+
+$=\dfrac{\frac{1}{\sqrt{3}}+1-0}{1-\sqrt{3}}=\dfrac{\frac{\sqrt{3}+1}{\sqrt{3}}}{1-\sqrt{3}}=\dfrac{\sqrt{3}+1}{\sqrt{3}(1-\sqrt{3})}=-\dfrac{2\sqrt{3}+3}{3}$
+}
+
+\mondai{276}{$\alpha$鈍角，$\cos\alpha=-\dfrac{2}{5}$のとき．}
+\kotae{
+$\sin\alpha=\dfrac{\sqrt{21}}{5}$，$\tan\alpha=-\dfrac{\sqrt{21}}{2}$
+}
+
+\mondai{277}{$\alpha$鈍角，$\tan\alpha=-3$のとき．}
+\kotae{
+$\cos\alpha=-\dfrac{\sqrt{10}}{10}$，$\sin\alpha=\dfrac{3\sqrt{10}}{10}$
+}
+
+\mondai{278}{$\triangle$ABCの計算．}
+\kotae{
+(1) $a=\sqrt{6}$，$B=105°$，$C=30°$ → $A=45°$
+
+$2R=\dfrac{\sqrt{6}}{\sin45°}=2\sqrt{3}$，$R=\sqrt{3}$，$c=2\sqrt{3}\sin30°=\sqrt{3}$
+
+(2) $a=3$，$b=5$，$C=120°$
+
+$c^{2}=9+25+15=49$，$c=7$，$S=\dfrac{15\sqrt{3}}{4}$
+
+(3) $a=3$，$b=8$，$c=7$
+
+$\cos B=\dfrac{9+49-64}{42}=-\dfrac{1}{7}$，$\sin B=\dfrac{4\sqrt{3}}{7}$，$S=6\sqrt{3}$
+}
+
+\end{document}

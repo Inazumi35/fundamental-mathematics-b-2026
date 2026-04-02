@@ -1,0 +1,93 @@
+\documentclass[a4paper,10pt,twocolumn]{ltjarticle}
+\usepackage{kaitoushu}
+
+\pgfplotsset{
+  myaxis/.style={
+    axis lines=middle,
+    xlabel={$x$}, ylabel={$y$},
+    every axis x label/.style={at={(ticklabel* cs:1)},anchor=west},
+    every axis y label/.style={at={(ticklabel* cs:1)},anchor=south},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    width=5.5cm, height=5cm,
+    grid=none,
+    samples=200,
+  }
+}
+
+\begin{document}
+
+\problemrange{5章：三角関数 — Basic (p.56)（問255--261）}
+
+
+
+\mondai{255}{次の三角形において，$\alpha$の三角比を求めよ．}
+\kotae{
+$\sin=\dfrac{\text{対辺}}{\text{斜辺}}$，$\cos=\dfrac{\text{隣辺}}{\text{斜辺}}$，$\tan=\dfrac{\text{対辺}}{\text{隣辺}}$
+
+(1) 三辺 $2,\,1,\,\sqrt{3}$（斜辺2）
+
+$\sin\alpha=\dfrac{1}{2}$，$\cos\alpha=\dfrac{\sqrt{3}}{2}$，$\tan\alpha=\dfrac{1}{\sqrt{3}}=\dfrac{\sqrt{3}}{3}$
+
+(2) 三辺 $\sqrt{7},\,\sqrt{3},\,2$（$(\sqrt{3})^{2}+2^{2}=7$ より斜辺 $\sqrt{7}$）
+
+$\sin\alpha=\dfrac{2}{\sqrt{7}}=\dfrac{2\sqrt{7}}{7}$，$\cos\alpha=\dfrac{\sqrt{3}}{\sqrt{7}}=\dfrac{\sqrt{21}}{7}$，$\tan\alpha=\dfrac{2}{\sqrt{3}}=\dfrac{2\sqrt{3}}{3}$
+
+(3) 三辺 $12,\,13,\,5$（$5^{2}+12^{2}=169=13^{2}$ より斜辺13）
+
+$\sin\alpha=\dfrac{12}{13}$，$\cos\alpha=\dfrac{5}{13}$，$\tan\alpha=\dfrac{12}{5}$
+}
+
+\mondai{256}{次の式の値を求めよ．}
+\kotae{
+加法定理を逆に使って1つにまとめる．
+
+(1) $\sin60°\cos30°-\cos60°\sin30°=\sin(60°-30°)=\sin30°=\dfrac{1}{2}$
+
+(2) $\cos30°\cos60°+\sin30°\sin60°=\cos(30°-60°)=\cos30°=\dfrac{\sqrt{3}}{2}$
+
+(3) $\dfrac{\tan60°-\tan45°}{1+\tan60°\tan45°}=\tan(60°-45°)=\tan15°$
+
+$=\dfrac{\sqrt{3}-1}{1+\sqrt{3}}=\dfrac{(\sqrt{3}-1)^{2}}{2}=2-\sqrt{3}$
+}
+
+\mondai{257}{三角関数表を用いて，次の三角比を求めよ．}
+\kotae{
+(1) $\sin6°\approx0.1045$\quad (2) $\cos33°\approx0.8387$\quad (3) $\tan84°\approx9.5144$
+}
+
+\mondai{258}{高さ634\,mのスカイツリーを見上げる角度が22°のとき，距離を求めよ．}
+\kotae{
+$\tan22°=\dfrac{634}{d}$，$d=\dfrac{634}{\tan22°}\approx\dfrac{634}{0.4040}\approx1569$\,m
+}
+
+\mondai{259}{次の三角比を $45°$ より小さい角の三角比で表せ．}
+\kotae{
+(1) $\sin81°=\cos9°$\quad (2) $\cos56°=\sin34°$\quad (3) $\tan77°=\dfrac{1}{\tan13°}$
+}
+
+\mondai{260}{次の式の値を求めよ．}
+\kotae{
+(1) $\sin45°\cos135°-\cos45°\sin135°=\sin(45°-135°)=\sin(-90°)=-1$
+
+(2) $\dfrac{\tan45°-\tan150°}{1+\tan45°\tan150°}=\tan(45°-150°)$
+
+$\tan150°=-\dfrac{1}{\sqrt{3}}$ より $=\dfrac{1+\frac{1}{\sqrt{3}}}{1-\frac{1}{\sqrt{3}}}=\dfrac{\sqrt{3}+1}{\sqrt{3}-1}=2+\sqrt{3}$
+
+(3) $\cos120°\cos150°+\tan120°\sin150°+\sin120°\tan135°$
+
+$=\left(-\dfrac{1}{2}\right)\!\left(-\dfrac{\sqrt{3}}{2}\right)+(-\sqrt{3})\cdot\dfrac{1}{2}+\dfrac{\sqrt{3}}{2}\cdot(-1)=\dfrac{\sqrt{3}}{4}-\dfrac{\sqrt{3}}{2}-\dfrac{\sqrt{3}}{2}=-\dfrac{3\sqrt{3}}{4}$
+}
+
+\mondai{261}{三角関数表を用いて，次の三角比を求めよ．}
+\kotae{
+$\sin(180°-\theta)=\sin\theta$，$\cos(180°-\theta)=-\cos\theta$，$\tan(180°-\theta)=-\tan\theta$
+
+(1) $\sin100°=\sin80°\approx0.9848$
+
+(2) $\cos176°=-\cos4°\approx-0.9976$
+
+(3) $\tan111°=-\tan69°\approx-2.6051$
+}
+
+\end{document}

@@ -1,0 +1,214 @@
+% !TEX program = lualatex
+% ============================================================
+% 基礎数学B　前期中間試験
+% ============================================================
+% 使い方:
+%   1. 配点を \tiny{（xx点）} の部分に記入
+%   2. 問題文を各問題ブロックに記入
+%   3. lualatex でコンパイル
+% ============================================================
+
+\documentclass[twocolumn,a4paper,10pt]{ltjsarticle}
+
+% --- 日本語 ---
+\usepackage{luatexja}
+\usepackage[yu-win10]{luatexja-preset}
+
+% --- レイアウト ---
+\usepackage[margin=20truemm]{geometry}
+\geometry{landscape}                % A4横 2段組み
+
+% --- 数式 ---
+\usepackage{amsmath,amssymb}
+
+% --- その他 ---
+\usepackage{graphicx}
+\setlength{\columnseprule}{0.5pt}
+\pagestyle{empty}
+
+% ============================================================
+% 編集エリア
+% ============================================================
+\newcommand{\ExamTitle}{基礎数学B}
+\newcommand{\ExamTerm}{2026年度 前期中間試験 問題用紙}
+\newcommand{\ExamClass}{（1I・1C・1A）}
+\newcommand{\ExamTime}{50分}
+\newcommand{\ExamTarget}{到達目標1：問題1～問題12}
+% 試験範囲：第1〜7回（関数とグラフ〜２次関数と２次不等式）
+
+% ============================================================
+\begin{document}
+\small
+%
+\begin{flushleft}
+\ExamTerm \quad \ExamTitle \ExamClass 試験時間\ExamTime\\
+\vspace{2mm}
+学科\hspace{15mm} 出席番号 \hspace{15mm} 名前\hspace{120mm}
+%
+\hspace{10mm}
+
+\begin{itemize}
+\itemsep=-0.4mm
+\item 各問題の解答は解答用紙の対応する枠内に記入すること．
+\item 解答用紙のマークシートの学年は1を記入・マークすること．
+\item 解答用紙のマークシートのクラスは，M:01，E:02，I:03，C:04，A:05に対応する2桁の数字を記入・マークすること．
+\item 解答用紙のマークシートの番号は，出席番号を3桁に変換して記入・マークすること．
+\item 答えしか書かれていない問題は0点となる．
+\item 各問題の解答の最終的な形は，各自で適切に判断すること．
+\item \ExamTarget
+\end{itemize}
+
+
+%
+\end{flushleft}
+
+% ============================================================
+% 問題
+% ============================================================
+
+%143
+\begin{description}
+  \item[問題1]
+  $f(x)=3x+1$のとき，$f(2)$，$f(a-2)$を求めよ．
+  \tiny{（8点）}
+\end{description}
+\vspace{20mm}
+
+%144(1)
+\begin{description}
+  \item[問題2]
+  次の関数の()内の定義域に対する値域を求めよ．
+  \tiny{（8点）}
+  \normalsize
+  \begin{equation}
+    y=2x+1 \hspace{10mm} (-1 \leqq x \leqq 2)  \nonumber
+  \end{equation}
+\end{description}
+\vspace{30mm}
+
+%147(6)
+\begin{description}
+  \item[問題3]
+  次の2次関数を標準形に直せ．
+  \tiny{（8点）}
+    \normalsize
+  \begin{equation}
+    y=-2x^2-3x+2  \nonumber
+  \end{equation}
+
+\end{description}
+\vspace{30mm}
+
+\newpage
+
+%149(1)
+\begin{description}
+  \item[問題4]
+  次の条件を満たし，$y$軸に平行な軸を持つ放物線の方程式を求めよ．
+  \tiny{（8点）}
+  \normalsize
+  \begin{itemize}
+    \item 3点$(1,0)$，$(0,3)$，$(2,-1)$を通る．
+  \end{itemize}
+\end{description}
+\vspace{35mm}
+
+
+
+%150(1)
+\begin{description}
+  \item[問題5]
+  次の2次関数の最大値または最小値を求めよ．
+  \tiny{（8点）}
+  %
+  \normalsize
+  \begin{equation}
+    y=x^2-4x+8  \nonumber
+  \end{equation}
+  %
+\end{description}
+\vspace{50mm}
+
+%152
+\begin{description}
+  \item[問題6]
+  底辺の長さと高さの和が8cmである三角形の底辺の長さを$x$cmとするとき，三角形の面積が最大となる
+  $x$の値とその最大値を求めよ．
+  \tiny{（8点）}
+\end{description}
+\vspace{50mm}
+
+%153(1)
+\begin{description}
+  \item[問題7]
+  次の2次関数のグラフと$x$軸との共有点を調べよ．また，共有点をもつときは，その$x$座標を求めよ．
+  \tiny{（8点）}
+  %
+  \normalsize
+  \begin{equation}
+    y=2x^2+5x+1  \nonumber
+  \end{equation}
+  %
+\end{description}
+\vspace{30mm}
+
+
+
+
+%154(3)
+\begin{description}
+  \item[問題8]
+  次の2次関数のグラフが()内の条件を満たすように，定数$k$の値または値の範囲を定めよ．
+  \tiny{（8点）}
+  %
+  \normalsize
+  \begin{equation}
+    y=kx^2+x-1 \hspace{10mm} (x軸と共有点をもたない) \nonumber
+  \end{equation}
+  %
+
+\end{description}
+\vspace{30mm}
+
+%155(2)
+\begin{description}
+  \item[問題9]
+  次の2次不等式を解け．
+  \tiny{（8点）}
+  %
+  \normalsize
+  \begin{equation}
+    x^2-2x-1<0 \nonumber
+  \end{equation}
+  %
+\end{description}
+\vspace{30mm}
+
+\newpage
+
+%156改
+\begin{description}
+  \item[問題10]
+  放物線$y=\frac{1}{2}x^2$を$x$軸方向に$-2$，$y$軸方向に1平行移動した放物線の方程式を
+  求めよ．
+  \tiny{（8点）}
+\end{description}
+\vspace{30mm}
+
+%練習1Aの6
+\begin{description}
+  \item[問題11]
+  2次関数$y=x^2-3x-4$のグラフを$x$軸方向にどれだけ平行移動すれば，原点を通るようにできるか．
+  \tiny{（10点）}
+\end{description}
+\vspace{30mm}
+
+%160
+\begin{description}
+  \item[問題12]
+  放物線$y=-x^2+6x+1$は，放物線$y=-x^2-2x+3$をどのように平行移動したものか．
+  \tiny{（10点）}
+\end{description}
+
+
+\end{document}

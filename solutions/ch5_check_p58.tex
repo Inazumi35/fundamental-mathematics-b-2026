@@ -34,7 +34,29 @@ $\sin\alpha=\dfrac{2}{\sqrt{5}}=\dfrac{2\sqrt{5}}{5}$，$\cos\alpha=\dfrac{1}{\s
 
 \mondai{273}{図において，$\tan15°$の値を求めよ．}
 \kotae{
-加法定理：$\tan15°=\tan(45°-30°)=\dfrac{\tan45°-\tan30°}{1+\tan45°\tan30°}=\dfrac{1-\frac{1}{\sqrt{3}}}{1+\frac{1}{\sqrt{3}}}=\dfrac{\sqrt{3}-1}{\sqrt{3}+1}=2-\sqrt{3}$
+二等辺三角形の外角を利用して，$15°$ をつくる．
+
+$\triangle$ABD は $BA=BD$ の二等辺三角形だから，底角は等しく
+
+$\angle BAD=\angle BDA$
+
+$\angle DBC$ は $\triangle$ABD の頂点 B における外角なので，
+隣り合わない2つの内角の和に等しい．
+
+$\angle DBC=\angle BAD+\angle BDA=2\,\angle BAD$
+
+$\angle DBC=30°$ より $\angle BAD=15°$
+
+次に長さを求める．直角三角形 DBC で $\angle C=90°$，$\angle DBC=30°$ だから，
+$BD=2$ とすると
+
+$DC=BD\sin30°=1$，$BC=BD\cos30°=\sqrt{3}$
+
+$AB=BD=2$ より $AC=AB+BC=2+\sqrt{3}$
+
+直角三角形 ADC において $\angle DAC=15°$ だから
+
+$\tan15°=\dfrac{DC}{AC}=\dfrac{1}{2+\sqrt{3}}=\dfrac{2-\sqrt{3}}{(2+\sqrt{3})(2-\sqrt{3})}=\dfrac{2-\sqrt{3}}{1}=2-\sqrt{3}$
 }
 
 \mondai{274}{傾斜角$34°$，距離815\,mのケーブルカーの標高差．}

@@ -10,4 +10,12 @@
 texput.*
 __pycache__/
 *.pyc
+
+# 試験ファイルは public に置かない（fund-math-b-exams で管理）
+# past_exams/ は実施後の公開用なので除外しない
 exam/
+exam*/
+/exam_*.tex
+/exam_*.pdf
+/*試験*.tex
+/*試験*.pdf

@@ -1,0 +1,185 @@
+\documentclass[a4paper,10pt,twocolumn]{ltjarticle}
+\usepackage{kaitoushu}
+
+\begin{document}
+
+\problemrange{5章：三角関数 — 練習問題1・A (p.138)}
+
+\mondai{1}{三角関数表を用いて，図の $x$，$y$ を求めよ．}
+\kotae{
+直角三角形なので，与えられた辺が斜辺か隣辺かを見分けて使い分ける．
+
+\textbf{(1)} $32°$，斜辺 $3$
+
+$x$ は $32°$ の対辺，$y$ は隣辺だから
+
+$x=3\sin32°=3\times0.5299=1.5897\approx1.59$
+
+$y=3\cos32°=3\times0.8480=2.5440\approx2.54$
+
+\textbf{(2)} $57°$，隣辺 $4$
+
+$x$ は $57°$ の対辺だから $\tan$ を使う．
+
+$x=4\tan57°=4\times1.5399=6.1596\approx6.16$
+
+$y$ は斜辺で，$\cos57°=\dfrac{4}{y}$ より
+
+$y=\dfrac{4}{\cos57°}=\dfrac{4}{0.5446}=7.3448\approx7.34$
+}
+
+\mondai{2}{$\alpha$ は鈍角で $\sin\alpha=\dfrac{3}{5}$ のとき，$\dfrac{5\cos\alpha-2}{8\tan\alpha+5}$ の値を求めよ．}
+\kotae{
+まず $\cos\alpha$，$\tan\alpha$ を求める．
+
+$\sin^{2}\alpha+\cos^{2}\alpha=1$ より
+
+$\cos^{2}\alpha=1-\dfrac{9}{25}=\dfrac{16}{25}$
+
+$\alpha$ は鈍角（$90°<\alpha<180°$）だから $\cos\alpha<0$．
+
+$\cos\alpha=-\dfrac{4}{5}$，
+$\tan\alpha=\dfrac{\sin\alpha}{\cos\alpha}=\dfrac{3/5}{-4/5}=-\dfrac{3}{4}$
+
+これを代入して
+
+$\dfrac{5\cos\alpha-2}{8\tan\alpha+5}
+=\dfrac{5\cdot\left(-\frac{4}{5}\right)-2}{8\cdot\left(-\frac{3}{4}\right)+5}
+=\dfrac{-4-2}{-6+5}=\dfrac{-6}{-1}=6$
+}
+
+\mondai{3}{次の等式を証明せよ．}
+\kotae{
+\textbf{(1)} $\sin^{4}\theta-\cos^{4}\theta=1-2\cos^{2}\theta$
+
+左辺を $2$ 乗の差とみて因数分解する．
+
+左辺 $=(\sin^{2}\theta+\cos^{2}\theta)(\sin^{2}\theta-\cos^{2}\theta)$
+
+$\sin^{2}\theta+\cos^{2}\theta=1$ だから
+
+$=\sin^{2}\theta-\cos^{2}\theta$
+
+さらに $\sin^{2}\theta=1-\cos^{2}\theta$ を代入して
+
+$=(1-\cos^{2}\theta)-\cos^{2}\theta=1-2\cos^{2}\theta=$ 右辺 \qed
+
+\medskip
+\textbf{(2)} $\tan^{2}\theta+(1-\tan^{4}\theta)\cos^{2}\theta=1$
+
+$1+\tan^{2}\theta=\dfrac{1}{\cos^{2}\theta}$，すなわち
+$(1+\tan^{2}\theta)\cos^{2}\theta=1$ を使う．
+
+左辺の $1-\tan^{4}\theta$ を因数分解すると
+
+$1-\tan^{4}\theta=(1-\tan^{2}\theta)(1+\tan^{2}\theta)$
+
+よって
+
+左辺 $=\tan^{2}\theta+(1-\tan^{2}\theta)\underbrace{(1+\tan^{2}\theta)\cos^{2}\theta}_{=1}$
+
+$=\tan^{2}\theta+(1-\tan^{2}\theta)=1=$ 右辺 \qed
+}
+
+\mondai{4}{$\triangle$ABC について，次の問いに答えよ．}
+\kotae{
+\textbf{(1)} $A=85°$，$B=65°$，$c=5$ のとき，$a$，$b$ を求めよ．
+
+まず残りの角を求める．
+
+$C=180°-85°-65°=30°$
+
+正弦定理 $\dfrac{a}{\sin A}=\dfrac{c}{\sin C}$ より
+
+$a=\dfrac{c\sin A}{\sin C}=\dfrac{5\sin85°}{\sin30°}
+=\dfrac{5\times0.9962}{0.5}=9.962\approx9.96$
+
+$b=\dfrac{c\sin B}{\sin C}=\dfrac{5\sin65°}{\sin30°}
+=\dfrac{5\times0.9063}{0.5}=9.063\approx9.06$
+
+\medskip
+\textbf{(2)} $a=4$，$b=3$，$c=\sqrt{37}$ のとき，$C$ を求めよ．
+
+3辺がわかっているので余弦定理を使う．
+
+$\cos C=\dfrac{a^{2}+b^{2}-c^{2}}{2ab}
+=\dfrac{16+9-37}{2\cdot4\cdot3}=\dfrac{-12}{24}=-\dfrac{1}{2}$
+
+$0°<C<180°$ より
+
+$\therefore C=120°$
+}
+
+\mondai{5}{$\triangle$ABC において，等式 $\cos C=\dfrac{\sin A}{\sin B}$ が成り立つとき，次の問いに答えよ．ただし，$R$ は $\triangle$ABC の外接円の半径とする．}
+\kotae{
+\textbf{(1)} 等式を $a$，$b$，$c$，$R$ の関係式に直せ．
+
+正弦定理 $\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=2R$ より
+
+$\sin A=\dfrac{a}{2R}$，$\sin B=\dfrac{b}{2R}$
+
+よって右辺は
+
+$\dfrac{\sin A}{\sin B}=\dfrac{a/(2R)}{b/(2R)}=\dfrac{a}{b}$
+
+（$2R$ が約分され，$R$ は消える．）
+
+左辺は余弦定理より
+
+$\cos C=\dfrac{a^{2}+b^{2}-c^{2}}{2ab}$
+
+したがって
+
+$\dfrac{a^{2}+b^{2}-c^{2}}{2ab}=\dfrac{a}{b}$
+
+両辺に $2ab$ を掛けて
+
+$a^{2}+b^{2}-c^{2}=2a^{2}$
+
+$\therefore b^{2}=a^{2}+c^{2}$
+
+\medskip
+\textbf{(2)} $\triangle$ABC はどんな三角形か．
+
+(1) より $b^{2}=a^{2}+c^{2}$．
+三平方の定理の逆から，最大辺 $b$ に向かい合う角 $B$ が直角である．
+
+$\therefore \angle B=90°$ の直角三角形
+}
+
+\mondai{6}{図の台形について，辺 AB の長さおよび面積 $S$ を求めよ．
+（$AD\parallel BC$，$AD=4$，$BC=8$，$\angle B=70°$，$\angle C=57°$）}
+\kotae{
+A，D から辺 BC に垂線 AH，DK を下ろす．
+$AD\parallel BC$ だから $AH=DK$ で，これを高さ $h$ とおく．
+
+$HK=AD=4$ であり，直角三角形 ABH，DKC において
+
+$BH=\dfrac{h}{\tan70°}$，$KC=\dfrac{h}{\tan57°}$
+
+$BC=BH+HK+KC$ だから
+
+$\dfrac{h}{\tan70°}+4+\dfrac{h}{\tan57°}=8$
+
+$h\left(\dfrac{1}{\tan70°}+\dfrac{1}{\tan57°}\right)=4$
+
+三角関数表より $\tan70°=2.7475$，$\tan57°=1.5399$ なので
+
+$\dfrac{1}{2.7475}+\dfrac{1}{1.5399}=0.3640+0.6494=1.0134$
+
+$h=\dfrac{4}{1.0134}=3.9471\approx3.95$
+
+次に AB を求める．直角三角形 ABH で
+$\sin70°=\dfrac{h}{AB}$ だから
+
+$AB=\dfrac{h}{\sin70°}=\dfrac{3.9471}{0.9397}=4.2004\approx4.20$
+
+面積は台形の公式より
+
+$S=\dfrac{1}{2}(AD+BC)\times h
+=\dfrac{1}{2}(4+8)\times3.9471=6\times3.9471=23.68$
+
+$\therefore AB\approx4.20$，$S\approx23.7$
+}
+
+\end{document}

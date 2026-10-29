@@ -4,9 +4,7 @@
 
 \newcommand{\LectureNum}{1}
 \newcommand{\LectureTitle}{累乗根・指数の拡張（１）}
-\newcommand{\TextPages}{pp.\,102-104}
-\newcommand{\NextTopic}{累乗根・指数の拡張（２）}
-\newcommand{\NextPages}{pp.\,104-106}
+\newcommand{\TextPages}{pp.\,102--104}
 \newcommand{\CourseName}{基礎数学B}
 \renewcommand{\TermName}{後期}
 
@@ -18,12 +16,16 @@
 \begin{frame}{\CourseName\quad 第\LectureNum 回「\LectureTitle 」}
   {\small \TermName\quad \TeacherName\quad ／\quad 教科書 \TextPages}
 
+  \begin{block}{目標}
+    $n$ 乗根の定義と性質を理解し、基本的な計算ができる
+  \end{block}
+
   \begin{block}{用語・定義}
-  \begin{description}[labelwidth=5.5em]
-    \item[\kw{n乗根}] $a^n = b$ を満たす数 $a$（$\sqrt[n]{b}$ と書く）
-    \item[\kw{n乗根の定義（aのn乗根）}] $n$ が奇数のとき実数解1個、偶数のとき正の数のみ（$a > 0$）
-    \item[\kw{$\sqrt[n]{a}$ の表記}] $n$ 乗根のうち正のもの（$n$ が偶数）または実数のもの
-    \item[\kw{奇数乗根と偶数乗根の違い}] 奇数乗根は負の数でも定義できる；偶数乗根は $a \geq 0$ が必要
+  \begin{description}[labelwidth=5em]
+    \item[\kw{$a$ の $n$ 乗根}] $x^n = a$ を満たす $x$
+    \item[\kw{$\sqrt[n]{a}$}] $n$ が偶数のとき $a>0$ の正の $n$ 乗根、\\
+                               $n$ が奇数のとき $a$ の実数の $n$ 乗根
+    \item[\kw{$n$ 乗根の個数}] $n$ 奇数：実数解1個、$n$ 偶数：$a>0$ なら $\pm\sqrt[n]{a}$ の2個
   \end{description}
   \end{block}
 \end{frame}
@@ -31,14 +33,15 @@
 % -----------------------------------------------
 % スライド2: 公式・性質
 % -----------------------------------------------
-\begin{frame}{公式・性質}
+\begin{frame}{累乗根の性質（$a>0,\;b>0$）}
   \begin{block}{}
   \begin{itemize}
-    \item $(\sqrt[n]{a})^n = a$
-    \item $\sqrt[n]{a^n} = a$（$n$ が奇数）
-    \item $\sqrt[n]{a^n} = |a|$（$n$ が偶数）
-    \item $\sqrt[n]{a} \cdot \sqrt[n]{b} = \sqrt[n]{ab}$
-    \item $\sqrt[n]{a} \div \sqrt[n]{b} = \sqrt[n]{a/b}$
+    \item $\bigl(\sqrt[n]{a}\bigr)^n = a$
+    \item $\sqrt[n]{a^n} = a$（$n$ が奇数）\quad$\sqrt[n]{a^n} = |a|$（$n$ が偶数）
+    \item $\sqrt[n]{a}\cdot\sqrt[n]{b} = \sqrt[n]{ab}$
+    \item $\dfrac{\sqrt[n]{a}}{\sqrt[n]{b}} = \sqrt[n]{\dfrac{a}{b}}$
+    \item $\sqrt[m]{\sqrt[n]{a}} = \sqrt[mn]{a}$
+    \item $\bigl(\sqrt[n]{a}\bigr)^m = \sqrt[n]{a^m}$
   \end{itemize}
   \end{block}
 \end{frame}
@@ -46,31 +49,68 @@
 % -----------------------------------------------
 % スライド3: 例1→問1
 % -----------------------------------------------
-\begin{frame}{例1→問1}
-  \begin{exampleblock}{例1) p.102（n乗根の値を求める）}
-    （板書で解説）
+\begin{frame}{例1 $\to$ 問1 \hfill{\small p.\,102}}
+  \begin{exampleblock}{例1）次の数の $n$ 乗根を求めよ}
+    (1) $16$ の $4$ 乗根\quad (2) $-27$ の $3$ 乗根\quad (3) $0$ の $5$ 乗根
   \end{exampleblock}
+
+  \begin{block}{解}
+    (1)\; $x^4=16$ の実数解は $x=\pm 2$\;\;$\Rightarrow$\;\; $\boldsymbol{2}$ \textbf{と} $\boldsymbol{-2}$\\[3pt]
+    (2)\; $x^3=-27$ の実数解は $x=-3$\;\;$\Rightarrow$\;\; $\boldsymbol{-3}$\\[3pt]
+    (3)\; $x^5=0$ の実数解は $x=0$\;\;$\Rightarrow$\;\; $\boldsymbol{0}$
+  \end{block}
 
   \vfill
 
-  \begin{block}{問1) p.102\quad 自分で解いてみよう}
-    （ノートに解くこと）
-  \end{block}
+  \begin{alertblock}{問1）次の数の $n$ 乗根を求めよ\hfill p.\,102}
+    (1) $81$ の $4$ 乗根\quad (2) $-8$ の $3$ 乗根\quad (3) $1$ の $6$ 乗根
+  \end{alertblock}
 \end{frame}
 
 % -----------------------------------------------
 % スライド4: 例2→問2
 % -----------------------------------------------
-\begin{frame}{例2→問2}
-  \begin{exampleblock}{例2) p.103（$\sqrt[n]{a}$ の計算）}
-    （板書で解説）
+\begin{frame}{例2 $\to$ 問2 \hfill{\small p.\,103}}
+  \begin{exampleblock}{例2）次の値を求めよ}
+    (1) $\sqrt[3]{-8}$\quad (2) $\sqrt[4]{81}$\quad (3) $\sqrt[3]{(-5)^3}$
   \end{exampleblock}
+
+  \begin{block}{解}
+    (1)\; $(-2)^3=-8$ より $\sqrt[3]{-8}=\boldsymbol{-2}$\\[3pt]
+    (2)\; $3^4=81$ より $\sqrt[4]{81}=\boldsymbol{3}$\\[3pt]
+    (3)\; $n=3$（奇数）のとき $\sqrt[n]{a^n}=a$ より $\sqrt[3]{(-5)^3}=\boldsymbol{-5}$
+  \end{block}
 
   \vfill
 
-  \begin{block}{問2) p.103\quad 自分で解いてみよう}
-    （ノートに解くこと）
+  \begin{alertblock}{問2）次の値を求めよ\hfill p.\,103}
+    (1) $\sqrt[3]{27}$\quad (2) $\sqrt[4]{16}$\quad (3) $\sqrt[5]{(-2)^5}$\quad (4) $\sqrt[4]{(-3)^4}$
+  \end{alertblock}
+\end{frame}
+
+% -----------------------------------------------
+% スライド5: 例3→問3（性質を使った計算）
+% -----------------------------------------------
+\begin{frame}{例3 $\to$ 問3 \hfill{\small p.\,103--104}}
+  \begin{exampleblock}{例3）次を計算せよ}
+    (1) $\sqrt[3]{9}\cdot\sqrt[3]{3}$\quad
+    (2) $\dfrac{\sqrt[4]{32}}{\sqrt[4]{2}}$\quad
+    (3) $\sqrt[2]{\sqrt[3]{64}}$
+  \end{exampleblock}
+
+  \begin{block}{解}
+    (1)\; $\sqrt[3]{9}\cdot\sqrt[3]{3}=\sqrt[3]{9\times 3}=\sqrt[3]{27}=\boldsymbol{3}$\\[3pt]
+    (2)\; $\dfrac{\sqrt[4]{32}}{\sqrt[4]{2}}=\sqrt[4]{\dfrac{32}{2}}=\sqrt[4]{16}=\boldsymbol{2}$\\[3pt]
+    (3)\; $\sqrt[2]{\sqrt[3]{64}}=\sqrt[2\times3]{64}=\sqrt[6]{64}=\sqrt[6]{2^6}=\boldsymbol{2}$
   \end{block}
+
+  \vfill
+
+  \begin{alertblock}{問3）次を計算せよ\hfill p.\,104}
+    (1) $\sqrt[4]{4}\cdot\sqrt[4]{4^3}$\quad
+    (2) $\dfrac{\sqrt[3]{54}}{\sqrt[3]{2}}$\quad
+    (3) $\sqrt[3]{\sqrt[4]{a}}$（$a>0$）
+  \end{alertblock}
 \end{frame}
 
 % -----------------------------------------------
@@ -78,9 +118,10 @@
 % -----------------------------------------------
 \begin{frame}{まとめ}
   \begin{itemize}
-    \item $\sqrt[n]{a}$ は $a$ の $n$ 乗根（$a \geq 0$ のとき正の値）
-    \item $(\sqrt[n]{a})^n = a$、$\sqrt[n]{a^n} = |a|$（$n$ が偶数）
-    \item 累乗根の性質：$\sqrt[n]{a}\cdot\sqrt[n]{b}=\sqrt[n]{ab}$
+    \item $\sqrt[n]{a}$ は「$n$ 乗すると $a$ になる数」
+    \item $n$ が偶数のとき $a>0$ なら $\pm\sqrt[n]{a}$ の2個
+    \item $n$ が奇数のとき $a$ の符号に関わらず実数解1個
+    \item 累乗根の性質：$\sqrt[n]{a}\cdot\sqrt[n]{b}=\sqrt[n]{ab}$、$\sqrt[m]{\sqrt[n]{a}}=\sqrt[mn]{a}$
   \end{itemize}
 
   \vfill
